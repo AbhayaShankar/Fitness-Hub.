@@ -1,22 +1,23 @@
-import { UserButton, useAuth } from "@clerk/nextjs";
+import { NavbarLinks } from "@/constants";
 import Link from "next/link";
+import { ModeToggle } from "./ThemeToggler";
 
 export const Navbar = () => {
-  //   const { isSignedIn } = useAuth();
-
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between p-4 py-6 ">
       <h1>Fitness Hub</h1>
-      <div>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/gallery">Gallery</Link>
-        <Link href="/classes">Classes</Link>
-        <Link href="/pricing">Pricing</Link>
-        <Link href="/courses">Courses</Link>
-        <Link href="/contact">Contact</Link>
+      <div className="flex space-x-6 ">
+        {NavbarLinks.map((item) => (
+          <Link
+            key={item.id}
+            className="hover:text-red-500 transition-all delay-75"
+            href={item.href}
+          >
+            {item.label}
+          </Link>
+        ))}
       </div>
-      {/* <UserButton afterSignOutUrl="/" /> */}
+      <ModeToggle />
     </div>
   );
 };
