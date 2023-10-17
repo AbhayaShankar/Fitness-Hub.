@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ModeToggle } from "./ThemeToggler";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -12,7 +13,16 @@ const font = Montserrat({
 export const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-4 py-6 border-b-2  ">
-      <h1 className="font-bold text-2xl tracking-widest">Fitness Hub</h1>
+      <Link href={"/"} className="flex items-center space-x-3">
+        <Image
+          src={"/logo.png"}
+          width={500}
+          height={500}
+          className="h-10 w-10"
+          alt="logo-fh"
+        />
+        <h1 className="font-bold text-2xl tracking-widest">Fitness Hub</h1>
+      </Link>
       <div className="flex space-x-6  ">
         {NavbarLinks.map((item) => (
           <Link
