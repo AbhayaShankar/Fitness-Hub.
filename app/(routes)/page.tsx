@@ -3,12 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex space-x-5 p-5">
       <Link href="/sign-in">
-        <Button>Login</Button>
+        <Button variant={"custom1"} size={"lg"}>
+          Login
+        </Button>
       </Link>
       <Link href="/sign-up">
-        <Button variant={"outline"}>Register</Button>
+        <Button variant={"custom2"} size={"lg"}>
+          Register
+        </Button>
       </Link>
     </main>
   );

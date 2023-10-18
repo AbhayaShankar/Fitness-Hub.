@@ -10,3 +10,6 @@ List of things you are supposed to do - *learning perspective*
    dark:text-gray-400 dark:hover:text-white
    ```
    Similarly use dark and light theme in CSS.
+
+3. By Default - Dark theme...
+4. Font of FitnessHub -- change.

@@ -7,12 +7,12 @@ import Image from "next/image";
 
 const font = Montserrat({
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-4 py-6 border-b-2  ">
+    <nav className="flex items-center justify-between p-4 py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
@@ -21,14 +21,28 @@ export const Navbar = () => {
           className="h-10 w-10"
           alt="logo-fh"
         />
-        <h1 className="font-bold text-2xl tracking-widest">Fitness Hub</h1>
+        <div>
+          <h1
+            className={cn(
+              "font-extrabold text-2xl tracking-normal",
+              "font-bold",
+              font.className
+            )}
+          >
+            <span className="dark:text-[#fafe19]">Fitness </span>
+            Hub
+          </h1>
+          <p className="text-[9.5px] uppercase tracking-wide text-muted-foreground">
+            Ultimate Fitness Center
+          </p>
+        </div>
       </Link>
       <div className="flex space-x-6  ">
         {NavbarLinks.map((item) => (
           <Link
             key={item.id}
             className={cn(
-              "transition-all delay-75 text-[17px] dark:text-gray-400 dark:hover:text-white font-medium",
+              "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900",
               font.className
             )}
             href={item.href}
@@ -38,6 +52,6 @@ export const Navbar = () => {
         ))}
       </div>
       <ModeToggle />
-    </div>
+    </nav>
   );
 };
