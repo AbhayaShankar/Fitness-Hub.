@@ -1,3 +1,4 @@
+import TitleBg from "@/components/TitleBg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -14,6 +15,7 @@ export default function Home() {
           Register
         </Button>
       </Link>
+      <TitleBg title={"ABHAYA SHANKAR"} />
     </main>
   );
 }

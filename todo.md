@@ -13,3 +13,4 @@ List of things you are supposed to do - *learning perspective*
 
 3. By Default - Dark theme...
 4. Font of FitnessHub -- change.
+5. Select a TitleBg color background.
