@@ -35,3 +35,24 @@ export const NavbarLinks = [
     label: "Contact",
   },
 ];
+
+export const TrainersList = [
+  {
+    id: 0,
+    name: "Abhaya Shankar",
+    type: "Personal Trainer",
+    src: "/assets/trainer.png",
+  },
+  {
+    id: 1,
+    name: "Abhaya Shankar",
+    type: "Personal Trainer",
+    src: "/assets/trainer2.png",
+  },
+  {
+    id: 2,
+    name: "Abhaya Shankar",
+    type: "Personal Trainer",
+    src: "/assets/trainer3.png",
+  },
+];

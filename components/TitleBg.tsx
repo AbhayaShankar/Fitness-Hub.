@@ -1,29 +1,43 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
-const font = Montserrat({
+const font = Poppins({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 });
 
 interface TitleBgProps {
   title: string;
+  isDark: boolean;
 }
 
-const TitleBg = ({ title }: TitleBgProps) => {
+const TitleBg = ({ title, isDark }: TitleBgProps) => {
   return (
     <div className="relative flex items-center justify-center">
-      <Image
-        alt="title-bg"
-        src={"/assets/titlebg.svg"}
-        width={250}
-        height={25}
-      />
+      {isDark ? (
+        <Image
+          alt="title-bg"
+          src={"/assets/titlebg-primary.svg"}
+          width={250}
+          height={25}
+        />
+      ) : (
+        <Image
+          alt="title-bg"
+          src={"/assets/titlebg-secondary.svg"}
+          width={250}
+          height={25}
+        />
+      )}
       <p
         className={cn(
-          "absolute font-extrabold text-white dark:text-black z-10",
+          `absolute font-bold ${
+            isDark ? "text-black/60" : "text-white"
+          } $ z-10 uppercase tracking-[0.2px]`,
           font.className
         )}
       >
