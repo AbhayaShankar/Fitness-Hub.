@@ -1,7 +1,6 @@
 import TitleBg from "@/components/TitleBg";
-import TrainerCard from "@/components/TrainerCard";
+import Trainers from "@/components/Trainers";
 import { Button } from "@/components/ui/button";
-import { TrainersList } from "@/constants";
 
 import Link from "next/link";
 
@@ -18,19 +17,9 @@ export default function Home() {
           Register
         </Button>
       </Link>
-      <TitleBg title={"Pricing"} isDark={true} />
-      <TitleBg title={"Courses"} isDark={false} />
-      <TitleBg title={"Gym Trainers"} isDark={true} />
-      <div className="flex items-center justify-center flex-wrap gap-10 ">
-        {TrainersList.map((item) => (
-          <TrainerCard
-            key={item.id}
-            name={item.name}
-            type={item.type}
-            src={item.src}
-          />
-        ))}
-      </div>
+      {/* <TitleBg title={"Pricing"} isDark={true} />
+      <TitleBg title={"Courses"} isDark={false} /> */}
+      <Trainers />
     </main>
   );
 }

@@ -16,3 +16,4 @@ List of things you are supposed to do - *learning perspective*
 5. Select a TitleBg color background.
 6. Navigation Menu - shadcn/ui ❗IMPORTANT
 7. Sidebar using sheet component
+8. Make a heading and description component so that we use the same model everywhere.
