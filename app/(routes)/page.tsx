@@ -21,7 +21,7 @@ export default function Home() {
       {/* <TitleBg title={"Pricing"} isDark={true} />
       <TitleBg title={"Courses"} isDark={false} /> */}
       <Trainers />
-      <div className="grid grid-cols-4 gap-5 mx-auto w-full">
+      <div className="grid grid-cols-4 grid-rows-2 gap-6 p-6 mx-auto w-full">
         <ClassesCard item={0} />
         <ClassesCard item={1} />
         <ClassesCard item={2} />
