@@ -17,3 +17,4 @@ List of things you are supposed to do - *learning perspective*
 6. Navigation Menu - shadcn/ui ❗IMPORTANT
 7. Sidebar using sheet component
 8. Make a heading and description component so that we use the same model everywhere.
+9. Collect Images for Trainers List - 258 x 415 sizes only
