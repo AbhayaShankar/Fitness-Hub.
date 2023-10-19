@@ -21,7 +21,7 @@ export default function Home() {
       {/* <TitleBg title={"Pricing"} isDark={true} />
       <TitleBg title={"Courses"} isDark={false} /> */}
       <Trainers />
-      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-6 p-10 w-full h-full lg:h-[40rem]">
+      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-6 px-28 py-20 w-full h-full lg:h-[50rem]">
         <ClassesCard
           item={0}
           className="Cycling"

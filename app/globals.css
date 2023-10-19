@@ -216,3 +216,32 @@ body,
 .box-desc:hover::after {
   width: 100%;
 }
+
+.classCard::after {
+  background-color: #ffffff4d;
+  border-radius: 0 50px 50px 0;
+  bottom: 50%;
+  content: "";
+  height: 69px;
+  left: -49px;
+  position: absolute;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  transition: all 0.4s;
+  width: 140px;
+  z-index: 5;
+}
+
+.classCard:hover::after {
+  background-color: #fff;
+}
+
+.classCard::before {
+  display: block;
+  position: absolute;
+  -webkit-transform: scale(0.65);
+  transform: scale(0.65);
+  transition: all 0.4s;
+  width: 50%;
+  z-index: 6;
+}

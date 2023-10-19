@@ -3,7 +3,7 @@ import { cn } from "./utils";
 
 const font = Montserrat({
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 interface HeadingCompProps {
@@ -12,6 +12,7 @@ interface HeadingCompProps {
 
 interface DescriptionCompProps {
   desc: string;
+  advStyle?: string;
 }
 
 export const HeadingComp = ({ title }: HeadingCompProps) => {
@@ -27,12 +28,13 @@ export const HeadingComp = ({ title }: HeadingCompProps) => {
   );
 };
 
-export const DescriptionComp = ({ desc }: DescriptionCompProps) => {
+export const DescriptionComp = ({ desc, advStyle }: DescriptionCompProps) => {
   return (
     <p
       className={cn(
-        "max-w-[40%] text-center dark:text-muted-foreground pb-5",
-        font.className
+        "text-center dark:text-muted-foreground pb-5 max-w-[600px]",
+        font.className,
+        advStyle
       )}
     >
       {desc}
