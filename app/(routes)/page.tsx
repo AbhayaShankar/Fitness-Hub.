@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex space-x-5 space-y-10 p-5 flex-col">
+    <main className="flex  space-y-10 p-5 flex-col">
       <Link href="/sign-in">
         <Button variant={"custom1"} size={"lg"}>
           Login
@@ -21,13 +21,37 @@ export default function Home() {
       {/* <TitleBg title={"Pricing"} isDark={true} />
       <TitleBg title={"Courses"} isDark={false} /> */}
       <Trainers />
-      <div className="grid grid-cols-4 grid-rows-2 gap-6 p-6 mx-auto w-full">
-        <ClassesCard item={0} />
-        <ClassesCard item={1} />
-        <ClassesCard item={2} />
-        <ClassesCard item={3} />
-        <ClassesCard item={4} />
-        <ClassesCard item={5} />
+      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-6 p-10 w-full h-full lg:h-[40rem]">
+        <ClassesCard
+          item={0}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
+        <ClassesCard
+          item={1}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
+        <ClassesCard
+          item={2}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
+        <ClassesCard
+          item={3}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
+        <ClassesCard
+          item={4}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
+        <ClassesCard
+          item={5}
+          className="Cycling"
+          timings="Friday : 9:00 AM - 11:00 AM"
+        />
       </div>
     </main>
   );

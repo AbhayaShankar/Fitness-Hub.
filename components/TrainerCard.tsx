@@ -25,7 +25,7 @@ const TrainerCard = ({ name, type, src }: TrainerCardProps) => {
           alt="trainer-img"
           width={800}
           height={800}
-          className="w-[225px] h-[225px] grayscale hover:grayscale-0 transition-all duration-300 delay-75  relative mx-auto z-10 object-cover object-top "
+          className="w-[225px] h-[225px] grayscale hover:grayscale-0 transition-all duration-300 ease-in relative mx-auto z-10 object-cover object-top "
         />
         <Image
           src={"/assets/profileBg.png"}
