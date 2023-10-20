@@ -1,18 +1,27 @@
+"use client";
+
 import { NavbarLinks } from "@/constants";
 import Link from "next/link";
 import { ModeToggle } from "./ThemeToggler";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { SheetClose, SheetFooter } from "./ui/sheet";
+import { Button } from "./ui/button";
 
 const font = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 });
 
-export const Navbar = () => {
+interface NavbarProps {
+  sheetOpen: boolean;
+  setSheetOpen(arg: boolean): void;
+}
+
+export const Navbar = ({ sheetOpen, setSheetOpen }: NavbarProps) => {
   return (
-    <nav className="flex flex-col lg:flex-row items-start px-10 lg:px-6 lg:items-center justify-between  py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
+    <nav className="flex flex-col lg:flex-row items-start px-4 lg:px-6 lg:items-center justify-between  py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
@@ -46,12 +55,13 @@ export const Navbar = () => {
               font.className
             )}
             href={item.href}
+            onClick={() => setSheetOpen(true)}
           >
             {item.label}
           </Link>
         ))}
       </div>
-      <div className="block lg:hidden absolute right-10">
+      <div className="block lg:hidden absolute right-5">
         <ModeToggle />
       </div>
       <div className="hidden lg:block">
