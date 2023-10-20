@@ -56,3 +56,30 @@ export const TrainersList = [
     src: "/assets/trainer3.png",
   },
 ];
+
+export const GymCardList = [
+  {
+    id: 0,
+    src: "/assets/gym1.png",
+  },
+  {
+    id: 1,
+    src: "/assets/gym2.png",
+  },
+  {
+    id: 2,
+    src: "/assets/gym3.png",
+  },
+  {
+    id: 3,
+    src: "/assets/gym4.png",
+  },
+  {
+    id: 4,
+    src: "/assets/gym5.png",
+  },
+  {
+    id: 5,
+    src: "/assets/gym6.png",
+  },
+];
