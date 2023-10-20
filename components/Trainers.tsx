@@ -7,14 +7,15 @@ import { DescriptionComp, HeadingComp } from "@/lib/Common";
 const Trainers = () => {
   return (
     <div className="flex flex-col space-y-4 items-center">
-      <TitleBg title={"Gym Trainers"} isDark={true} />
+      <TitleBg title={"Gym Trainers"} />
       <HeadingComp
         title="team of expert coaches"
         advStyle="capitalize text-[32px]"
       />
       <DescriptionComp
-        desc="Expert team of coaches helps you succeed in any goal, personalized
+        desc="Expert team of coaches will help you succeed in any goal, personalized
       guidance and motivation provided!"
+        advStyle="max-w-[750px]"
       />
       <div className="flex items-center justify-center flex-wrap gap-10 ">
         {TrainersList.map((item) => (
