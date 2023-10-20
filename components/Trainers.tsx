@@ -8,7 +8,10 @@ const Trainers = () => {
   return (
     <div className="flex flex-col space-y-4 items-center">
       <TitleBg title={"Gym Trainers"} isDark={true} />
-      <HeadingComp title="team of expert coaches" />
+      <HeadingComp
+        title="team of expert coaches"
+        advStyle="capitalize text-[32px]"
+      />
       <DescriptionComp
         desc="Expert team of coaches helps you succeed in any goal, personalized
       guidance and motivation provided!"

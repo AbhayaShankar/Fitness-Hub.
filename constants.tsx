@@ -41,18 +41,18 @@ export const TrainersList = [
     id: 0,
     name: "Abhaya Shankar",
     type: "Powerlift Trainer",
-    src: "/assets/powerlift3.png",
+    src: "/assets/trainer1.png",
   },
   {
     id: 1,
     name: "Abhaya Shankar",
     type: "Personal Trainer",
-    src: "/assets/img3.png",
+    src: "/assets/trainer2.png",
   },
   {
     id: 2,
     name: "Abhaya Shankar",
     type: "Yoga Trainer",
-    src: "/assets/yoga3.png",
+    src: "/assets/trainer3.png",
   },
 ];

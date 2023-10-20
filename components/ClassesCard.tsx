@@ -5,9 +5,10 @@ interface ClassesCardProps {
   className: string;
   timings: string;
   item: number;
+  src: string;
 }
 
-const ClassesCard = ({ item, className, timings }: ClassesCardProps) => {
+const ClassesCard = ({ item, className, timings, src }: ClassesCardProps) => {
   return (
     <div
       className={` relative overflow-hidden cursor-pointer classCard
@@ -20,17 +21,17 @@ const ClassesCard = ({ item, className, timings }: ClassesCardProps) => {
     `}
     >
       <Image
-        src={"/assets/abc.jpg"}
+        src={src}
         alt="class-card"
         width={400}
         height={400}
         className="h-full object-cover w-full object-top grayscale  transition-all delay-75 duration-300 ease-in hover:grayscale-0 hover:scale-110"
       />
       <div className="absolute bottom-5 left-5 text-white">
-        <HeadingComp title={className} />
+        <HeadingComp title={className} advStyle="capitalize text-[32px]" />
         <DescriptionComp
           desc={timings}
-          advStyle="bg-[#ce032c] px-2 py-1 dark:text-white text-sm font-light dark:font-light"
+          advStyle="bg-[#ce032c] px-2 py-1 dark:text-white text-[13px] font-light dark:font-light"
         />
       </div>
     </div>

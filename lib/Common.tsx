@@ -8,6 +8,7 @@ const font = Montserrat({
 
 interface HeadingCompProps {
   title: string;
+  advStyle?: string;
 }
 
 interface DescriptionCompProps {
@@ -15,12 +16,13 @@ interface DescriptionCompProps {
   advStyle?: string;
 }
 
-export const HeadingComp = ({ title }: HeadingCompProps) => {
+export const HeadingComp = ({ title, advStyle }: HeadingCompProps) => {
   return (
     <h1
       className={cn(
-        "text-[32px] font-bold tracking-[0.2px] capitalize dark:text-white ",
-        font.className
+        "font-bold tracking-[0.2px] capitalize dark:text-white text-3xl ",
+        font.className,
+        advStyle
       )}
     >
       {title}

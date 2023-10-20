@@ -1,3 +1,4 @@
+import ClassGrid from "@/components/ClassGrid";
 import ClassesCard from "@/components/ClassesCard";
 import TitleBg from "@/components/TitleBg";
 import Trainers from "@/components/Trainers";
@@ -21,38 +22,7 @@ export default function Home() {
       {/* <TitleBg title={"Pricing"} isDark={true} />
       <TitleBg title={"Courses"} isDark={false} /> */}
       <Trainers />
-      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-6 px-28 py-20 w-full h-full lg:h-[50rem]">
-        <ClassesCard
-          item={0}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-        <ClassesCard
-          item={1}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-        <ClassesCard
-          item={2}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-        <ClassesCard
-          item={3}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-        <ClassesCard
-          item={4}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-        <ClassesCard
-          item={5}
-          className="Cycling"
-          timings="Friday : 9:00 AM - 11:00 AM"
-        />
-      </div>
+      <ClassGrid />
     </main>
   );
 }
