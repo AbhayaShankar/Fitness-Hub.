@@ -14,7 +14,7 @@ List of things you are supposed to do - *learning perspective*
 3. By Default - Dark theme...
 4. Font of FitnessHub -- change.
 5. Select a TitleBg color background.
-6. Navigation Menu - shadcn/ui ❗IMPORTANT
-7. Sidebar using sheet component
-8. Make a heading and description component so that we use the same model everywhere.
-9. Collect Images for Trainers List - 258 x 415 sizes only
+6. Navigation Menu - shadcn/ui ❗IMPORTANT ✅ --> Add Copyright issues in this after the links --> flex end
+7. Sidebar using sheet component ✅
+8. Make a heading and description component so that we use the same model everywhere. ✅
+9. Collect Images for Trainers List - 258 x 415 sizes only ✅

@@ -12,7 +12,7 @@ const font = Montserrat({
 
 export const Navbar = () => {
   return (
-    <nav className="flex flex-col lg:flex-row items-center justify-between p-4 py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
+    <nav className="flex flex-col lg:flex-row items-start px-10 lg:px-6 lg:items-center justify-between  py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
@@ -37,7 +37,7 @@ export const Navbar = () => {
           </p>
         </div>
       </Link>
-      <div className="flex space-x-6 flex-col lg:flex-row items-start ">
+      <div className="flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start ">
         {NavbarLinks.map((item) => (
           <Link
             key={item.id}
@@ -51,7 +51,12 @@ export const Navbar = () => {
           </Link>
         ))}
       </div>
-      <ModeToggle />
+      <div className="block lg:hidden absolute right-10">
+        <ModeToggle />
+      </div>
+      <div className="hidden lg:block">
+        <ModeToggle />
+      </div>
     </nav>
   );
 };
