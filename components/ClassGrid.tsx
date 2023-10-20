@@ -15,7 +15,7 @@ const ClassGrid = () => {
         advStyle="max-w-[750px]"
       />
 
-      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-5 px-28 pb-20 pt-8 w-full h-full lg:h-[50rem]">
+      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-5 p-6 lg:px-28 pb-20 pt-8 w-full h-full lg:h-[50rem]">
         <ClassesCard
           item={0}
           className="calisthenics"

@@ -12,7 +12,7 @@ const font = Montserrat({
 
 export const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
+    <nav className="flex flex-col lg:flex-row items-center justify-between p-4 py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
@@ -37,12 +37,12 @@ export const Navbar = () => {
           </p>
         </div>
       </Link>
-      <div className="flex space-x-6  ">
+      <div className="flex space-x-6 flex-col lg:flex-row items-start ">
         {NavbarLinks.map((item) => (
           <Link
             key={item.id}
             className={cn(
-              "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900",
+              "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 ",
               font.className
             )}
             href={item.href}

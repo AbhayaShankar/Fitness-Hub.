@@ -1,11 +1,17 @@
 import { Navbar } from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
 const Routelayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main>
-      <Navbar />
-      {children}
-    </main>
+    <div className="h-full relative">
+      <div className="hidden lg:block w-full">
+        <Navbar />
+      </div>
+      <main>
+        <Sidebar />
+        {children}
+      </main>
+    </div>
   );
 };
 
