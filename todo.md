@@ -21,3 +21,10 @@ List of things you are supposed to do - *learning perspective*
 10. Gym authenticities -- support. ✅``
 11. Gallery tile/Grid view. ✅
 12. Close the Sheet Component - Upon clicking the link inside. ✅
+   
+### 22.10.23 - 
+1. Fix Navbar issue - refer codebox.
+2. Design Basic Other routes - Banner image 
+3. 6 Card Design - Stages of healthy workout cycle.
+4. Classes cards design
+5. Footer Design
