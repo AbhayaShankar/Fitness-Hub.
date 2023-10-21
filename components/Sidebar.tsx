@@ -4,7 +4,7 @@ import { UserButton } from "@clerk/nextjs";
 
 const Sidebar = () => {
   return (
-    <div className="w-full flex items-center p-4">
+    <div className="w-full flex items-center">
       <MobileSidebar />
       <div className="w-full flex justify-end ">
         <UserButton afterSignOutUrl="/" />

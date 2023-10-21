@@ -227,6 +227,14 @@ body,
   z-index: 6;
 }
 
+.classCard:first-child::before {
+  width: 25%;
+}
+
+.classCard:last-child::before {
+  width: 25%;
+}
+
 .classCard::after {
   background-color: #ffffff4d;
   border-radius: 0 50px 50px 0;
@@ -249,7 +257,7 @@ body,
 .classCard:nth-child(1)::before {
   bottom: 45%;
   content: url("/assets/icons/calisthenics.png");
-  left: -25px;
+  left: -1px;
 }
 
 .classCard:nth-child(2)::before {
@@ -260,7 +268,7 @@ body,
 
 .classCard:nth-child(3)::before {
   bottom: 45%;
-  content: url("/assets/icons/karate.png");
+  content: url("/assets/icons/fitness.png");
   left: -1px;
 }
 
@@ -278,22 +286,22 @@ body,
 .classCard:nth-child(6)::before {
   bottom: 45%;
   content: url("/assets/icons/powerlifting.png");
-  left: -25px;
+  left: -1px;
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
   .classCard:nth-child(1)::before {
-    left: -1px;
+    left: 10px;
   }
 
   .classCard:nth-child(6)::before {
-    left: -1px;
+    left: 10px;
   }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
   .classCard:nth-child(1)::before {
-    left: -30px;
+    left: 0px;
   }
 
   .classCard:nth-child(2)::before {
@@ -315,6 +323,6 @@ body,
   }
 
   .classCard:nth-child(6)::before {
-    left: -30px;
+    left: 0px;
   }
 }

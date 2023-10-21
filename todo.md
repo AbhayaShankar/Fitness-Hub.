@@ -19,5 +19,5 @@ List of things you are supposed to do - *learning perspective*
 8. Make a heading and description component so that we use the same model everywhere. ✅
 9. Collect Images for Trainers List - 258 x 415 sizes only ✅
 10. Gym authenticities -- support. ✅``
-11. Gallery tile/Grid view.
-12. Close the Sheet Component - Upon clicking the link inside. ❗❌
+11. Gallery tile/Grid view. ✅
+12. Close the Sheet Component - Upon clicking the link inside. ✅
