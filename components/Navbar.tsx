@@ -6,8 +6,6 @@ import { ModeToggle } from "./ThemeToggler";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { SheetClose, SheetFooter } from "./ui/sheet";
-import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 
 const font = Montserrat({
@@ -54,7 +52,6 @@ export const Navbar = () => {
       </Link>
       <div className="flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start ">
         {NavbarLinks.map((item) => (
-          // <SheetClose asChild key={item.id}>
           <Link
             key={item.id}
             className={cn(
@@ -65,7 +62,6 @@ export const Navbar = () => {
           >
             {item.label}
           </Link>
-          // </SheetClose>
         ))}
       </div>
       <div className="block lg:hidden absolute right-5">
