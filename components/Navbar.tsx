@@ -8,20 +8,26 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { SheetClose, SheetFooter } from "./ui/sheet";
 import { Button } from "./ui/button";
+import { useEffect, useState } from "react";
 
 const font = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 });
 
-interface NavbarProps {
-  sheetOpen: boolean;
-  setSheetOpen(arg: boolean): void;
-}
+export const Navbar = () => {
+  const [mounted, setMounted] = useState(false);
 
-export const Navbar = ({ sheetOpen, setSheetOpen }: NavbarProps) => {
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <nav className="flex flex-col lg:flex-row items-start px-4 lg:px-6 lg:items-center justify-between  py-6 border-b-[2px] sticky left-0 top-0 z-50 bg-[#fff] dark:bg-[#0c0a09]   ">
+    <nav className="flex flex-col lg:flex-row items-start px-4 lg:px-6 lg:items-center justify-between py-6 border-b-[2px] sticky top-0 left-0 z-50 bg-[#fff] dark:bg-[#0c0a09]">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
@@ -48,6 +54,7 @@ export const Navbar = ({ sheetOpen, setSheetOpen }: NavbarProps) => {
       </Link>
       <div className="flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start ">
         {NavbarLinks.map((item) => (
+          // <SheetClose asChild key={item.id}>
           <Link
             key={item.id}
             className={cn(
@@ -55,10 +62,10 @@ export const Navbar = ({ sheetOpen, setSheetOpen }: NavbarProps) => {
               font.className
             )}
             href={item.href}
-            onClick={() => setSheetOpen(true)}
           >
             {item.label}
           </Link>
+          // </SheetClose>
         ))}
       </div>
       <div className="block lg:hidden absolute right-5">

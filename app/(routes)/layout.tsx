@@ -3,8 +3,8 @@ import Sidebar from "@/components/Sidebar";
 
 const Routelayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-full relative">
-      <div className="hidden lg:block w-full">
+    <div className="min-h-full relative">
+      <div className="hidden lg:block sticky top-0 left-0 w-full z-50">
         <Navbar />
       </div>
       <main>
