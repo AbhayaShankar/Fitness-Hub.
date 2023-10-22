@@ -98,7 +98,7 @@ export const classes = [
     name: "Arm Wrestling",
   },
   {
-    name: "Cycling",
+    name: "Cardio",
   },
   {
     name: "Powerlifting",
