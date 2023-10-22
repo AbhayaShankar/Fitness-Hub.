@@ -7,7 +7,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-evenly px-6 py-10 gap-y-5">
+    <div className="flex flex-col lg:flex-row items-start justify-evenly px-6 py-10 gap-y-5 border-t-[1px] border-t-muted-foreground/20 dark:border-t-muted ">
       {/* Title */}
       <div className="flex flex-col gap-y-[16px]">
         <div className="flex items-center space-x-3 ">
