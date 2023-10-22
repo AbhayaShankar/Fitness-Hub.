@@ -1,4 +1,4 @@
-import { classes } from "@/constants";
+import { classes, trainingHours } from "@/constants";
 import { HeadingComp } from "@/lib/Common";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
@@ -83,7 +83,7 @@ const Footer = () => {
             <Link
               href={"/classes"}
               key={item.name}
-              className="font-semibold tracking-[0.15px] text-muted-foreground hover:text-[#ce032c]"
+              className="font-semibold text-[16px] tracking-[0.15px] text-muted-foreground hover:text-[#ce032c]"
             >
               {item.name}
             </Link>
@@ -97,19 +97,17 @@ const Footer = () => {
           advStyle="capitalize text-2xl mb-3"
         />
         <span className="top-[33px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
-        <div className="flex flex-col items-start gap-2">
-          {classes.map((item) => (
-            <Link
-              href={"/classes"}
-              key={item.name}
-              className="font-semibold tracking-[0.15px] text-muted-foreground"
+        <div className="flex flex-col items-start gap-3">
+          {trainingHours.map((item) => (
+            <div
+              className="flex flex-col text-[16px] tracking-[0.15px] gap-1 text-muted-foreground"
+              key={item.day}
             >
-              {item.name}
-            </Link>
+              <h2 className="font-bold text-[17px]">{item.day}</h2>
+              <p className="font-semibold">{item.time}</p>
+            </div>
           ))}
         </div>
-        <div></div>
-        {/* Policies */}
       </div>
     </div>
   );

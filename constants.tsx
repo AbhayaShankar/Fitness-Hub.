@@ -104,3 +104,18 @@ export const classes = [
     name: "Powerlifting",
   },
 ];
+
+export const trainingHours = [
+  {
+    day: "Monday - Friday:",
+    time: "6:30 AM - 9:00 PM",
+  },
+  {
+    day: "Saturday:",
+    time: "8:00 AM - 8:00 PM",
+  },
+  {
+    day: "Sunday:",
+    time: "Closed",
+  },
+];
