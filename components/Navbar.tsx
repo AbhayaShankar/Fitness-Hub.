@@ -6,14 +6,14 @@ import { ModeToggle } from "./ThemeToggler";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const font = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 });
 
-export const Navbar = () => {
+export const Navbar = (props: any) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -59,6 +59,7 @@ export const Navbar = () => {
               font.className
             )}
             href={item.href}
+            onClick={() => props.setOpen(false)}
           >
             {item.label}
           </Link>

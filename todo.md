@@ -1,6 +1,6 @@
 List of things you are supposed to fix
 
-1. how to remove **HYDRATION_ERROR**.
+1. how to remove **HYDRATION_ERROR**. ✅
 
 List of things you are supposed to do - *learning perspective*
 
