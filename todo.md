@@ -23,8 +23,9 @@ List of things you are supposed to do - *learning perspective*
 12. Close the Sheet Component - Upon clicking the link inside. ✅
    
 ### 22.10.23 - 
-1. Fix Navbar issue - refer codebox.
-2. Design Basic Other routes - Banner image 
-3. 6 Card Design - Stages of healthy workout cycle.
-4. Classes cards design
-5. Footer Design
+1. Fix Navbar issue - refer codebox. ✅
+2. Design Basic Other routes - Banner image ❗
+3. 6 Card Design - Stages of healthy workout cycle. ❗
+4. Classes cards design ❗
+5. Footer Design ❗
+6. After 8 secs - right sheet popup. - Exclusive offer 🎟️🎫 Join today.. something like that.

@@ -83,3 +83,24 @@ export const GymCardList = [
     src: "/assets/gym6.png",
   },
 ];
+
+export const classes = [
+  {
+    name: "Calisthenics",
+  },
+  {
+    name: "Yoga",
+  },
+  {
+    name: "Fitness",
+  },
+  {
+    name: "Arm Wrestling",
+  },
+  {
+    name: "Cycling",
+  },
+  {
+    name: "Powerlifting",
+  },
+];

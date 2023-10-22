@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 
@@ -10,6 +11,7 @@ const Routelayout = ({ children }: { children: React.ReactNode }) => {
       <main>
         <Sidebar />
         {children}
+        <Footer />
       </main>
     </div>
   );
