@@ -1,5 +1,5 @@
 import { classes, trainingHours } from "@/constants";
-import { HeadingComp } from "@/lib/Common";
+import { HeadingComp, UnderlinedHeading } from "@/lib/Common";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

@@ -119,3 +119,48 @@ export const trainingHours = [
     time: "Closed",
   },
 ];
+
+export const AllClasses = [
+  {
+    id: 0,
+    name: "Calisthenics",
+    instructor: "Abhaya Shankar",
+    timing: "Mon, Wed, Fri : 10:00 AM - 1:00 PM",
+    imageUrl: "/assets/calisthenics.jpg",
+  },
+  {
+    id: 1,
+    name: "Yoga",
+    instructor: "Abhaya Shankar",
+    timing: "Tues, Thur : 8:00 AM - 10:00 AM",
+    imageUrl: "/assets/yoga.jpg",
+  },
+  {
+    id: 2,
+    name: "Fitness",
+    instructor: "Abhaya Shankar",
+    timing: "Weekdays : 4:00 PM - 8:30 PM",
+    imageUrl: "/assets/fitness.jpg",
+  },
+  {
+    id: 3,
+    name: "Arm Wrestling",
+    instructor: "Abhaya Shankar",
+    timing: "Mon, Fri : 6:00 PM - 9:00 PM",
+    imageUrl: "/assets/armwrestle.jpg",
+  },
+  {
+    id: 4,
+    name: "Cardio",
+    instructor: "Abhaya Shankar",
+    timing: "Tues, Thur : 9:00 AM - 9:00 PM",
+    imageUrl: "/assets/cycling.jpg",
+  },
+  {
+    id: 5,
+    name: "Powerlifting",
+    instructor: "Abhaya Shankar",
+    timing: "Weekdays : 9:00 AM - 8:00 PM",
+    imageUrl: "/assets/powerlifting.jpg",
+  },
+];

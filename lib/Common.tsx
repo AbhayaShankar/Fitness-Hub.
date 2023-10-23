@@ -16,6 +16,10 @@ interface DescriptionCompProps {
   advStyle?: string;
 }
 
+interface UnderlineHeadingProps {
+  title: string;
+}
+
 export const HeadingComp = ({ title, advStyle }: HeadingCompProps) => {
   return (
     <h1
@@ -41,5 +45,14 @@ export const DescriptionComp = ({ desc, advStyle }: DescriptionCompProps) => {
     >
       {desc}
     </p>
+  );
+};
+
+export const UnderlinedHeading = ({ title }: UnderlineHeadingProps) => {
+  return (
+    <div className="relative">
+      <HeadingComp title={title} advStyle="capitalize text-2xl mb-3" />
+      <span className="top-[33px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
+    </div>
   );
 };
