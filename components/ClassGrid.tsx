@@ -2,10 +2,22 @@ import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import ClassesCard from "./ClassesCard";
 import TitleBg from "./TitleBg";
 import { AllClasses } from "@/constants";
+import { Montserrat } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const font = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 const ClassGrid = () => {
   return (
-    <div className="flex flex-col space-y-4 pt-16 items-center">
+    <div
+      className={cn(
+        "flex flex-col space-y-4 pt-16 items-center",
+        font.className
+      )}
+    >
       <TitleBg title={"Featured Class"} />
       <HeadingComp
         title="Best Guidance on variety of Classes"

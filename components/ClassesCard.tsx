@@ -1,3 +1,5 @@
+"use client";
+
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import Image from "next/image";
 

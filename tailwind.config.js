@@ -8,6 +8,7 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   sans: [
+    "Montserrat",
     "Inter",
     "ui-sans-serif",
     "system-ui",
@@ -25,6 +26,7 @@ module.exports = {
     "Noto Color Emoji",
   ],
   sans: [
+    "Montserrat",
     "Inter",
     "ui-sans-serif",
     "system-ui",
