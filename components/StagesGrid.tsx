@@ -12,7 +12,7 @@ const font = Montserrat({
 const StagesGrid = () => {
   return (
     <div className={cn("flex justify-center items-center", font.className)}>
-      <div className="flex flex-col lg:grid grid-cols-4 grid-rows-3 gap-10 p-4 lg:p-16">
+      <div className="flex flex-col lg:grid grid-cols-7 grid-rows-5 gap-10 p-4 lg:p-16">
         {STAGES_CARD.map((item) => (
           <StagesCard
             key={item.id}
