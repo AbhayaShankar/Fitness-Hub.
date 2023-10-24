@@ -1,3 +1,12 @@
+import {
+  Drumstick,
+  Dumbbell,
+  Goal,
+  KeyRound,
+  Puzzle,
+  Waypoints,
+} from "lucide-react";
+
 export const NavbarLinks = [
   {
     id: 0,
@@ -162,5 +171,50 @@ export const AllClasses = [
     instructor: "Abhaya Shankar",
     timing: "Weekdays : 9:00 AM - 8:00 PM",
     imageUrl: "/assets/powerlifting.jpg",
+  },
+];
+
+export const STAGES_CARD = [
+  {
+    id: 0,
+    title: "Goal",
+    icon: Goal,
+    desc: "Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/goal.webp",
+  },
+  {
+    id: 1,
+    title: "Hardwork",
+    icon: Dumbbell,
+    desc: " Unlock your fitness potential with clear goals. Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/hardwork.jpg",
+  },
+  {
+    id: 2,
+    title: "Determination",
+    icon: Puzzle,
+    desc: " Unlock your fitness potential with clear goals. Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/determination.webp",
+  },
+  {
+    id: 3,
+    title: "Nutrition",
+    icon: Drumstick,
+    desc: " Unlock your fitness potential with clear goals. Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/nutrition.jpg",
+  },
+  {
+    id: 4,
+    title: "Consistency",
+    icon: KeyRound,
+    desc: " Unlock your fitness potential with clear goals. Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/consistency.jpg",
+  },
+  {
+    id: 5,
+    title: "Never Give Up",
+    icon: Waypoints,
+    desc: " Unlock your fitness potential with clear goals. Define your path, track your progress, and embrace the journey to a healthier, stronger you.",
+    bgImgUrl: "/assets/never-give-up.webp",
   },
 ];

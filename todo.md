@@ -30,4 +30,5 @@ List of things you are supposed to do - *learning perspective*
 5. Footer Design ✅
 6. After 8 secs - right sheet popup. - Exclusive offer 🎟️🎫 Join today.. something like that.
 7. Primary Button color in light mode - design.
-8. 
+8. dumbbell, key - consistency, drumstick, wavypoints, tortoise/piggy-bank
+9. convert all constant from AllClasses to ALL_CLASSES

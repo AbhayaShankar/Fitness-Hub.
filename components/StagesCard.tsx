@@ -1,22 +1,42 @@
-import { Goal } from "lucide-react";
 import React from "react";
 
-const StagesCard = () => {
+interface StagesCardProps {
+  item: number;
+  title: string;
+  desc: string;
+  bgImgUrl: string;
+  icon: React.ElementType;
+}
+
+const StagesCard = (props: StagesCardProps) => {
   return (
-    <div className="w-[330px] h-[330px] flex flex-col items-center gap-5 border-[1.5px] border-gray-700 rounded-3xl justify-center relative group overflow-hidden">
-      <div className="z-10 relative flex flex-col gap-[10px] justify-center items-center p-4">
-        <Goal
-          strokeWidth={1.25}
+    <div
+      key={props.item}
+      className={`flex flex-col items-center gap-5 border-[1.5px] border-gray-700 rounded-3xl justify-center relative group overflow-hidden cursor-pointer
+      ${props.item === 0 && "col-start-1 row-end-2 row-start-1 col-span-1"}
+      ${props.item === 1 && "col-start-2 row-end-3 row-start-1 col-span-2"}
+      ${props.item === 2 && "col-start-4 row-end-2 row-start-1 col-span-1"}
+      ${props.item === 3 && "row-end-4 row-start-2 col-start-1 col-span-1"}
+      ${props.item === 4 && "row-end-4 row-start-3 col-start-2 col-span-2"}
+      ${props.item === 5 && "row-end-4 row-start-2 col-start-4 col-span-1"}
+      `}
+    >
+      <div className="z-10 relative flex flex-col gap-[16px] justify-center items-center p-4">
+        <props.icon
+          strokeWidth={1.5}
           className="w-16 h-16 stroke-current group-hover:text-[#ce032c]"
         />
-        <h1 className="text-xl lg:text-3xl uppercase font-semibold">Goal</h1>
-        <p className="text-sm font-medium">
-          Unlock your fitness potential with clear goals. Define your path,
-          track your progress, and embrace the journey to a healthier, stronger
-          you.
+        <h1 className="text-xl lg:text-3xl uppercase font-semibold">
+          {props.title}
+        </h1>
+        <p className="text-sm font-medium text-black text-center dark:text-white/70">
+          {props.desc}
         </p>
       </div>
-      <div className="w-full h-full absolute top-0 left-0 z-0 bg-[url('/assets/goal.webp')] bg-no-repeat bg-cover bg-center  opacity-0 group-hover:opacity-50  group-hover:dark:opacity-20"></div>
+      <div
+        className={`w-full h-full absolute top-0 left-0 z-0 bg-no-repeat bg-cover bg-center opacity-0 group-hover:opacity-40 group-hover:dark:opacity-20`}
+        style={{ backgroundImage: `url(${props.bgImgUrl})` }}
+      ></div>
     </div>
   );
 };
