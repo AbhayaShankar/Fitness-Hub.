@@ -5,6 +5,7 @@ import { Clock4, UserCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import Link from "next/link";
 
 interface SingleClassProps {
   name: string;
@@ -57,7 +58,7 @@ const SingleClass = ({
             <p>{timing}</p>
           </div>
         </div>
-        <div className="flex justify-center py-8">
+        <Link href={"/pricing"} className="flex justify-center py-8">
           <Button
             className="w-[75%] mx-auto"
             variant={"custom1"}
@@ -65,7 +66,7 @@ const SingleClass = ({
           >
             Join Now
           </Button>
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -40,8 +40,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <p className="text-muted-foreground">
-          We help building your dream Physique...
+        <p className="text-muted-foreground max-w-[360px] text-[15px]">
+          FitnessHub - We help building your dream Physique - your ultimate
+          destination for achieving your fitness goals
         </p>
         <div className="flex items-center gap-5">
           <div className="bg-gray-200 rounded-full p-2">
@@ -75,7 +76,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-[15px]">
           Privacy policy | ©️ FitnessHub 2023 <br /> Designed by{" "}
           <Link
             className=""

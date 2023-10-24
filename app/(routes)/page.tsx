@@ -1,6 +1,8 @@
 import ClassGrid from "@/components/ClassGrid";
 import GalleryGrid from "@/components/GalleryGrid";
 import { GymCards } from "@/components/GymCards";
+import StagesCard from "@/components/StagesCard";
+import StagesGrid from "@/components/StagesGrid";
 import Trainers from "@/components/Trainers";
 import { Button } from "@/components/ui/button";
 
@@ -19,6 +21,7 @@ export default function Home() {
           Register
         </Button>
       </Link>
+      <StagesGrid />
       <Trainers />
       <ClassGrid />
       <GymCards />
