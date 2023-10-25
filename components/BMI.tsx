@@ -47,10 +47,10 @@ const BMIComponent = () => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16  ",
+        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16 bg-[url(/assets/bg/bg-2.jpg)] dark:bg-none",
         font.className
       )}
-      style={{ backgroundImage: "url(/assets/bg/bg-2.jpg)" }}
+      //   style={{ backgroundImage: "url(/assets/bg/bg-2.jpg)" }}
     >
       {/* main comp */}
       <div className="flex flex-col gap-3">
