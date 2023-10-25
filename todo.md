@@ -25,10 +25,20 @@ List of things you are supposed to do - *learning perspective*
 ### 22.10.23 - 
 1. Fix Navbar issue - refer codebox. ✅
 2. Design Basic Other routes - Banner image ❗
-3. 6 Card Design - Stages of healthy workout cycle. ❗
+3. 6 Card Design - Stages of healthy workout cycle. ✅
 4. Classes cards design ✅
 5. Footer Design ✅
 6. After 8 secs - right sheet popup. - Exclusive offer 🎟️🎫 Join today.. something like that.
 7. Primary Button color in light mode - design.
-8. dumbbell, key - consistency, drumstick, wavypoints, tortoise/piggy-bank
+8. dumbbell, key - consistency, drumstick, wavypoints, tortoise/piggy-bank ✅
 9. convert all constant from AllClasses to ALL_CLASSES
+10. Calculate your BMI ❗
+11. Pricing page ❗
+12. route - achievements - Hall of Fame - card design and text image etc.
+13. Home page Banner.
+14. About page design
+15. Contact page - research for design
+16. Google Map location
+17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
+18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.
+19. 
