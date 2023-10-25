@@ -1,3 +1,4 @@
+import BMIComponent from "@/components/BMI";
 import ClassGrid from "@/components/ClassGrid";
 import GalleryGrid from "@/components/GalleryGrid";
 import { GymCards } from "@/components/GymCards";
@@ -26,6 +27,7 @@ export default function Home() {
       <ClassGrid />
       <GymCards />
       <GalleryGrid />
+      <BMIComponent />
     </main>
   );
 }
