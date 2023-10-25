@@ -33,8 +33,8 @@ List of things you are supposed to do - *learning perspective*
 8. dumbbell, key - consistency, drumstick, wavypoints, tortoise/piggy-bank ✅
 9. convert all constant from AllClasses to ALL_CLASSES
 10. Calculate your BMI --> Background Image solution ...
-11. Pricing page ❗
-12. route - achievements - Hall of Fame - card design and text image etc.
+11. route - achievements - Hall of Fame - card design and text image etc.
+12. Pricing page ❗
 13. Home page Banner.
 14. About page design
 15. Contact page - research for design

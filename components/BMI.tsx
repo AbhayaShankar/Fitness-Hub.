@@ -23,24 +23,31 @@ const font = Montserrat({
 
 const BMIComponent = () => {
   const { control, handleSubmit, setValue } = useForm();
-  const [bmi, setBMI] = useState(null);
+  const [bmi, setBMI] = useState("");
   const [category, setCategory] = useState("");
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: { weight: number; height: number }) => {
     const weight = parseFloat(data.weight);
     const height = parseFloat(data.height) / 100; // Convert height to meters
-    const BMI = weight / (height * height);
-    const ApproxBMI = BMI.toFixed(2);
-    setBMI(ApproxBMI);
 
-    if (+ApproxBMI < 18.5) {
-      setCategory("Underweight");
-    } else if (+ApproxBMI >= 18.5 && +ApproxBMI < 25) {
-      setCategory("Normal weight");
-    } else if (+ApproxBMI >= 25 && +ApproxBMI < 30) {
-      setCategory("Overweight");
+    if (isNaN(weight) || isNaN(height)) {
+      // Handle invalid input
+      setBMI("Invalid input");
+      setCategory("");
     } else {
-      setCategory("Obesity");
+      const BMI = weight / (height * height);
+      const ApproxBMI = BMI.toFixed(2);
+      setBMI(ApproxBMI);
+
+      if (+ApproxBMI < 18.5) {
+        setCategory("Underweight");
+      } else if (+ApproxBMI < 25) {
+        setCategory("Normal weight");
+      } else if (+ApproxBMI < 30) {
+        setCategory("Overweight");
+      } else {
+        setCategory("Obesity");
+      }
     }
   };
 
@@ -81,7 +88,7 @@ const BMIComponent = () => {
             />
           </div>
           {bmi && (
-            <div className="flex flex-col lg:flex-row lg:items-center gap-1 justify-between px-1">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-1 justify-between px-1 mb-3">
               <p className="text-semibold">
                 Your BMI:{" "}
                 <span className="text-[#ce032c] text-bold"> {bmi} </span>
@@ -96,7 +103,7 @@ const BMIComponent = () => {
             variant={"custom1"}
             type="submit"
             size={"lg"}
-            className="font-semibold text-base lg:text-base"
+            className="font-semibold text-base lg:text-base "
           >
             Calculate
           </Button>
