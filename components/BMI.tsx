@@ -47,7 +47,7 @@ const BMIComponent = () => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16",
+        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16  ",
         font.className
       )}
       style={{ backgroundImage: "url(/assets/bg/bg-2.jpg)" }}
@@ -81,7 +81,7 @@ const BMIComponent = () => {
             />
           </div>
           {bmi && (
-            <div className="flex flex-col lg:flex-row lg:items-center gap-1 justify-between">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-1 justify-between px-1">
               <p className="text-semibold">
                 Your BMI:{" "}
                 <span className="text-[#ce032c] text-bold"> {bmi} </span>
