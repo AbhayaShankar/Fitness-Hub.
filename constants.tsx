@@ -218,3 +218,62 @@ export const STAGES_CARD = [
     bgImgUrl: "/assets/never-give-up.webp",
   },
 ];
+
+export const PRICING_PLANS = [
+  {
+    id: 1,
+    plan: "Fitness",
+    beginner: true,
+    intermediate: true,
+    advance: true,
+  },
+  {
+    id: 2,
+    plan: "Yoga",
+    beginner: true,
+    intermediate: true,
+    advance: true,
+  },
+  {
+    id: 3,
+    plan: "Cardio",
+    beginner: true,
+    intermediate: true,
+    advance: true,
+  },
+  {
+    id: 4,
+    plan: "Powerlifting",
+    beginner: false,
+    intermediate: true,
+    advance: true,
+  },
+  {
+    id: 5,
+    plan: "Arm Wrestling",
+    beginner: false,
+    intermediate: true,
+    advance: true,
+  },
+  {
+    id: 6,
+    plan: "Calisthenics",
+    beginner: false,
+    intermediate: false,
+    advance: true,
+  },
+  {
+    id: 7,
+    plan: "Powerlifting Belt",
+    beginner: false,
+    intermediate: false,
+    advance: true,
+  },
+  {
+    id: 8,
+    plan: "Arm Wrestling kit",
+    beginner: false,
+    intermediate: false,
+    advance: true,
+  },
+];

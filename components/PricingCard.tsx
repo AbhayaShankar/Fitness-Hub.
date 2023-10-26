@@ -2,17 +2,24 @@ import { Button } from "./ui/button";
 
 interface PricingCardProps {
   planType: string;
-  amount: number;
+  MonthlyAmount?: number;
+  YearlyAmount?: number;
+  billingPeriod: string;
 }
 
-const PricingCard = ({ planType, amount }: PricingCardProps) => {
+const PricingCard = ({
+  planType,
+  MonthlyAmount,
+  YearlyAmount,
+  billingPeriod,
+}: PricingCardProps) => {
   return (
-    <div className=" min-w-[220px]  rounded-lg p-5 text-center hover:bg-[#0c0a09] hover:dark:bg-white/90 transition-all duration-100 ease-in group hover:scale-[1.05]">
+    <div className=" min-w-[220px] rounded-lg p-5 text-center hover:bg-[#0c0a09] hover:dark:bg-white/90 transition-all duration-100 ease-in group hover:scale-[1.05]">
       <h2 className="text-base font-medium mb-5 group-hover:text-white dark:group-hover:text-[#0c0a09]">
         {planType}
       </h2>
       <h1 className="text-5xl font-bold mb-2 group-hover:text-white dark:group-hover:text-[#0c0a09]">
-        ${amount}
+        ${billingPeriod === "yearly" ? YearlyAmount : MonthlyAmount}
       </h1>
       <p className="text-xs font-medium text-muted-foreground mb-8 group-hover:text-white dark:group-hover:text-[#0c0a09]">
         Per Month
