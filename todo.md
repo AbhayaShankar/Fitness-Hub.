@@ -34,11 +34,11 @@ List of things you are supposed to do - *learning perspective*
 9. convert all constant from AllClasses to ALL_CLASSES
 10. Calculate your BMI --> Background Image solution ...
 11. route - achievements - Hall of Fame - card design and text image etc.
-12. Pricing page ❗
+12. Pricing page ✅
 13. Home page Banner.
 14. About page design
 15. Contact page - research for design
 16. Google Map location
 17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
 18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.
-19. 
+19. design a json file for Exercises.Think properly all the things you are going to need for a single exercise --> then you can replicate for different.
