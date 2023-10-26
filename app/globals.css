@@ -370,3 +370,10 @@ body,
   transform: translateY(-90%);
   transition: all 300ms ease-in;
 }
+
+.center-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

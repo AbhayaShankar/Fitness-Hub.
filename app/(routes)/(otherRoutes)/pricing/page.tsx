@@ -10,49 +10,64 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { CheckCircle2, XCircle } from "lucide-react";
 
-const invoices = [
+const PRICING_PLANS = [
   {
-    invoice: "INV001",
-    paymentStatus: "Paid",
-    totalAmount: "$250.00",
-    paymentMethod: "Credit Card",
+    id: 1,
+    plan: "Fitness",
+    beginner: true,
+    intermediate: true,
+    advance: true,
   },
   {
-    invoice: "INV002",
-    paymentStatus: "Pending",
-    totalAmount: "$150.00",
-    paymentMethod: "PayPal",
+    id: 2,
+    plan: "Yoga",
+    beginner: true,
+    intermediate: true,
+    advance: true,
   },
   {
-    invoice: "INV003",
-    paymentStatus: "Unpaid",
-    totalAmount: "$350.00",
-    paymentMethod: "Bank Transfer",
+    id: 3,
+    plan: "Cardio",
+    beginner: true,
+    intermediate: true,
+    advance: true,
   },
   {
-    invoice: "INV004",
-    paymentStatus: "Paid",
-    totalAmount: "$450.00",
-    paymentMethod: "Credit Card",
+    id: 4,
+    plan: "Powerlifting",
+    beginner: false,
+    intermediate: true,
+    advance: true,
   },
   {
-    invoice: "INV005",
-    paymentStatus: "Paid",
-    totalAmount: "$550.00",
-    paymentMethod: "PayPal",
+    id: 5,
+    plan: "Arm Wrestling",
+    beginner: false,
+    intermediate: true,
+    advance: true,
   },
   {
-    invoice: "INV006",
-    paymentStatus: "Pending",
-    totalAmount: "$200.00",
-    paymentMethod: "Bank Transfer",
+    id: 6,
+    plan: "Calisthenics",
+    beginner: false,
+    intermediate: false,
+    advance: true,
   },
   {
-    invoice: "INV007",
-    paymentStatus: "Unpaid",
-    totalAmount: "$300.00",
-    paymentMethod: "Credit Card",
+    id: 7,
+    plan: "Powerlifting Belt",
+    beginner: false,
+    intermediate: false,
+    advance: true,
+  },
+  {
+    id: 8,
+    plan: "Arm Wrestling kit",
+    beginner: false,
+    intermediate: false,
+    advance: true,
   },
 ];
 
@@ -76,32 +91,44 @@ const PricingPage = () => {
           <PricingCard planType="Advance Plan" amount={50} />
         </div>
       </div>
-      <div className="p-4  xl:px-[300px] ">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="min-w-[220px]">Invoice</TableHead>
-              <TableHead className="min-w-[220px]">Status</TableHead>
-              <TableHead className="min-w-[220px]">Method</TableHead>
-              <TableHead className="text-center min-w-[220px]">
-                Amount
-              </TableHead>
+      <Table className="p-4 lg:p-0 lg:px-0 w-fit mx-auto">
+        <TableBody>
+          {PRICING_PLANS.map((item) => (
+            <TableRow className="" key={item.id}>
+              <TableCell className="font-medium lg:min-w-[180px] px-0">
+                {item.plan}
+              </TableCell>
+              <TableCell className=" p-0 lg:min-w-[200px] text-left">
+                <div className="center-icon">
+                  {item.beginner ? (
+                    <CheckCircle2 strokeWidth={1.2} />
+                  ) : (
+                    <XCircle strokeWidth={1.2} />
+                  )}
+                </div>
+              </TableCell>
+              <TableCell className="p-0 lg:min-w-[260px] text-center">
+                <div className="center-icon">
+                  {item.intermediate ? (
+                    <CheckCircle2 strokeWidth={1.2} />
+                  ) : (
+                    <XCircle strokeWidth={1.2} />
+                  )}
+                </div>
+              </TableCell>
+              <TableCell className="p-0 lg:min-w-[260px] text-center">
+                <div className="center-icon">
+                  {item.advance ? (
+                    <CheckCircle2 strokeWidth={1.2} />
+                  ) : (
+                    <XCircle strokeWidth={1.2} />
+                  )}
+                </div>
+              </TableCell>
             </TableRow>
-          </TableHeader>
-          <TableBody>
-            {invoices.map((invoice) => (
-              <TableRow key={invoice.invoice}>
-                <TableCell className="font-medium">{invoice.invoice}</TableCell>
-                <TableCell>{invoice.paymentStatus}</TableCell>
-                <TableCell>{invoice.paymentMethod}</TableCell>
-                <TableCell className="text-center">
-                  {invoice.totalAmount}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
+          ))}
+        </TableBody>
+      </Table>
     </div>
   );
 };
