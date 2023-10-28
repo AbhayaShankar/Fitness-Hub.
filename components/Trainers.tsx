@@ -1,6 +1,6 @@
 import React from "react";
 import TrainerCard from "./TrainerCard";
-import { TrainersList } from "@/constants";
+import { TRAINERS_LIST } from "@/constants";
 import TitleBg from "./TitleBg";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { cn } from "@/lib/utils";
@@ -25,7 +25,7 @@ const Trainers = () => {
         advStyle="max-w-[750px]"
       />
       <div className="flex items-center justify-center flex-wrap gap-10 ">
-        {TrainersList.map((item) => (
+        {TRAINERS_LIST.map((item) => (
           <TrainerCard
             key={item.id}
             name={item.name}

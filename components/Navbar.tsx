@@ -1,12 +1,12 @@
 "use client";
 
-import { NavbarLinks } from "@/constants";
 import Link from "next/link";
 import { ModeToggle } from "./ThemeToggler";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { NAVBAR_LINKS } from "@/constants";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -51,7 +51,7 @@ export const Navbar = (props: any) => {
         </div>
       </Link>
       <div className="flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start ">
-        {NavbarLinks.map((item) => (
+        {NAVBAR_LINKS.map((item) => (
           <div key={item.id}>
             <Link
               key={item.id}

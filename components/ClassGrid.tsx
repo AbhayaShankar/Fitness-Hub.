@@ -1,7 +1,7 @@
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import ClassesCard from "./ClassesCard";
 import TitleBg from "./TitleBg";
-import { AllClasses } from "@/constants";
+import { ALL_CLASSES } from "@/constants";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -29,7 +29,7 @@ const ClassGrid = () => {
       />
 
       <div className="flex flex-col lg:grid grid-cols-4 grid-rows-2 gap-5 p-6 lg:px-28 pb-20 pt-8 w-full h-full lg:h-[50rem]">
-        {AllClasses.map((item) => (
+        {ALL_CLASSES.map((item) => (
           <ClassesCard
             item={item.id}
             key={item.id}

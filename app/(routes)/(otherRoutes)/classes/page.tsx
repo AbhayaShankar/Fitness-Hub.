@@ -1,5 +1,5 @@
 import SingleClass from "@/components/SingleClass";
-import { AllClasses } from "@/constants";
+import { ALL_CLASSES } from "@/constants";
 import React from "react";
 
 const ClassesPage = () => {
@@ -9,7 +9,7 @@ const ClassesPage = () => {
         Classes
       </h1>
       <div className="py-6 lg:py-20 flex w-full mx-auto flex-col md:flex-row justify-center items-center flex-wrap gap-10 ">
-        {AllClasses.map((item) => (
+        {ALL_CLASSES.map((item) => (
           <SingleClass
             name={item.name}
             imageUrl={item.imageUrl}

@@ -7,7 +7,7 @@ import {
   Waypoints,
 } from "lucide-react";
 
-export const NavbarLinks = [
+export const NAVBAR_LINKS = [
   {
     id: 0,
     href: "/",
@@ -45,7 +45,7 @@ export const NavbarLinks = [
   },
 ];
 
-export const TrainersList = [
+export const TRAINERS_LIST = [
   {
     id: 0,
     name: "Abhaya Shankar",
@@ -66,7 +66,7 @@ export const TrainersList = [
   },
 ];
 
-export const GymCardList = [
+export const GYM_CARD_LIST = [
   {
     id: 0,
     src: "/assets/gym1.png",
@@ -114,7 +114,7 @@ export const classes = [
   },
 ];
 
-export const trainingHours = [
+export const TRAINING_HOURS = [
   {
     day: "Monday - Friday:",
     time: "6:30 AM - 9:00 PM",
@@ -129,7 +129,7 @@ export const trainingHours = [
   },
 ];
 
-export const AllClasses = [
+export const ALL_CLASSES = [
   {
     id: 0,
     name: "Calisthenics",

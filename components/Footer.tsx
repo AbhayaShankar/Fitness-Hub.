@@ -1,5 +1,5 @@
-import { classes, trainingHours } from "@/constants";
-import { HeadingComp, UnderlinedHeading } from "@/lib/Common";
+import { classes, TRAINING_HOURS } from "@/constants";
+import { HeadingComp } from "@/lib/Common";
 import { cn } from "@/lib/utils";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Montserrat } from "next/font/google";
@@ -111,7 +111,7 @@ const Footer = () => {
         />
         <span className="top-[33px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
         <div className="flex flex-col items-start gap-3">
-          {trainingHours.map((item) => (
+          {TRAINING_HOURS.map((item) => (
             <div
               className="flex flex-col text-[16px] tracking-[0.15px] gap-1 text-muted-foreground"
               key={item.day}
