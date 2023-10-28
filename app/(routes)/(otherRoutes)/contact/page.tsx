@@ -34,14 +34,16 @@ const ContactPage = () => {
     return null;
   }
 
+  // 23.760209790070338, 86.35606878025722
+
   return (
-    <div className="p-4 lg:p-8">
+    <div className="p-4 lg:p-8 ">
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">
         Contact
       </h1>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center p-2 lg:p-8 gap-x-12">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center p-2 lg:p-8 gap-5 gap-x-12">
         {/* left */}
-        <div className="flex items-start justify-start flex-col gap-8">
+        <div className="flex items-start justify-start flex-col p-4 gap-8">
           <HeadingComp
             title="We are here for help you! To Shape Your Body."
             advStyle="capitalize text-[30px]"
@@ -53,12 +55,12 @@ const ContactPage = () => {
         </div>
         {/* Right */}
         <div>
-          <Card className="w-[400px] relative p-2">
+          <Card className="min-w-[320px] lg:max-w-[500px] relative p-2">
             <CardHeader>
               <CardTitle>
                 <HeadingComp
                   title="Leave us your info"
-                  advStyle="capitalize text-3xl mb-3 font-semibold tracking-wide"
+                  advStyle="capitalize text-xl lg:text-3xl mb-3 font-semibold tracking-wide"
                 />
               </CardTitle>
               <CardDescription>
