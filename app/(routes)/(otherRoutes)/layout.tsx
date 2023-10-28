@@ -9,7 +9,12 @@ const font = Montserrat({
 
 const Routelayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={cn("min-h-full relative", font.className)}>
+    <div
+      className={cn(
+        "min-h-full relative bg-[url(/assets/bg/bg-2.jpg)] dark:bg-none ",
+        font.className
+      )}
+    >
       <Image
         alt="banner-img"
         src={"/assets/banner1.jpg"}

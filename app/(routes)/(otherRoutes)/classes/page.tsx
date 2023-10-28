@@ -8,7 +8,7 @@ const ClassesPage = () => {
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">
         Classes
       </h1>
-      <div className="my-6 lg:my-16 flex w-full mx-auto flex-col md:flex-row justify-center items-center flex-wrap gap-10">
+      <div className="py-6 lg:py-20 flex w-full mx-auto flex-col md:flex-row justify-center items-center flex-wrap gap-10 ">
         {AllClasses.map((item) => (
           <SingleClass
             name={item.name}
