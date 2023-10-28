@@ -42,9 +42,8 @@ export const DescriptionComp = ({ desc, advStyle }: DescriptionCompProps) => {
         font.className,
         advStyle
       )}
-    >
-      {desc}
-    </p>
+      dangerouslySetInnerHTML={{ __html: desc }}
+    ></p>
   );
 };
 

@@ -46,7 +46,7 @@ const TrainerCard = ({ name, type, src }: TrainerCardProps) => {
           alt="trainer-card-badge"
           width={500}
           height={500}
-          className="absolute -top-[25px] w-auto h-auto"
+          className="absolute -top-[25px] z-10 w-auto h-auto"
         />
         <ChevronUp
           className={cn(
