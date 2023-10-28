@@ -192,11 +192,11 @@ body,
 
 .custom-button-2:hover::before {
   transform: translate(0, 0);
+  overflow: hidden;
 }
 
 .box-desc {
   position: relative;
-  overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
 
@@ -215,7 +215,8 @@ body,
 }
 
 .box-desc:hover::after {
-  width: 100%;
+  width: 98%;
+  border-radius: 0 0 800px 800px;
 }
 
 .classCard::before {

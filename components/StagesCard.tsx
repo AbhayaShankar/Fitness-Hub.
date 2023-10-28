@@ -29,7 +29,7 @@ const StagesCard = (props: StagesCardProps) => {
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] uppercase font-semibold">
           {props.title}
         </h1>
-        <p className="text-sm font-medium text-black text-center dark:text-white/70">
+        <p className="text-sm font-semibold dark:font-medium text-black/80 text-center dark:text-white/70 tracking-wide">
           {props.desc}
         </p>
       </div>
