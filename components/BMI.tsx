@@ -6,7 +6,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Input } from "./ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Controller, useForm } from "react-hook-form";
+import {
+  Controller,
+  FieldValues,
+  SubmitHandler,
+  useForm,
+} from "react-hook-form";
 import * as z from "zod";
 import { Button } from "./ui/button";
 
@@ -26,12 +31,11 @@ const BMIComponent = () => {
   const [bmi, setBMI] = useState("");
   const [category, setCategory] = useState("");
 
-  const onSubmit = (data: { weight: number; height: number }) => {
-    const weight = parseFloat(data.weight);
-    const height = parseFloat(data.height) / 100; // Convert height to meters
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    const weight = parseFloat(data.weight.toString());
+    const height = parseFloat(data.height.toString()) / 100;
 
     if (isNaN(weight) || isNaN(height)) {
-      // Handle invalid input
       setBMI("Invalid input");
       setCategory("");
     } else {
@@ -57,9 +61,7 @@ const BMIComponent = () => {
         "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16 ",
         font.className
       )}
-      //   style={{ backgroundImage: "url(/assets/bg/bg-2.jpg)" }}
     >
-      {/* main comp */}
       <div className="flex flex-col gap-3">
         <h1 className="capitalize text-2xl text-center lg:text-4xl font-bold">
           Let&#39;s calculate your <span className="text-[#ce032c]">BMI</span>
@@ -75,7 +77,12 @@ const BMIComponent = () => {
               control={control}
               defaultValue=""
               render={({ field }) => (
-                <Input {...field} type="number" placeholder="Weight (in Kgs)" />
+                <Input
+                  {...field}
+                  step={"any"}
+                  type="number"
+                  placeholder="Weight (in Kgs)"
+                />
               )}
             />
             <Controller
@@ -83,7 +90,12 @@ const BMIComponent = () => {
               control={control}
               defaultValue=""
               render={({ field }) => (
-                <Input {...field} type="number" placeholder="Height (in cms)" />
+                <Input
+                  {...field}
+                  step={"any"}
+                  type="number"
+                  placeholder="Height (in cms)"
+                />
               )}
             />
           </div>
@@ -109,7 +121,6 @@ const BMIComponent = () => {
           </Button>
         </form>
       </div>
-      {/* Image */}
       <div>
         <Image
           src={"/assets/bmi.jpg"}
