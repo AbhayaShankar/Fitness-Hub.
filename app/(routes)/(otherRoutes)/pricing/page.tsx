@@ -55,7 +55,7 @@ const PricingPage = () => {
               <PricingCard
                 billingPeriod="monthly"
                 planType="Beginners Plan"
-                MonthlyAmount={0}
+                MonthlyAmount={10}
               />
               <PricingCard
                 billingPeriod="monthly"
@@ -73,7 +73,7 @@ const PricingPage = () => {
               <PricingCard
                 billingPeriod="yearly"
                 planType="Beginners Plan"
-                YearlyAmount={0}
+                YearlyAmount={100}
               />
               <PricingCard
                 billingPeriod="yearly"

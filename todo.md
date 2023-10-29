@@ -37,7 +37,7 @@ List of things you are supposed to do - *learning perspective*
 12. Pricing page ✅
 13. Home page Banner.
 14. About page design ✅
-15. Contact page - research for design
+15. Contact page - research for design ✅
 16. Google Map location
 17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
 18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.

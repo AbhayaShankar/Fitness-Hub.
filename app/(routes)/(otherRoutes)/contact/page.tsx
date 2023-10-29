@@ -23,9 +23,13 @@ import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useState } from "react";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 const ContactPage = () => {
   const [mounted, setMounted] = useState(false);
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  });
 
   useEffect(() => {
     setMounted(true);
@@ -35,7 +39,9 @@ const ContactPage = () => {
     return null;
   }
 
-  // 23.760209790070338, 86.35606878025722
+  if (!isLoaded) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="p-4 lg:p-8 ">
@@ -53,7 +59,7 @@ const ContactPage = () => {
             desc="At Gymate, we are dedicated to helping you achieve the body of your dreams. Our expert trainers and nutritionists will work with you to create a personalized fitness and nutrition plan that helps you reach your specific goals."
             advStyle="text-left text-muted-foreground max-w-[600px]"
           />
-          <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 w-full gap-5 lg:max-w-[800px]">
+          <div className="grid grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 w-full gap-8 lg:max-w-[800px]">
             <div className="relative">
               <HeadingComp
                 title="Fitness Hub, Putki."
@@ -132,7 +138,7 @@ const ContactPage = () => {
         </div>
         {/* Right */}
         <div>
-          <Card className="min-w-[320px] lg:max-w-[500px] relative p-2">
+          <Card className="min-w-[320px] lg:min-w-[450px] relative p-2">
             <CardHeader>
               <CardTitle>
                 <HeadingComp
@@ -192,8 +198,23 @@ const ContactPage = () => {
           </Card>
         </div>
       </div>
+      <Map />
     </div>
   );
 };
+
+// 23.760209790070338, 86.35606878025722
+
+function Map() {
+  return (
+    <GoogleMap
+      zoom={12}
+      center={{ lat: 23.760209790070338, lng: 86.35606878025722 }}
+      mapContainerClassName="h-[30rem] w-full"
+    >
+      <Marker position={{ lat: 23.760209790070338, lng: 86.35606878025722 }} />
+    </GoogleMap>
+  );
+}
 
 export default ContactPage;
