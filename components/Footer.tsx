@@ -45,34 +45,34 @@ const Footer = () => {
           destination for achieving your fitness goals
         </p>
         <div className="flex items-center gap-5">
-          <div className="bg-gray-200 rounded-full p-2">
+          <div className="bg-gray-200 group rounded-full p-2">
             <Instagram
               color="#5f5f5f"
               strokeWidth={2}
-              className="w-6 h-6 hover:stroke-[#ce032c] transition-all ease-in duration-100"
+              className="w-6 h-6 group-hover:stroke-[#ce032c] transition-all ease-in duration-150"
             />
           </div>
-          <div className="bg-gray-200 rounded-full p-2">
+          <div className="bg-gray-200 group rounded-full p-2">
             <Facebook
               fill="#5f5f5f"
               stroke="1px"
               color="#5f5f5f"
-              className="w-6 h-6 hover:fill-[#ce032c] transition-all ease-in duration-100"
+              className="w-6 h-6 group-hover:fill-[#ce032c] transition-all ease-in duration-150"
             />
           </div>
-          <div className="bg-gray-200 rounded-full p-2">
+          <div className="bg-gray-200 group rounded-full p-2">
             <Twitter
               fill="#5f5f5f"
               stroke="1px"
               color="#5f5f5f"
-              className="w-6 h-6 hover:fill-[#ce032c] transition-all ease-in duration-100"
+              className="w-6 h-6 group-hover:fill-[#ce032c] transition-all ease-in duration-150"
             />
           </div>
-          <div className="bg-gray-200 rounded-full p-2">
+          <div className="bg-gray-200 group rounded-full p-2">
             <Youtube
               color="#5f5f5f"
               strokeWidth={2}
-              className="w-6 h-6 hover:stroke-[#ce032c] transition-all ease-in duration-100"
+              className="w-6 h-6 group-hover:stroke-[#ce032c] transition-all ease-in duration-150"
             />
           </div>
         </div>

@@ -42,7 +42,7 @@ List of things you are supposed to do - *learning perspective*
 17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
 18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.
 19. design a json file for Exercises.Think properly all the things you are going to need for a single exercise --> then you can replicate for different.
-20. Highlight the currently active route.
+20. Highlight the currently active route. ✅
 21. BMI weight - decimal allow - fix "step='any'" ✅
 22. Classes card - overflow hidden ✅
 23. Classes show more feature.
