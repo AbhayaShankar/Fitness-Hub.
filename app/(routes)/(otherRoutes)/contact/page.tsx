@@ -40,8 +40,19 @@ const ContactPage = () => {
     return null;
   }
 
-  if (!isLoaded) {
-    return <div>Loading...</div>;
+  if (isLoaded) {
+    return (
+      <div className="flex items-center w-full justify-center bg-black">
+        <iframe
+          src="https://giphy.com/embed/RgzryV9nRCMHPVVXPV"
+          width="480"
+          height="480"
+          frameBorder="0"
+          // class="giphy-embed"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
   }
 
   return (
