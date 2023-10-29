@@ -55,16 +55,17 @@ export const Navbar = (props: any) => {
         </div>
       </Link>
       <div
-        className={`flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start `}
+        className={`flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-2 gap-y-6 flex-col lg:flex-row items-start `}
       >
         {NAVBAR_LINKS.map((item) => (
           <div key={item.id}>
             <Link
               key={item.id}
               className={cn(
-                `font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 active:text-gray-900 hidden lg:block ${
-                  trimmedPath === item.label.toLowerCase()
-                    ? "text-gray-900 dark:text-white"
+                `font-semibold transition-all delay-75 duration-150 text-[17px] py-[6px] px-4 dark:text-muted-foreground dark:hover:text-white  text-gray-400 hover:text-gray-900 active:text-gray-900 hover:bg-black/[0.075] dark:hover:bg-white/10 rounded-xl  hidden lg:block ${
+                  trimmedPath === item.label.toLowerCase() ||
+                  (item.label.toLowerCase() === "home" && trimmedPath === "")
+                    ? "text-gray-900 dark:text-white bg-black/[0.075] dark:bg-white/10"
                     : ""
                 }`,
                 font.className
