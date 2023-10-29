@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { NAVBAR_LINKS } from "@/constants";
+import { usePathname } from "next/navigation";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -14,6 +15,9 @@ const font = Montserrat({
 });
 
 export const Navbar = (props: any) => {
+  const pathname = usePathname();
+  const trimmedPath = pathname.split("/")[1];
+
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -50,13 +54,19 @@ export const Navbar = (props: any) => {
           </p>
         </div>
       </Link>
-      <div className="flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start ">
+      <div
+        className={`flex mt-5 lg:mt-0 mb-5 lg:mb-0 lg:gap-x-6 gap-y-6 flex-col lg:flex-row items-start `}
+      >
         {NAVBAR_LINKS.map((item) => (
           <div key={item.id}>
             <Link
               key={item.id}
               className={cn(
-                "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 hidden lg:block",
+                `font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 active:text-gray-900 hidden lg:block ${
+                  trimmedPath === item.label.toLowerCase()
+                    ? "text-gray-900 dark:text-white"
+                    : ""
+                }`,
                 font.className
               )}
               href={item.href}

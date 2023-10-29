@@ -115,7 +115,7 @@ const BMIComponent = () => {
             variant={"custom1"}
             type="submit"
             size={"lg"}
-            className="font-semibold text-base lg:text-base "
+            className="font-semibold text-base lg:text-base mt-3"
           >
             Calculate
           </Button>

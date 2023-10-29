@@ -17,7 +17,7 @@ const AboutBanner = () => {
           desc="At Gymate, we are dedicated to helping you achieve the body of your dreams. Our expert trainers and nutritionists will work with you to create a personalized fitness and nutrition plan that helps you reach your specific goals."
           advStyle="text-left text-muted-foreground max-w-[600px]"
         />
-        <Button variant={"custom2"} size={"lg"} className="w-[300px]">
+        <Button variant={"custom1"} size={"lg"} className="w-[300px]">
           Contact us{" "}
         </Button>
       </div>
