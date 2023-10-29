@@ -38,7 +38,7 @@ List of things you are supposed to do - *learning perspective*
 13. Home page Banner.
 14. About page design ✅
 15. Contact page - research for design ✅
-16. Google Map location
+16. Google Map location ✅
 17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
 18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.
 19. design a json file for Exercises.Think properly all the things you are going to need for a single exercise --> then you can replicate for different.
@@ -47,3 +47,6 @@ List of things you are supposed to do - *learning perspective*
 22. Classes card - overflow hidden ✅
 23. Classes show more feature.
 24. BMI Button margin inc ✅
+25. Contact form Loading state... - shadcnui component
+26. Bug - why isnt marker showing up ?
+27. 

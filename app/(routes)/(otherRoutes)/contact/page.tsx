@@ -27,6 +27,7 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 const ContactPage = () => {
   const [mounted, setMounted] = useState(false);
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
@@ -190,7 +191,6 @@ const ContactPage = () => {
               </form>
             </CardContent>
             <CardFooter className="flex justify-center w-full">
-              {/* <Button variant="outline">Cancel</Button> */}
               <Button className="z-1 w-full" size={"lg"} variant={"custom1"}>
                 Submit
               </Button>
@@ -203,12 +203,10 @@ const ContactPage = () => {
   );
 };
 
-// 23.760209790070338, 86.35606878025722
-
 function Map() {
   return (
     <GoogleMap
-      zoom={12}
+      zoom={10}
       center={{ lat: 23.760209790070338, lng: 86.35606878025722 }}
       mapContainerClassName="h-[30rem] w-full"
     >
