@@ -52,7 +52,7 @@ const AboutBanner = () => {
 
 export const AboutBanner2 = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-x-12 p-2 lg:p-8">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-x-12 p-2 lg:p-8 lg:pb-24">
       <div className="flex items-center lg:items-start justify-center lg:justify-start flex-col gap-8 lg:mt-10 max-w-[600px]">
         <TitleBg title="Who we are" />
         <HeadingComp
@@ -70,9 +70,9 @@ export const AboutBanner2 = () => {
               src={"/assets/icons/trainer.png"}
               height={500}
               width={500}
-              className="w-20 h-20"
+              className="w-16 h-16 opacity-85"
             />
-            <h1 className="uppercase text-xl font-semibold dark:font-medium text-center">
+            <h1 className="uppercase text-lg text-muted-foreground/80 font-semibold dark:font-medium text-center">
               Professional Trainers
             </h1>
           </div>
@@ -82,9 +82,9 @@ export const AboutBanner2 = () => {
               src={"/assets/icons/gymEquip.png"}
               height={500}
               width={500}
-              className="w-20 h-20"
+              className="w-16 h-16 opacity-85"
             />
-            <h1 className="uppercase text-xl font-semibold dark:font-medium text-center">
+            <h1 className="uppercase text-lg text-muted-foreground/80 font-semibold dark:font-medium text-center">
               Modern Equipments
             </h1>
           </div>
@@ -94,9 +94,9 @@ export const AboutBanner2 = () => {
               src={"/assets/icons/machine.png"}
               height={500}
               width={500}
-              className="w-20 h-20"
+              className="w-16 h-16 opacity-85"
             />
-            <h1 className="uppercase text-xl font-semibold dark:font-medium text-center">
+            <h1 className="uppercase text-lg text-muted-foreground/80 font-semibold dark:font-medium text-center">
               Best Gym Machines
             </h1>
           </div>
@@ -104,7 +104,7 @@ export const AboutBanner2 = () => {
         <Button
           variant={"custom1"}
           size={"lg"}
-          className="mt-5 w-[400px] mx-auto"
+          className="mt-5 min-w-[300px] lg:w-[400px] mx-auto"
         >
           Take a tour{" "}
         </Button>

@@ -48,5 +48,7 @@ List of things you are supposed to do - *learning perspective*
 23. Classes show more feature.
 24. BMI Button margin inc ✅
 25. Contact form Loading state... - shadcnui component
-26. Bug - why isnt marker showing up ?
+26. Bug - why isnt marker showing up ? ❗
 27. Loadign state refractor
+28. Achievements page design
+29. Change courses page to exercises --> point 17 features.

@@ -35,11 +35,16 @@ export const NAVBAR_LINKS = [
   },
   {
     id: 5,
-    href: "/courses",
-    label: "Courses",
+    href: "/exercise",
+    label: "Exercises",
   },
   {
     id: 6,
+    href: "/achievements",
+    label: "Achievements",
+  },
+  {
+    id: 7,
     href: "/contact",
     label: "Contact",
   },

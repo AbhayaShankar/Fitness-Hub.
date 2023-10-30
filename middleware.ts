@@ -10,7 +10,8 @@ export default authMiddleware({
         "/gallery",
         "/classes",
         "/pricing",
-        "/contact"
+        "/contact",
+        "/achievements",
     ]
 });
 
