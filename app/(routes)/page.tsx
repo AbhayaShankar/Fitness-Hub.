@@ -1,8 +1,8 @@
+import AboutBanner, { AboutBanner2 } from "@/components/AboutBanner";
 import BMIComponent from "@/components/BMI";
 import ClassGrid from "@/components/ClassGrid";
 import GalleryGrid from "@/components/GalleryGrid";
 import { GymCards } from "@/components/GymCards";
-import StagesCard from "@/components/StagesCard";
 import StagesGrid from "@/components/StagesGrid";
 import Trainers from "@/components/Trainers";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,9 @@ export default function Home() {
           Register
         </Button>
       </Link>
+      <h1 className="text-4xl uppercase font-bold text-center">HOME BANNER</h1>
       <StagesGrid />
+      <AboutBanner2 />
       <Trainers />
       <ClassGrid />
       <GymCards />

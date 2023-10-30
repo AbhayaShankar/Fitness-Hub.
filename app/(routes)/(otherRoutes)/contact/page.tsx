@@ -28,8 +28,9 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 const ContactPage = () => {
   const [mounted, setMounted] = useState(false);
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
+
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: apiKey,
   });
 
   useEffect(() => {
@@ -40,7 +41,7 @@ const ContactPage = () => {
     return null;
   }
 
-  if (isLoaded) {
+  if (!isLoaded) {
     return (
       <div className="flex items-center w-full justify-center bg-black">
         <iframe
