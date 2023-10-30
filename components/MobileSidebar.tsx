@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "./Navbar";
+import { UserButton } from "@clerk/nextjs";
 
 const font = Montserrat({
   subsets: ["latin"],

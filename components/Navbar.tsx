@@ -8,6 +8,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { NAVBAR_LINKS } from "@/constants";
 import { usePathname } from "next/navigation";
+import { UserButton } from "@clerk/nextjs";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -91,8 +92,9 @@ export const Navbar = (props: any) => {
       <div className="block lg:hidden absolute right-5">
         <ModeToggle />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:flex gap-5 items-center">
         <ModeToggle />
+        <UserButton afterSignOutUrl="/" />
       </div>
     </nav>
   );
