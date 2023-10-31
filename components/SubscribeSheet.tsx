@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Menu } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "./Navbar";
+import SubscribeComp from "./Subscribe";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -25,13 +26,15 @@ const SubscribeSheet = () => {
     <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger asChild>
         {/* add this along with theme toggler and you would have to refractor the code for links while responsive design layout as well. */}
-        <Button variant={"ghost"} size={"icon"} className="hidden">
+        <Button variant={"ghost"} size={"icon"} className="">
           <Menu />
         </Button>
       </SheetTrigger>
       <SheetContent side={"right"} className="p-0">
         {/* Also need to design this compoennt */}
-        <Navbar setOpen={setSheetOpen} />
+        <SubscribeComp
+        //  setOpen={setSheetOpen}
+        />
       </SheetContent>
     </Sheet>
   );

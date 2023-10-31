@@ -30,7 +30,7 @@ export const Navbar = (props: any) => {
   }
 
   return (
-    <nav className="flex flex-col lg:flex-row items-start px-4 lg:px-6 lg:items-center justify-between py-6 border-b-[2px] sticky top-0 left-0 z-50 bg-[#fff] dark:bg-[#0c0a09]">
+    <nav className="flex flex-col lg:flex-row items-start px-4 lg:px-6 lg:items-center justify-between py-6 border-b-[2px] sticky top-0 left-0 z-30 bg-[#fff] dark:bg-[#0c0a09]">
       <Link href={"/"} className="flex items-center space-x-3">
         <Image
           src={"/logo.png"}
