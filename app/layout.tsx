@@ -32,7 +32,6 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
-            <SubscribeSheet />
           </ThemeProvider>
         </body>
       </html>

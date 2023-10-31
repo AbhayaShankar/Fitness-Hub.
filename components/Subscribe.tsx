@@ -16,6 +16,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import { useAuth } from "@clerk/nextjs";
 
 const font = Montserrat({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -23,6 +24,7 @@ const font = Montserrat({
 });
 
 const SubscribeComp = (props: any) => {
+  const { isSignedIn } = useAuth();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -55,16 +57,18 @@ const SubscribeComp = (props: any) => {
           </p>
         </div>
       </div>
-      <Link
-        className="flex items-center py-2 px-5"
-        href={"/sign-in"}
-        onClick={() => props.setSheetOpen(false)}
-      >
-        <Button className="w-full mt-2" size={"lg"} variant={"custom2"}>
-          {" "}
-          Subscribe{" "}
-        </Button>
-      </Link>
+      {!isSignedIn && (
+        <Link
+          className="flex items-center py-2 px-5"
+          href={"/sign-in"}
+          onClick={() => props.setSheetOpen(false)}
+        >
+          <Button className="w-full mt-2" size={"lg"} variant={"custom2"}>
+            {" "}
+            Subscribe{" "}
+          </Button>
+        </Link>
+      )}
       <div className="w-full flex items-start flex-col gap-3">
         <h3 className="capitalise text-[#ff0335] font-bold text-left tracking-wide mt-4 text-xl px-6 ">
           Classes
