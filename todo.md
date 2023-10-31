@@ -52,3 +52,4 @@ List of things you are supposed to do - *learning perspective*
 27. Loadign state refractor
 28. Achievements page design
 29. Change courses page to exercises --> point 17 features.
+30. On Subscribe sheet - if loggedin dont show login/register buttons - else show.

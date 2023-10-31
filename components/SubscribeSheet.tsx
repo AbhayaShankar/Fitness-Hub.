@@ -30,11 +30,9 @@ const SubscribeSheet = () => {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side={"right"} className="p-0">
+      <SheetContent side={"right"} className="p-0 overflow-y-scroll">
         {/* Also need to design this compoennt */}
-        <SubscribeComp
-        //  setOpen={setSheetOpen}
-        />
+        <SubscribeComp setOpen={setSheetOpen} />
       </SheetContent>
     </Sheet>
   );
