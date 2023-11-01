@@ -1,6 +1,12 @@
 import SingleClass from "@/components/SingleClass";
 import { ALL_CLASSES } from "@/constants";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Classes - Fitness Hub",
+  description: "Varieties of Classes",
+};
 
 const ClassesPage = () => {
   return (

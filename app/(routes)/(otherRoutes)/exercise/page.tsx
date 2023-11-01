@@ -1,6 +1,12 @@
 import ExerciseCard, { ExerciseGrid } from "@/components/ExerciseCard";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Exercises - Fitness Hub",
+  description: "Know how to perform with proper instructions.",
+};
 
 const CoursePage = () => {
   return (
