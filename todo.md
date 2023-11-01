@@ -54,3 +54,13 @@ List of things you are supposed to do - *learning perspective*
 29. Change courses page to exercises --> point 17 features.
 30. On Subscribe sheet - if loggedin dont show login/register buttons - else show. ✅
 31. Bug - SidebarSheet coming up twice - both for mobile and desktop. (Check if contextAPI will resolve or not.)
+32. Trainer card in mobile bug
+
+
+
+## EXERCISES ROUTE : 
+
+1. First Design the basic layout of how it should be displayed. Card structure - take up one exercise and design it.
+2. Make a different Muscle group and try to apply the filtering property there.
+3. After clicking on card --> make another route for detail page [slug]
+4. Make an API and then pull and fetch the data from there. 

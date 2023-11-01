@@ -11,6 +11,7 @@ export default authMiddleware({
         "/classes",
         "/pricing",
         "/contact",
+        "/exercise", // to be removed
         "/achievements",
     ]
 });
