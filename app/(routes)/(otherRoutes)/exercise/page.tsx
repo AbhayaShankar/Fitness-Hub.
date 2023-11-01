@@ -1,4 +1,4 @@
-import ExerciseCard from "@/components/ExerciseCard";
+import ExerciseCard, { ExerciseGrid } from "@/components/ExerciseCard";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import React from "react";
 
@@ -18,7 +18,7 @@ const CoursePage = () => {
           advStyle="max-w-[750px]"
         />
       </div>
-      <ExerciseCard />
+      <ExerciseGrid />
     </div>
   );
 };

@@ -55,6 +55,7 @@ List of things you are supposed to do - *learning perspective*
 30. On Subscribe sheet - if loggedin dont show login/register buttons - else show view Plan ❗❗Edit to navigate to Stripe page ❗
 31. Bug - SidebarSheet coming up twice - both for mobile and desktop. (Check if contextAPI will resolve or not.)
 32. Trainer card in mobile bug
+33. Design a color picker js util class and which will help you to extract vibrant color from the image and then that color should be in the back og the glass morphism effect.
 
 
 
