@@ -39,10 +39,13 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
       <h1 className="text-center text-2xl lg:text-5xl font-extrabold tracking-wide lg:tracking-wider uppercase mb-5">
         Back Squats
       </h1>
-      <div className="flex flex-col justify-center lg:grid grid-cols-4 gap-8 lg:gap-16 p-3 lg:px-20 lg:py-10 ">
+      <div className="flex flex-col justify-center lg:grid grid-cols-4 gap-8 lg:gap-12 p-3 lg:px-16 lg:py-10 ">
         {/* Details - grid grid-cols-2 w-400 gap-5 */}
         <div className="col-span-3">
-          <div className="flex flex-col justify-center lg:grid grid-cols-2 lg:w-[600px] gap-1 lg:gap-5">
+          <div
+            className="flex flex-col justify-center lg:grid grid-cols-2 
+          gap-1 lg:gap-5"
+          >
             <h3 className="text-[#ce032c] font-semibold">
               Target Muscle Group :{" "}
             </h3>
@@ -75,7 +78,7 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
           <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
             Back Squat Overview
           </h3>
-          <p>
+          <p className="text-black/80 dark:text-white/80 text-justify">
             The squat is the king of all exercises, working over 256 muscles in
             one movement! From bodybuilders to powerlifters to competitive
             athletes, the squat is a staple compound exercise and should be in
@@ -99,6 +102,144 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
             years, several squatting variations have been developed to help
             everyone be able to train this critical movement pattern safely.
           </p>
+        </div>
+        <div className="col-span-1">
+          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl">
+            Safety Checks ✅
+          </h3>
+          <div>
+            <div className="flex items-end gap-3 mt-5">
+              <Image
+                src={"/assets/gym/safety-back.png"}
+                alt="safety-icons"
+                width={200}
+                height={200}
+                className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <h3 className="font-semibold text-md lg:text-md">
+                Never Round your Back.
+              </h3>
+            </div>
+            <div className="flex items-end gap-3 mt-5">
+              <Image
+                src={"/assets/gym/safety-knees.png"}
+                alt="safety-icons"
+                width={200}
+                height={200}
+                className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <h3 className="font-semibold text-md lg:text-md">
+                Dont bend your knees too forward.
+              </h3>
+            </div>
+            <div className="flex items-end gap-3 mt-5">
+              <Image
+                src={"/assets/gym/safety-squat.png"}
+                alt="safety-icons"
+                width={200}
+                height={200}
+                className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <h3 className="font-semibold text-md lg:text-md">
+                Dont Squat too deep.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3">
+          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
+            Back Squat Instructions
+          </h3>
+          <ol
+            // type="1"
+            className="text-black/80 dark:text-white/80 text-justify list-decimal leading-7"
+          >
+            <li>
+              Set up for the exercise by setting the barbell to just below
+              shoulder height and loading the weight you want to use.
+            </li>
+            <li>
+              Stand under the bar with your feet at about shoulder width apart.
+            </li>
+            <li>
+              Position the bar so that it is resting on the muscles on the top
+              of your back, not on the back of your neck. The bar should feel
+              comfortable.
+            </li>
+            <li>
+              You should now bend at the knees and straighten your back in
+              preparation to take the weight off the rack.
+            </li>
+            <li>
+              Keeping your back straight and eyes up, push up through the legs
+              and take the weight off the rack.
+            </li>
+            <li>
+              Keeping your eyes facing forward slowly lower your body down. Dont
+              lean forward as you come down. Your buttocks should come out and
+              drop straight down.
+            </li>
+            <li>
+              Squat down until your thighs are parallel with the floor, and then
+              slowly raise your body back up by pushing through your heels.
+            </li>
+            <li>
+              Do not lock the knees out when you stand up, and then repeat the
+              movement
+            </li>
+          </ol>
+        </div>
+        <div className="col-span-1">
+          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl">
+            Relevant Exercises
+          </h3>
+          <div className="my-5 flex flex-col gap-y-2">
+            <div className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
+              <Image
+                src={"/assets/gym/bench-press.jpg"}
+                alt="relevant-exercise"
+                width={400}
+                height={400}
+                className="h-20 w-20 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <div className="flex flex-col items-start">
+                <h3 className="text-lg">Bench Press</h3>
+                <p className="text-xs text-muted-foreground">
+                  The Classic Bench Press
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
+              <Image
+                src={"/assets/gym/bench-press.jpg"}
+                alt="relevant-exercise"
+                width={400}
+                height={400}
+                className="h-20 w-20 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <div className="flex flex-col items-start">
+                <h3 className="text-lg">Bench Press</h3>
+                <p className="text-xs text-muted-foreground">
+                  The Classic Bench Press
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
+              <Image
+                src={"/assets/gym/bench-press.jpg"}
+                alt="relevant-exercise"
+                width={400}
+                height={400}
+                className="h-20 w-20 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
+              />
+              <div className="flex flex-col items-start">
+                <h3 className="text-lg">Bench Press</h3>
+                <p className="text-xs text-muted-foreground">
+                  The Classic Bench Press
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
