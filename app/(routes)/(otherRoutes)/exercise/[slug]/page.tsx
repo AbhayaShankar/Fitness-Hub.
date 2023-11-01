@@ -107,8 +107,8 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
           <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl">
             Safety Checks ✅
           </h3>
-          <div>
-            <div className="flex items-end gap-3 mt-5">
+          <div className="mt-5">
+            <div className="flex items-center gap-3 mt-3 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
               <Image
                 src={"/assets/gym/safety-back.png"}
                 alt="safety-icons"
@@ -116,11 +116,11 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
                 height={200}
                 className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
               />
-              <h3 className="font-semibold text-md lg:text-md">
+              <h3 className="font-semibold text-sm lg:text-sm">
                 Never Round your Back.
               </h3>
             </div>
-            <div className="flex items-end gap-3 mt-5">
+            <div className="flex items-center gap-3 mt-3 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
               <Image
                 src={"/assets/gym/safety-knees.png"}
                 alt="safety-icons"
@@ -128,11 +128,11 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
                 height={200}
                 className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
               />
-              <h3 className="font-semibold text-md lg:text-md">
+              <h3 className="font-semibold text-sm lg:text-sm">
                 Dont bend your knees too forward.
               </h3>
             </div>
-            <div className="flex items-end gap-3 mt-5">
+            <div className="flex items-center gap-3 mt-3 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
               <Image
                 src={"/assets/gym/safety-squat.png"}
                 alt="safety-icons"
@@ -140,7 +140,7 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
                 height={200}
                 className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
               />
-              <h3 className="font-semibold text-md lg:text-md">
+              <h3 className="font-semibold text-sm lg:text-sm">
                 Dont Squat too deep.
               </h3>
             </div>
@@ -240,6 +240,11 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
               </div>
             </div>
           </div>
+        </div>
+        <div className="col-span-4">
+          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
+            Video Resources
+          </h3>
         </div>
       </div>
     </div>
