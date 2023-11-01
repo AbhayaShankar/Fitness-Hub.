@@ -9,6 +9,7 @@ import React, { useEffect, useState } from "react";
 import { NAVBAR_LINKS } from "@/constants";
 import { usePathname } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
+import SubscribeSheet from "./SubscribeSheet";
 
 const font = Montserrat({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export const Navbar = (props: any) => {
         <ModeToggle />
       </div>
       <div className="hidden lg:flex gap-5 items-center">
+        <SubscribeSheet />
         <ModeToggle />
         <UserButton afterSignOutUrl="/" />
       </div>

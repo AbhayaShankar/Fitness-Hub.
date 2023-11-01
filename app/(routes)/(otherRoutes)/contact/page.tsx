@@ -24,6 +24,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useState } from "react";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact - Fitness Hub",
+  description: "Contact FitnessHub for joining and more",
+};
 
 const ContactPage = () => {
   const [mounted, setMounted] = useState(false);
