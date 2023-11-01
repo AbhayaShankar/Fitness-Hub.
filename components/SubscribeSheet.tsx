@@ -11,7 +11,7 @@ const SubscribeSheet = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setSheetOpen(true);
+      setSheetOpen(false);
     }, 8000);
   }, []);
 

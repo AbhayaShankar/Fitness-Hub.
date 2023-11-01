@@ -69,3 +69,5 @@ List of things you are supposed to do - *learning perspective*
 
 back-squats - #45a7c8
 bench-press - #a2b57f
+
+
