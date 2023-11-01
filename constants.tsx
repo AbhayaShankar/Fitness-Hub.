@@ -36,7 +36,7 @@ export const NAVBAR_LINKS = [
   {
     id: 5,
     href: "/exercise",
-    label: "Exercises",
+    label: "Exercise",
   },
   {
     id: 6,

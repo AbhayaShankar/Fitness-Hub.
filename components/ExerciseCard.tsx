@@ -1,14 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import { Badge } from "./ui/badge";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const ExerciseCard = () => {
   return (
-    <div className="">
+    <Link href={"/exercise/back-squats"} className="">
       {/* Slanted Button - Tilt */}
       {/* <div className="-skew-x-[25deg] bg-red-500 w-fit py-2 px-4 m-8">
         <h1 className="skew-x-[20deg]">Slanted Button</h1>
       </div> */}
+
       <div className="w-80">
         <Image
           alt="back-squats"
@@ -29,7 +32,7 @@ const ExerciseCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
