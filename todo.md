@@ -52,7 +52,7 @@ List of things you are supposed to do - *learning perspective*
 27. Loadign state refractor
 28. Achievements page design
 29. Change courses page to exercises --> point 17 features.
-30. On Subscribe sheet - if loggedin dont show login/register buttons - else show. ✅
+30. On Subscribe sheet - if loggedin dont show login/register buttons - else show view Plan ❗❗Edit to navigate to Stripe page ❗
 31. Bug - SidebarSheet coming up twice - both for mobile and desktop. (Check if contextAPI will resolve or not.)
 32. Trainer card in mobile bug
 
