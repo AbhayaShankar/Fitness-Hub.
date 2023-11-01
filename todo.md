@@ -65,3 +65,7 @@ List of things you are supposed to do - *learning perspective*
 2. Make a different Muscle group and try to apply the filtering property there.
 3. After clicking on card --> make another route for detail page [slug]
 4. Make an API and then pull and fetch the data from there. 
+
+
+back-squats - #45a7c8
+bench-press - #a2b57f
