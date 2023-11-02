@@ -100,10 +100,7 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
         </div>
         <div className="col-span-3">
           <HeadingCols3 title={"Back Squat Instructions"} />
-          <ol
-            // type="1"
-            className="text-black/80 dark:text-white/80 text-justify list-decimal leading-7"
-          >
+          <ol className="text-black/80 dark:text-white/80 text-justify list-decimal leading-7">
             <Instructions />
             <Instructions />
             <Instructions />
