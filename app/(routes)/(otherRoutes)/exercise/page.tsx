@@ -1,14 +1,22 @@
-import ExerciseCard, { ExerciseGrid } from "@/components/ExerciseCard";
+import { ExerciseGrid } from "@/components/ExerciseCard";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { Metadata } from "next";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "Exercises - Fitness Hub",
   description: "Know how to perform with proper instructions.",
 };
 
-const CoursePage = () => {
+const CoursePage = async () => {
+  const response = await fetch("https://dummyjson.com/posts");
+  const data = await response.json();
+
+  if (!data) {
+    return alert("No data found");
+  }
+
+  // console.log(data);
+
   return (
     <div>
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">
