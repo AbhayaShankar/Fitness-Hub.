@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 const ExerciseCard = () => {
   return (

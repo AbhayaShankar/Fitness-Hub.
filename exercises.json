@@ -1,0 +1,87 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "difficulty": "intermediate",
+      "name": "back squats",
+      "desc": "Strength building exercise for legs, back and core",
+      "muscle_group": "quads",
+      "equipment_req": ["Barbell", "Knee Pads", "Belt"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": [
+        "calves",
+        "glutes",
+        "hamstrings",
+        "lower back"
+      ],
+      "ImageUrl": "back-squats.jpeg",
+      "overview": "The squat is the king of all exercises, working over 256 muscles in one movement! From bodybuilders to powerlifters to competitive athletes, the squat is a staple compound exercise and should be in every workout plan.<br /><br /> For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, having an explosive squat is a good indicator for on field/court performance. And for bodybuilders, the squat is a compound exercise that targets nearly every muscle of your lower body and core. <br /> <br /> The squat directly targets the muscles of the quads, but also involves the hamstrings, glutes, back, and core as well as muscles of the shoulders and arms to a lesser degree. <br /> <br /> Not everyone is built to perform the traditional barbell back squat and it can result in some pain for certain individuals. Over the years, several squatting variations have been developed to help everyone be able to train this critical movement pattern safely.",
+      "safety_check": [
+        {
+          "icon": "safety-back.png",
+          "safety": "Never round your back."
+        },
+        {
+          "icon": "safety-leaning.png",
+          "safety": "Dont lean too forward."
+        },
+        {
+          "icon": "safety-squat.png",
+          "safety": "Dont squat too below."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Set up for the exercise by setting the barbell to just below shoulder height and loading the weight you want to use."
+        },
+        {
+          "step": 2,
+          "instr": "Stand under the bar with your feet at about shoulder width apart."
+        },
+        {
+          "step": 3,
+          "instr": "Position the bar so that it is resting on the muscles on the top of your back, not on the back of your neck."
+        },
+        {
+          "step": 4,
+          "instr": "You should now bend at the knees and straighten your back in preparation to take the weight off the rack."
+        },
+        {
+          "step": 5,
+          "instr": "Keeping your back straight and eyes up, push up through the legs and take the weight off the rack and slowly take a small step back and stabilize  yourself."
+        },
+        {
+          "step": 6,
+          "instr": "Keeping your eyes facing forward slowly lower your body down. Don't lean forward as you come down."
+        },
+        {
+          "step": 7,
+          "instr": "Squat down until your thighs are parallel with the floor, and then slowly raise your body back up by pushing through your heels and REPEAT."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "bench press",
+          "shortDesc": "the classic bench press",
+          "rel_imgUrl": "bench-press.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "cable fly",
+          "shortDesc": "the peck deck fly",
+          "rel_imgUrl": "bench-press.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "bench-press.jpg"
+        }
+      ],
+      "video_resources": []
+    }
+  ]
+}
