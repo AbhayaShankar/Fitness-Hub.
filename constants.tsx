@@ -282,3 +282,5 @@ export const PRICING_PLANS = [
     advance: true,
   },
 ];
+
+// our workspace gallery - gallery page (all the images array.)
