@@ -13,6 +13,7 @@ export default authMiddleware({
         "/contact",
         "/exercise", // to be removed
         "/achievements",
+        "/api/exercises"
     ]
 });
 
