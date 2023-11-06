@@ -1,51 +1,7 @@
-"use client";
-
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
-import React, { useEffect, useState } from "react";
 import { ExerciseGrid } from "./ExerciseCard";
-import path from "path";
 
 const Exercises = () => {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState<string | null>(null);
-
-  const absolutePath = path.join(process.cwd(), "exercises.json");
-  console.log(absolutePath);
-
-  //   useEffect(() => {
-  //     const fetchData = async () => {
-  //       try {
-  //         const response = await fetch("/api/exercises");
-  //         if (response.ok) {
-  //           const jsonData = await response.json();
-  //           setData(jsonData);
-  //           console.log("LIST_OF_EXERCISES", data);
-  //         } else {
-  //           setError("Error fetching data");
-  //         }
-  //       } catch (error) {
-  //         setError("Error fetching data");
-  //       }
-  //     };
-
-  //     fetchData();
-  //   }, []);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch("/exercises.json");
-        const jsonData = await response.json();
-        setData(jsonData);
-        console.log(data);
-      } catch (error) {
-        console.error("Error fetching JSON data", error);
-      }
-    }
-
-    fetchData();
-  }, []);
-
   return (
     <div>
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">

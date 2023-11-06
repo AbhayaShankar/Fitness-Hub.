@@ -18,7 +18,8 @@ const GalleryPage = () => {
       <GalleryGrid />
 
       {/* Our workspace gallery */}
-      <div className="flex justify-center">
+      <div className="flex items-center flex-col justify-center">
+        <p className="text-center">To be edited...!!!</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
           {ALL_CLASSES.map((item) => (
             <Image
@@ -27,7 +28,7 @@ const GalleryPage = () => {
               width={400}
               height={400}
               key={item.id}
-              className="w-[350px] h-[400px] object-cover"
+              className="w-[350px] h-[400px] object-cover rounded-lg"
             />
           ))}
         </div>

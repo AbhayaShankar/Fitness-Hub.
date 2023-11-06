@@ -13,6 +13,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ExerciseDescProps } from "@/components/ExerciseCard";
 
 // type Props = {
 //   params: { slug: string };
