@@ -13,32 +13,54 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ExerciseDescProps } from "@/components/ExerciseCard";
+import {
+  ExerciseDescProps,
+  Relevant_Exercise_Item,
+  Intstructions_Item,
+  Safety_Check_Item,
+} from "@/components/ExerciseCard";
+import ExercisesList from "../../../../../exercises.json";
 
 // type Props = {
 //   params: { slug: string };
 // };
 
 export const metadata: Metadata = {
-  title: "Single Muscle", // To change
+  title: "Single Muscle", // TODO: Dynamic title
   description: "Know how to perform with proper instructions.",
 };
 
-const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
-  params,
-}) => {
+const SingleExercisePage = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
 
-  const updatedMetadata = {
-    ...metadata,
-    title: `${slug}`,
-  };
+  const slugCheck = slug.split("-").join(" ");
 
+  const correctExercise = ExercisesList.exercises.filter(
+    ({ name }) => name === slugCheck
+  );
+
+  if (correctExercise.length === 1) {
+    const finalExercise = correctExercise[0];
+    return (
+      <SingleExercise
+        name={finalExercise.name}
+        muscle_group={finalExercise.muscle_group}
+        equipments={finalExercise.equipment_req}
+        sec_muscle_group={finalExercise.secondary_muscle_group}
+        force_type={finalExercise.force_type}
+        mechanics={finalExercise.mechanics}
+        imageUrl={finalExercise.ImageUrl}
+      />
+    );
+  } else {
+    //TODO: Design this as well
+    return <div> Not found</div>;
+  }
+};
+
+const SingleExercise = ({ ...props }: ExerciseDescProps) => {
   return (
     <div className=" p-5 space-y-5">
-      <Head>
-        <title>{slug}</title>
-      </Head>
       <Link href={"/exercise"}>
         <Button variant={"custom1"} className="capitalize">
           <ArrowLeftCircleIcon className="mr-2" />
@@ -46,7 +68,7 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
         </Button>
       </Link>
       <h1 className="text-center text-2xl lg:text-5xl font-extrabold tracking-wide lg:tracking-wider uppercase mb-5">
-        Back Squats
+        {props.name}
       </h1>
       <div className="flex flex-col justify-center lg:grid grid-cols-4 gap-8 lg:gap-12 p-3 lg:px-16 lg:py-10 ">
         {/* Details - grid grid-cols-2 w-400 gap-5 */}
@@ -58,26 +80,38 @@ const SingleExercisePage: NextPage<{ params: { slug: string } }> = ({
             <h3 className="text-[#ce032c] font-semibold">
               Target Muscle Group :{" "}
             </h3>
-            <p>Quads</p>
+            <p className="capitalize">{props.muscle_group}</p>
             <h3 className="text-[#ce032c] font-semibold">
               Equipment Required :{" "}
             </h3>
-            <p>Barbell</p>
+            <p className="capitalize">
+              {props.equipments.map((equip) => (
+                <span key={equip} className="mr-2">
+                  {equip}
+                </span>
+              ))}
+            </p>
             <h3 className="text-[#ce032c] font-semibold">Mechanics :</h3>
-            <p> Compound</p>
+            <p className="capitalize"> {props.mechanics}</p>
             <h3 className="text-[#ce032c] font-semibold">Force Type :</h3>
-            <p> Push</p>
+            <p className="capitalize"> {props.force_type}</p>
             <h3 className="text-[#ce032c] font-semibold">
               Secondary Muscle Group :{" "}
             </h3>
-            <p>Calves, Glutes, Hamstrings, Lower back</p>
+            <p className="capitalize mr-1">
+              {props.sec_muscle_group.map((muscle) => (
+                <span className="mr-2" key={muscle}>
+                  {muscle},
+                </span>
+              ))}
+            </p>
           </div>
         </div>
         {/* Image */}
         <div className="col-span-1">
           <Image
-            alt="back-squats"
-            src={"/assets/gym/back-squats.jpeg"}
+            alt={props.name}
+            src={`/assets/gym/${props.imageUrl}`}
             height={400}
             width={400}
             className="h-96 w-full h- object-cover object-center rounded-xl"
