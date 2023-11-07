@@ -3,6 +3,7 @@ import TitleBg from "./TitleBg";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const AboutBanner = () => {
   return (
@@ -17,9 +18,11 @@ const AboutBanner = () => {
           desc="At FitnessHub, we are dedicated to helping you achieve the body of your dreams. Our expert trainers and nutritionists will work with you to create a personalized fitness and nutrition plan that helps you reach your specific goals."
           advStyle="text-left text-muted-foreground max-w-[600px]"
         />
-        <Button variant={"custom1"} size={"lg"} className="w-[300px]">
-          Contact us{" "}
-        </Button>
+        <Link href={"/contact"}>
+          <Button variant={"custom1"} size={"lg"} className="w-[300px]">
+            Contact us{" "}
+          </Button>
+        </Link>
       </div>
       <div className="relative mt-20 mb-5 lg:mb-0 lg:mt-0">
         <Image

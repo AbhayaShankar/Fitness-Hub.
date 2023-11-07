@@ -1,5 +1,4 @@
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
-import ClassesCard from "./ClassesCard";
 import TitleBg from "./TitleBg";
 import GalleryCard from "./GalleryCard";
 import { cn } from "@/lib/utils";
@@ -7,7 +6,7 @@ import { Montserrat } from "next/font/google";
 
 const font = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["100", "300", "400", "500", "600", "700", "800"],
 });
 
 const GalleryGrid = () => {

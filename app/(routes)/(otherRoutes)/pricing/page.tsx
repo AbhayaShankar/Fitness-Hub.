@@ -21,34 +21,46 @@ const PricingPage = () => {
       <Table className="p-4 px-6 lg:p-0 lg:px-0 lg:w-fit lg:mx-auto mb-20">
         <TableBody>
           {PRICING_PLANS.map((item) => (
-            <TableRow className="" key={item.id}>
+            <TableRow
+              className="hover:bg-black/5 dark:hover:bg-white/[0.033]"
+              key={item.id}
+            >
               <TableCell className="font-medium px-0 pl-1 pr-5 lg:min-w-[280px] ">
                 {item.plan}
               </TableCell>
               <TableCell className="p-1 lg:pr-0 lg:min-w-[200px] text-left">
                 <div className="center-icon">
                   {item.beginner ? (
-                    <CheckCircle2 strokeWidth={1.2} />
+                    <CheckCircle2
+                      className="text-green-500"
+                      strokeWidth={1.2}
+                    />
                   ) : (
-                    <XCircle strokeWidth={1.2} />
+                    <XCircle className="text-red-500" strokeWidth={1.2} />
                   )}
                 </div>
               </TableCell>
               <TableCell className="p-1 lg:min-w-[260px] text-center lg:pl-10">
                 <div className="center-icon">
                   {item.intermediate ? (
-                    <CheckCircle2 strokeWidth={1.2} />
+                    <CheckCircle2
+                      className="text-green-500"
+                      strokeWidth={1.2}
+                    />
                   ) : (
-                    <XCircle strokeWidth={1.2} />
+                    <XCircle className="text-red-500" strokeWidth={1.2} />
                   )}
                 </div>
               </TableCell>
               <TableCell className="p-1 lg:pl-8 lg:min-w-[260px] pr-0 text-center">
                 <div className="center-icon">
                   {item.advance ? (
-                    <CheckCircle2 strokeWidth={1.2} />
+                    <CheckCircle2
+                      className="text-green-500"
+                      strokeWidth={1.2}
+                    />
                   ) : (
-                    <XCircle strokeWidth={1.2} />
+                    <XCircle className="text-red-500" strokeWidth={1.2} />
                   )}
                 </div>
               </TableCell>

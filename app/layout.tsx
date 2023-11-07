@@ -26,7 +26,7 @@ export default function RootLayout({
         <body className={cn("h-full", inter.className)}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
