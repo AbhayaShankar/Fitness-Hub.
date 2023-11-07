@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex  space-y-10 pt-5 pb-20 flex-col bg-[url(/assets/bg/bg-2.jpg)] dark:bg-none py-8">
+    <main className="flex  space-y-10 pt-5 pb-20 flex-col bg-[url(/assets/bg/bg-2.jpg)] dark:bg-[url(/assets/bg/dark-bg2.jpg)] py-8">
       <Link href="/sign-in" className="w-fit">
         <Button variant={"custom1"} size={"lg"}>
           Login

@@ -22,7 +22,7 @@ const PricingPage = () => {
         <TableBody>
           {PRICING_PLANS.map((item) => (
             <TableRow
-              className="hover:bg-black/5 dark:hover:bg-white/[0.033]"
+              className="hover:bg-black/5 dark:hover:bg-white/5"
               key={item.id}
             >
               <TableCell className="font-medium px-0 pl-1 pr-5 lg:min-w-[280px] ">

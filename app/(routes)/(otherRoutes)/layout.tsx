@@ -11,7 +11,7 @@ const Routelayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className={cn(
-        "min-h-full relative bg-[url(/assets/bg/bg-2.jpg)] dark:bg-none ",
+        "min-h-full relative bg-[url(/assets/bg/bg-2.jpg)] dark:bg-[url(/assets/bg/dark-bg2.jpg)]",
         font.className
       )}
     >
