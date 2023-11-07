@@ -1,48 +1,62 @@
 import Image from "next/image";
 import React from "react";
 
-export const RelatedExercise = () => {
+interface SafetyChecksProps {
+  icon: string;
+  safety: string;
+}
+
+interface RelatedExerciseProps {
+  imageUrl: string;
+  rel_name: string;
+  shortDesc: string;
+  force_type: string;
+}
+
+export const RelatedExercise = ({
+  imageUrl,
+  rel_name,
+  shortDesc,
+  force_type,
+}: RelatedExerciseProps) => {
   return (
     <div className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
       <Image
-        src={"/assets/gym/bench-press.jpg"}
+        src={`/assets/gym/${imageUrl}`}
         alt="relevant-exercise"
         width={400}
         height={400}
         className="h-20 w-20 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
       />
       <div className="flex flex-col items-start">
-        <h3 className="text-lg">Bench Press</h3>
-        <p className="text-xs text-muted-foreground">The Classic Bench Press</p>
+        <h3 className="text-lg capitalize">{rel_name}</h3>
+        <p className="text-xs text-muted-foreground capitalize">{shortDesc}</p>
       </div>
     </div>
   );
 };
 
-export const SafetyChecks = () => {
+export const SafetyChecks = ({ icon, safety }: SafetyChecksProps) => {
   return (
     <div className="flex items-center gap-3 mt-3 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg">
       <Image
-        src={"/assets/gym/safety-back.png"}
+        src={`/assets/gym/${icon}`}
         alt="safety-icons"
         width={200}
         height={200}
         className="h-10 w-10 p-1 border-[1px] border-muted-foreground/50 rounded-lg"
       />
-      <h3 className="font-semibold text-sm lg:text-sm">
-        Never Round your Back.
-      </h3>
+      <h3 className="font-semibold text-sm lg:text-sm">{safety}</h3>
     </div>
   );
 };
 
-export const Instructions = () => {
-  return (
-    <li>
-      Set up for the exercise by setting the barbell to just below shoulder
-      height and loading the weight you want to use.
-    </li>
-  );
+interface InstructionProps {
+  instruction: string;
+}
+
+export const Instructions = ({ instruction }: InstructionProps) => {
+  return <li>{instruction}</li>;
 };
 
 interface OverviewProps {

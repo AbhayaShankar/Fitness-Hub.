@@ -30,7 +30,6 @@ export interface ExerciseCardProps {
 export interface ExerciseDescProps {
   difficulty: string;
   name: string;
-  desc: string;
   muscle_group: string;
   equipments: Array<string>;
   mechanics: string;
