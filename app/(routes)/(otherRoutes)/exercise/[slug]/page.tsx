@@ -89,13 +89,17 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
             <h3 className="text-[#ce032c] font-semibold">
               Equipment Required :{" "}
             </h3>
-            <p className="capitalize">
-              {props.equipments.map((equip) => (
-                <span key={equip} className="mr-2">
-                  {equip}
-                </span>
-              ))}
-            </p>
+            {props.equipments.length > 0 ? (
+              <p className="capitalize">
+                {props.equipments.map((equip) => (
+                  <span key={equip} className="mr-2">
+                    {equip}
+                  </span>
+                ))}
+              </p>
+            ) : (
+              <p className="capitalize">Nothing</p>
+            )}
             <h3 className="text-[#ce032c] font-semibold">Mechanics :</h3>
             <p className="capitalize"> {props.mechanics}</p>
             <h3 className="text-[#ce032c] font-semibold">Force Type :</h3>
@@ -123,7 +127,7 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           />
         </div>
         <div className="col-span-3">
-          <HeadingCols3 title={"Back Squat Overview"} />
+          <HeadingCols3 title={`${props.name} Overview`} />
           <Overview desc={props.overview} />
         </div>
         <div className="col-span-1">
@@ -139,7 +143,7 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           </div>
         </div>
         <div className="col-span-3">
-          <HeadingCols3 title={"Back Squat Instructions"} />
+          <HeadingCols3 title={`${props.name} Instructions`} />
           <ol className="text-black/80 dark:text-white/80 text-justify list-decimal leading-7">
             {props.instructions.map((instr) => (
               <Instructions key={instr.step} instruction={instr.instr} />
@@ -148,7 +152,7 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
         </div>
         <div className="col-span-1">
           <HeadingCols1 title="Relevant Exercises" />
-          <div className="my-5 flex flex-col gap-y-2">
+          <div className="my-5 flex flex-col gap-y-2 ">
             {props.relevant_exercise.map((rel_exer) => (
               <RelatedExercise
                 key={rel_exer.name}
