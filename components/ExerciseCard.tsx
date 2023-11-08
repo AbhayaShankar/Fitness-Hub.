@@ -1,46 +1,15 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
-import ExercisesList from "../exercises.json";
 import { LinkRoute } from "@/lib/utils";
-
-export interface Safety_Check_Item {
-  icon: string;
-  safety: string;
-}
-
-export interface Intstructions_Item {
-  step: number;
-  instr: string;
-}
-
-export interface Relevant_Exercise_Item {
-  force_type: string;
-  name: string;
-  shortDesc: string;
-  rel_imgUrl: string;
-}
-
-export interface ExerciseCardProps {
-  name: string;
-  desc: string;
-  imageUrl: string;
-}
-export interface ExerciseDescProps {
-  difficulty: string;
-  name: string;
-  muscle_group: string;
-  equipments: Array<string>;
-  mechanics: string;
-  force_type: string;
-  sec_muscle_group: Array<string>;
-  imageUrl: string;
-  overview: string;
-  safety_check: Safety_Check_Item[];
-  instructions: Intstructions_Item[];
-  relevant_exercise: Relevant_Exercise_Item[];
-}
+import { Button } from "./ui/button";
+import {
+  ExerciseCardProps,
+  ExerciseDescProps,
+} from "@/app/(routes)/(otherRoutes)/exercise/page";
 
 const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
   return (
@@ -74,11 +43,48 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
   );
 };
 
-export const ExerciseGrid = () => {
+export const ExerciseGrid = ({ ExercisesList }) => {
+  const [filterCategory, setFilterCategory] = useState(ExercisesList);
+
+  const filterExercise = (category) => {
+    let filteredExercisesList = ExercisesList.exercises.filter(
+      (item) => item.category === category
+    );
+    setFilterCategory({ exercises: filteredExercisesList });
+    console.log(ExercisesList);
+    console.log("New Array", filteredExercisesList);
+    console.log("TEST", filterCategory.exercises);
+    console.log(category);
+  };
+
   return (
-    <div className="flex justify-center p-5">
+    <div className="flex flex-col items-center justify-center p-5">
+      <div className="flex flex-row items-center gap-5 my-5">
+        <Button
+          onClick={() => setFilterCategory(ExercisesList)}
+          variant={"outline"}
+        >
+          All
+        </Button>
+        {Array.from(
+          new Set(
+            ExercisesList.exercises.map(
+              (item: ExerciseDescProps) => item.category
+            )
+          )
+        ).map((category) => (
+          <div key={category}>
+            <Button
+              onClick={() => filterExercise(category)}
+              variant={"outline"}
+            >
+              {category}
+            </Button>
+          </div>
+        ))}
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto ">
-        {ExercisesList.exercises.map((exer) => (
+        {filterCategory.exercises.map((exer: any) => (
           <ExerciseCard
             key={exer.id}
             imageUrl={exer.ImageUrl}

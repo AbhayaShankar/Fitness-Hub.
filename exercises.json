@@ -3,6 +3,7 @@
     {
       "id": 1,
       "difficulty": "intermediate",
+      "category": "legs",
       "name": "back squats",
       "desc": "Strength building exercise for legs, back and core",
       "muscle_group": "quads",
@@ -86,6 +87,7 @@
     {
       "id": 2,
       "difficulty": "intermediate",
+      "category": "chest",
       "name": "bench press",
       "desc": "Strength building exercise for chest, arms and core",
       "muscle_group": "chest",
@@ -160,6 +162,8 @@
     {
       "id": 3,
       "difficulty": "beginner",
+
+      "category": "chest",
       "name": "pushups",
       "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
       "muscle_group": "chest",
@@ -234,6 +238,7 @@
     {
       "id": 4,
       "difficulty": "intermediate",
+      "category": "chest",
       "name": "cable fly",
       "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
       "muscle_group": "chest",

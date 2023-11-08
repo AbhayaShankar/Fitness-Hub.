@@ -9,17 +9,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { ArrowLeftCircleIcon } from "lucide-react";
 import { Metadata, NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  ExerciseDescProps,
-  Relevant_Exercise_Item,
-  Intstructions_Item,
-  Safety_Check_Item,
-} from "@/components/ExerciseCard";
+
 import ExercisesList from "../../../../../exercises.json";
+import { ExerciseDescProps } from "../page";
 
 // type Props = {
 //   params: { slug: string };
@@ -43,6 +38,7 @@ const SingleExercisePage = ({ params }: { params: { slug: string } }) => {
     const finalExercise = correctExercise[0];
     return (
       <SingleExercise
+        category={finalExercise.category}
         name={finalExercise.name}
         difficulty={finalExercise.difficulty}
         muscle_group={finalExercise.muscle_group}

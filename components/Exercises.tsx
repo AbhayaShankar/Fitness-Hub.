@@ -1,5 +1,6 @@
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { ExerciseGrid } from "./ExerciseCard";
+import ExercisesList from "../exercises.json";
 
 const Exercises = () => {
   return (
@@ -17,7 +18,7 @@ const Exercises = () => {
           advStyle="max-w-[750px]"
         />
       </div>
-      <ExerciseGrid />
+      <ExerciseGrid ExercisesList={ExercisesList} />
     </div>
   );
 };
