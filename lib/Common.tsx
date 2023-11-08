@@ -24,7 +24,7 @@ export const HeadingComp = ({ title, advStyle }: HeadingCompProps) => {
   return (
     <h1
       className={cn(
-        "font-bold tracking-[0.2px] capitalize dark:text-white text-3xl ",
+        "font-bold tracking-[0.2px] text-center capitalize dark:text-white text-xl lg:text-3xl ",
         font.className,
         advStyle
       )}

@@ -43,26 +43,23 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
   );
 };
 
-export const ExerciseGrid = ({ ExercisesList }) => {
+export const ExerciseGrid = ({ ExercisesList }: any) => {
   const [filterCategory, setFilterCategory] = useState(ExercisesList);
 
-  const filterExercise = (category) => {
+  const filterExercise = (category: any) => {
     let filteredExercisesList = ExercisesList.exercises.filter(
-      (item) => item.category === category
+      (item: any) => item.category === category
     );
     setFilterCategory({ exercises: filteredExercisesList });
-    console.log(ExercisesList);
-    console.log("New Array", filteredExercisesList);
-    console.log("TEST", filterCategory.exercises);
-    console.log(category);
   };
 
   return (
     <div className="flex flex-col items-center justify-center p-5">
-      <div className="flex flex-row items-center gap-5 my-5">
+      <div className="flex flex-row flex-wrap items-center gap-5 my-5">
         <Button
           onClick={() => setFilterCategory(ExercisesList)}
           variant={"outline"}
+          key="all"
         >
           All
         </Button>
@@ -73,12 +70,12 @@ export const ExerciseGrid = ({ ExercisesList }) => {
             )
           )
         ).map((category) => (
-          <div key={category}>
+          <div key={String(category)}>
             <Button
               onClick={() => filterExercise(category)}
               variant={"outline"}
             >
-              {category}
+              {String(category)}
             </Button>
           </div>
         ))}
