@@ -73,13 +73,13 @@
           "force_type": "push",
           "name": "cable fly",
           "shortDesc": "the peck deck fly",
-          "rel_imgUrl": "bench-press.jpg"
+          "rel_imgUrl": "cable-fly.webp"
         },
         {
           "force_type": "push",
           "name": "pushups",
           "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "bench-press.jpg"
+          "rel_imgUrl": "push-up.jpg"
         }
       ],
       "video_resources": []
@@ -94,7 +94,7 @@
       "equipment_req": ["Barbell", "Bench", "Belt", "Wristbands"],
       "mechanics": "compound",
       "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "triceps", "forearms"],
+      "secondary_muscle_group": ["Chest", "triceps"],
       "ImageUrl": "bench-press.jpg",
       "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
       "safety_check": [
@@ -105,6 +105,10 @@
         {
           "icon": "safety-grip.png",
           "safety": "Dont take suicide grip."
+        },
+        {
+          "icon": "safety-wrist.png",
+          "safety": "Wear wrist bands for heavy weights."
         }
       ],
       "instructions": [
@@ -140,21 +144,21 @@
       "relevant_exercise": [
         {
           "force_type": "push",
-          "name": "bench press",
-          "shortDesc": "the classic bench press",
-          "rel_imgUrl": "bench-press.jpg"
+          "name": "incline db press",
+          "shortDesc": "The Ultimate push ",
+          "rel_imgUrl": "incline-db-press.png"
         },
         {
           "force_type": "push",
           "name": "cable fly",
           "shortDesc": "the peck deck fly",
-          "rel_imgUrl": "bench-press.jpg"
+          "rel_imgUrl": "cable-fly.webp"
         },
         {
           "force_type": "push",
           "name": "pushups",
           "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "bench-press.jpg"
+          "rel_imgUrl": "push-up.jpg"
         }
       ],
       "video_resources": []
@@ -162,7 +166,6 @@
     {
       "id": 3,
       "difficulty": "beginner",
-
       "category": ["chest", "triceps"],
       "name": "pushups",
       "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
@@ -170,17 +173,21 @@
       "equipment_req": [],
       "mechanics": "compound",
       "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "triceps", "back"],
+      "secondary_muscle_group": ["Chest", "triceps", "shoulders", "Back"],
       "ImageUrl": "push-up.jpg",
-      "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+      "overview": "The Pushup is a classic exercise for your full body core strength and muscle development. From bodybuilders, crossfit atheletes, powerlifters and calisthenics, everyone considers pushups to be the most basic and efficient exercise for muscle and strength growth. <br/ ><br/ >There are different variations of pushups which one can perform to target various muscle groups. Ex: A normal pushup - major focus on chest while minor on back and triceps.<br/ > Switch it with Archer pushups - Major for shoulders and minor for core and arms or switch it to diamond pushup to target your inner chest and triceps. <br/ ><br/ >This exercise can be performed by beginners to experts, with a mild adjustment you can make this exercise difficult and try to achieve that level. <br/ ><br/ > Beginners can start from Knee pushups. Once you are able to do 10 knee pushups, you can try to do one normal pushup. Once you are able to do 5 normal pushup - you can try to do a wide stance pushup. If you are able to do 5 wide pushups - you can try a diamond pushup and so on to Archer pushup and then final finish it with a one arm pushup. <br/> <br/> Once you are able to do one arm pushups - you can also try weighted pushups where you can put on weighted bags or put plates of weight over your back while you perform the motion.",
       "safety_check": [
         {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
+          "icon": "safety-elbows.png",
+          "safety": "Don't flare out elbows."
         },
         {
-          "icon": "safety-grip.png",
-          "safety": "Dont take suicide grip."
+          "icon": "safety-wrist.png",
+          "safety": "Don't put too much pressure on wrist."
+        },
+        {
+          "icon": "safety-spine.png",
+          "safety": "Keep hip, spine, neck and head straight ."
         }
       ],
       "instructions": [
@@ -224,13 +231,13 @@
           "force_type": "push",
           "name": "cable fly",
           "shortDesc": "the peck deck fly",
-          "rel_imgUrl": "bench-press.jpg"
+          "rel_imgUrl": "cable-fly.webp"
         },
         {
           "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "bench-press.jpg"
+          "name": "incline db press",
+          "shortDesc": "The Ultimate push ",
+          "rel_imgUrl": "incline-db-press.png"
         }
       ],
       "video_resources": []
@@ -297,15 +304,90 @@
         },
         {
           "force_type": "push",
-          "name": "cable fly",
-          "shortDesc": "the peck deck fly",
-          "rel_imgUrl": "bench-press.jpg"
+          "name": "incline db press",
+          "shortDesc": "The Ultimate push ",
+          "rel_imgUrl": "incline-db-press.png"
         },
         {
           "force_type": "push",
           "name": "pushups",
           "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 5,
+      "difficulty": "intermediate",
+      "category": ["chest"],
+      "name": "incline db press",
+      "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
+      "muscle_group": "chest",
+      "equipment_req": ["cable machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["chest", "shoulders", "triceps"],
+      "ImageUrl": "incline-db-press.png",
+      "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        },
+        {
+          "icon": "safety-grip.png",
+          "safety": "Dont take suicide grip."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        },
+        {
+          "step": 2,
+          "instr": "Keep the bar in line with your wrist and elbows and ensure it travels in a straight line."
+        },
+        {
+          "step": 3,
+          "instr": "Lie on your back and make an arch on back, Take a regular grip with wrists a little wider than your shoulders. Take a deep breath and lift off."
+        },
+        {
+          "step": 4,
+          "instr": "Control the weight throughout the movement. Take a pause at the bottom and then push back."
+        },
+        {
+          "step": 5,
+          "instr": "While lifting make sure you retract the shoulder blades and tighten your core to make the lift feel easier."
+        },
+        {
+          "step": 6,
+          "instr": "Squeeze the barbell as if you are trying to bend the bar to ensure your shoulder stability."
+        },
+        {
+          "step": 7,
+          "instr": "If you have weak wrists, you can also use wristbands. Lift and maintain constant tension throughtout and REPEAT."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "bench press",
+          "shortDesc": "the classic bench press",
           "rel_imgUrl": "bench-press.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "incline db press",
+          "shortDesc": "The Ultimate push ",
+          "rel_imgUrl": "incline-db-press.png"
+        },
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
         }
       ],
       "video_resources": []

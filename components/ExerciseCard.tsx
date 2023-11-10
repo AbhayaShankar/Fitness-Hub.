@@ -74,6 +74,7 @@ export const ExerciseGrid = ({ ExercisesList }: any) => {
         ).map((category) => (
           <div key={String(category)}>
             <Button
+              className="capitalize"
               onClick={() => filterExercise(category)}
               variant={"outline"}
             >
