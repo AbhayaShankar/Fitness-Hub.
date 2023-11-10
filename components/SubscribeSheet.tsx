@@ -10,9 +10,13 @@ const SubscribeSheet = () => {
   const [sheetOpen, setSheetOpen] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutFn = setTimeout(() => {
       setSheetOpen(false);
     }, 8000);
+
+    return () => {
+      clearTimeout(timeoutFn);
+    };
   }, []);
 
   return (

@@ -57,6 +57,7 @@ List of things you are supposed to do - *learning perspective*
 32. Trainer card in mobile bug
 33. Design a color picker js util class and which will help you to extract vibrant color from the image and then that color should be in the back og the glass morphism effect. ✅
 34. Custom_error page ❗
+35. On scroll_up display Navbar, on scroll_down hide the Navbar
 
 
 
