@@ -144,7 +144,7 @@
       "relevant_exercise": [
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         },
@@ -235,7 +235,7 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         }
@@ -304,7 +304,7 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         },
@@ -321,10 +321,10 @@
       "id": 5,
       "difficulty": "intermediate",
       "category": ["chest"],
-      "name": "incline db press",
-      "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
+      "name": "incline dumbbell press",
+      "desc": "Utilizing an incline dumbbell press will allow you to better target the upper chest.",
       "muscle_group": "chest",
-      "equipment_req": ["cable machine"],
+      "equipment_req": ["Dumbbell", "bench"],
       "mechanics": "compound",
       "force_type": "push",
       "secondary_muscle_group": ["chest", "shoulders", "triceps"],
@@ -379,9 +379,9 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
-          "shortDesc": "The Ultimate push ",
-          "rel_imgUrl": "incline-db-press.png"
+          "name": "cable fly",
+          "shortDesc": "the peck deck fly",
+          "rel_imgUrl": "cable-fly.webp"
         },
         {
           "force_type": "push",
