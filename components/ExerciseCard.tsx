@@ -46,11 +46,13 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
 export const ExerciseGrid = ({ ExercisesList }: any) => {
   const [filterCategory, setFilterCategory] = useState(ExercisesList);
 
-  const filterExercise = (category: any) => {
-    let filteredExercisesList = ExercisesList.exercises.filter(
-      (item: any) => item.category === category
-    );
-    setFilterCategory({ exercises: filteredExercisesList });
+  const filterExercise = (selectedCategory: any) => {
+    const filteredExercisesList = {
+      exercises: ExercisesList.exercises.filter((item: any) =>
+        item.category.includes(selectedCategory)
+      ),
+    };
+    setFilterCategory(filteredExercisesList);
   };
 
   return (
@@ -65,8 +67,8 @@ export const ExerciseGrid = ({ ExercisesList }: any) => {
         </Button>
         {Array.from(
           new Set(
-            ExercisesList.exercises.map(
-              (item: ExerciseDescProps) => item.category
+            ExercisesList.exercises.flatMap(
+              (exercise: ExerciseDescProps) => exercise.category
             )
           )
         ).map((category) => (
