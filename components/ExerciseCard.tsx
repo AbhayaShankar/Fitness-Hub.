@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
 import { LinkRoute } from "@/lib/utils";
@@ -44,22 +44,34 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
 };
 
 export const ExerciseGrid = ({ ExercisesList }: any) => {
-  const [filterCategory, setFilterCategory] = useState(ExercisesList);
+  const [displayLimit, setDisplayLimit] = useState(9);
+  const [currentIndex, setCurrentIndex] = useState(9);
+
+  const [filterCategory, setFilterCategory] = useState(ExercisesList.exercises);
 
   const filterExercise = (selectedCategory: any) => {
-    const filteredExercisesList = {
-      exercises: ExercisesList.exercises.filter((item: any) =>
-        item.category.includes(selectedCategory)
-      ),
-    };
+    const filteredExercisesList = ExercisesList.exercises.filter((item: any) =>
+      item.category.includes(selectedCategory)
+    );
     setFilterCategory(filteredExercisesList);
+    setDisplayLimit(9);
+    setCurrentIndex(9);
+  };
+
+  const showMore = () => {
+    setDisplayLimit(displayLimit + 9);
+    setCurrentIndex(currentIndex + 9);
   };
 
   return (
     <div className="flex flex-col items-center justify-center p-5">
       <div className="flex flex-row flex-wrap items-center gap-5 my-5">
         <Button
-          onClick={() => setFilterCategory(ExercisesList)}
+          onClick={() => {
+            setFilterCategory(ExercisesList.exercises);
+            setCurrentIndex(0);
+            setDisplayLimit(9);
+          }}
           variant={"outline"}
           key="all"
         >
@@ -84,7 +96,7 @@ export const ExerciseGrid = ({ ExercisesList }: any) => {
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto ">
-        {filterCategory.exercises.map((exer: any) => (
+        {filterCategory.slice(0, displayLimit).map((exer: any) => (
           <ExerciseCard
             key={exer.id}
             imageUrl={exer.ImageUrl}
@@ -93,6 +105,11 @@ export const ExerciseGrid = ({ ExercisesList }: any) => {
           />
         ))}
       </div>
+      {displayLimit < filterCategory.length && (
+        <Button className="mt-5" onClick={showMore}>
+          Show More
+        </Button>
+      )}
     </div>
   );
 };

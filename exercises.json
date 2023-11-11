@@ -586,7 +586,7 @@
       "difficulty": "overhead press",
       "category": ["shoulders"],
       "name": "overhead press",
-      "desc": "The overhead press, a fundamental exercise targeting the shoulders and triceps",
+      "desc": "The overhead press, a fundamental exercise targetting the shoulders and triceps",
       "muscle_group": "shoulders",
       "equipment_req": ["Dumbbell", "seated bench"],
       "mechanics": "compound",
