@@ -34,7 +34,7 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
           <p className="text-xs font-medium text-muted-foreground/100">
             {props.desc}
           </p>
-          <div className="flex justify-end cursor-pointer mt-1">
+          <div className="flex justify-end cursor-pointer mt-2">
             <Badge>Read More</Badge>
           </div>
         </div>
