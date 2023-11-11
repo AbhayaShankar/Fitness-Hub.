@@ -89,7 +89,10 @@ const Footer = () => {
       </div>
       <div className="relative">
         {/* classes and working hours */}
-        <HeadingComp title="Our Classes" advStyle="capitalize text-2xl mb-3" />
+        <HeadingComp
+          title="Our Classes"
+          advStyle="capitalize lg:text-2xl mb-3"
+        />
         <span className="top-[33px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
         <div className="flex flex-col items-start gap-2">
           {classes.map((item) => (
@@ -107,7 +110,7 @@ const Footer = () => {
         {/* classes and working hours */}
         <HeadingComp
           title="Training Hours"
-          advStyle="capitalize text-2xl mb-3"
+          advStyle="capitalize mb-3 lg:text-2xl"
         />
         <span className="top-[33px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
         <div className="flex flex-col items-start gap-3">

@@ -72,4 +72,43 @@ List of things you are supposed to do - *learning perspective*
 back-squats - #45a7c8
 bench-press - #a2b57f
 
+``` json
+{
+      "id": 6,
+      "difficulty": "",
+      "category": [""],
+      "name": "",
+      "desc": "",
+      "muscle_group": "",
+      "equipment_req": [""],
+      "mechanics": "",
+      "force_type": "",
+      "secondary_muscle_group": [""],
+      "ImageUrl": "",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": [] 
+
+}
+
+```
 

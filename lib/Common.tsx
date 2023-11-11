@@ -24,9 +24,8 @@ export const HeadingComp = ({ title, advStyle }: HeadingCompProps) => {
   return (
     <h1
       className={cn(
-        "font-bold tracking-[0.2px] text-center capitalize dark:text-white text-xl lg:text-3xl ",
-        font.className,
-        advStyle
+        `font-bold tracking-[0.2px] text-center capitalize dark:text-white text-xl lg:text-3xl ${advStyle}`,
+        font.className
       )}
     >
       {title}
@@ -38,9 +37,8 @@ export const DescriptionComp = ({ desc, advStyle }: DescriptionCompProps) => {
   return (
     <p
       className={cn(
-        "text-center dark:text-muted-foreground pb-5 max-w-[600px]",
-        font.className,
-        advStyle
+        `text-center dark:text-muted-foreground pb-5 max-w-[600px] ${advStyle}`,
+        font.className
       )}
       dangerouslySetInnerHTML={{ __html: desc }}
     ></p>

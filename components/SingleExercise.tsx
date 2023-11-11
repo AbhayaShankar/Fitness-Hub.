@@ -24,7 +24,7 @@ export const RelatedExercise = ({
   return (
     <Link
       href={LinkRoute(rel_name)}
-      className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/40 rounded-lg cursor-pointer"
+      className="flex items-start gap-5 p-2 hover:bg-accent-foreground/[0.075] dark:hover:bg-accent/50 rounded-lg cursor-pointer"
     >
       <Image
         src={`/assets/gym/${imageUrl}`}
