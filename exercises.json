@@ -593,6 +593,174 @@
       "force_type": "push",
       "secondary_muscle_group": ["chest", "traps", "Back"],
       "ImageUrl": "overhead-press.jpg",
+      "overview": "The seated dumbbell press is a variation of the standing dumbbell press and an exercise used to strengthen the muscles of the shoulders.<br/> <br/> The overhead press is a foundational movement for establishing baseline strength and building a completely balanced physique. Tests your core stability. <br/> <br/> Utilizing dumbbells as opposed to performing with a barbell will allow the individual to strengthen each side of the muscle equally.",
+      "safety_check": [
+        {
+          "icon": "safety-grip.png",
+          "safety": "Take a neutral grip."
+        },
+        {
+          "icon": "safety-dumbbell.png",
+          "safety": "Don't Ego lift if beginner."
+        },
+        {
+          "icon": "safety-wrist.png",
+          "safety": "Wear wrist bands for heavy weights."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Set up an adjustable angle bench to be a little more than 90 degrees and select the desired weight from the rack."
+        },
+        {
+          "step": 2,
+          "instr": "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench."
+        },
+        {
+          "step": 3,
+          "instr": "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place. This step is very underrated and much time neglected. Make sure you kick the dumbbell and reach extended arm position."
+        },
+        {
+          "step": 4,
+          "instr": "Once the dumbbells are in place, rotate your palms so they are at about 45 degrees with your face."
+        },
+        {
+          "step": 5,
+          "instr": "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids."
+        },
+        {
+          "step": 6,
+          "instr": "Slowly lower the dumbbells back to the starting position and don't go below the shoulders level. Once you go below shoulders level - main target will shift from shoulders to traps and back. Repeat for reps."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 10,
+      "difficulty": "beginner",
+      "category": ["shoulders"],
+      "name": "lateral raise",
+      "desc": "The shoulders killer - Ego destroyer of bodybuilders.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["forearms", "traps", "back"],
+      "ImageUrl": "lateral-raise.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 11,
+      "difficulty": "advanced",
+      "category": ["shoulders"],
+      "name": "military press",
+      "desc": "The military press is perfect for building shoulder muscle and strength measurement.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Barbell", "weighted plates"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["abs", "triceps", "back"],
+      "ImageUrl": "military-press.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 12,
+      "difficulty": "beginner",
+      "category": ["shoulders", "back"],
+      "name": "face pull",
+      "desc": "Face pull targets the rear part of your shoulders and back muscles.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["cable machine", "rope attachment"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["upper back", "traps"],
+      "ImageUrl": "face-pull.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 13,
+      "difficulty": "rear delt fly",
+      "category": ["shoulders", "back"],
+      "name": "rear delt fly",
+      "desc": "Rear delt fly targeting the rear deltoids and back of the shoulders.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell", "seated bench"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["traps", "triceps"],
+      "ImageUrl": "rear-delt.jpg",
       "overview": "",
       "safety_check": [
         {
