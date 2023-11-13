@@ -22,6 +22,7 @@ function CustomRadioButton({
   return (
     <label>
       <input
+        className="mr-[6px] checked:bg-blue-700 indeterminate:bg-red-500"
         type="radio"
         value={value}
         checked={isChecked}

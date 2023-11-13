@@ -71,9 +71,9 @@
         },
         {
           "force_type": "legs",
-          "name": "leg raise",
-          "shortDesc": "leg press - the screamer ",
-          "rel_imgUrl": "leg-raise.webp"
+          "name": "leg extension",
+          "shortDesc": "leg extensions - the screamer ",
+          "rel_imgUrl": "leg-extension.webp"
         },
         {
           "force_type": "legs",
@@ -761,6 +761,328 @@
       "force_type": "pull",
       "secondary_muscle_group": ["traps", "triceps"],
       "ImageUrl": "rear-delt.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 14,
+      "difficulty": "beginner",
+      "category": ["shoulders"],
+      "name": "front raise",
+      "desc": "The Front raise targeting your frontier deltoid which gives your shoulder a round shape.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["triceps", "forearms"],
+      "ImageUrl": "front-raise.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 15,
+      "difficulty": "leg press",
+      "category": ["legs"],
+      "name": "leg press",
+      "desc": "lower body strength training exercise targeting the quadriceps, hamstrings, and glutes",
+      "muscle_group": "Quads",
+      "equipment_req": ["leg press machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["quads", "hamstrings", "glutes"],
+      "ImageUrl": "leg-press.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 16,
+      "difficulty": "intermediate",
+      "category": ["legs"],
+      "name": "hamstring curls",
+      "desc": "Hamstring curls is an exercise primarily focusing on the hamstring muscles at the back of the thighs.",
+      "muscle_group": "Hamstrings",
+      "equipment_req": ["hamstring machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["calves", "glutes"],
+      "ImageUrl": "ham-curls.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 17,
+      "difficulty": "advanced",
+      "category": ["legs"],
+      "name": "front squats",
+      "desc": "Front squats are a compound lower body exercise targeting the quadriceps, glutes, and core muscles.",
+      "muscle_group": "quads",
+      "equipment_req": ["Barbell", "weighted plates", "Belt"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["abs", "calves", "glutes", "hamstrings"],
+      "ImageUrl": "front-squat.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 18,
+      "difficulty": "intermediate",
+      "category": ["legs"],
+      "name": "Lunges",
+      "desc": "Lunges are a versatile lower body exercise primarily engaging the quadriceps, hamstrings, and glutes.",
+      "muscle_group": "Quads",
+      "equipment_req": ["bodyweight", "Dumbbell"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["hamstrings", "glutes"],
+      "ImageUrl": "lunges.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 19,
+      "difficulty": "beginner",
+      "category": ["legs"],
+      "name": "leg extension",
+      "desc": "Leg extensions are an isolation exercise that specifically targeting front of the quadriceps.",
+      "muscle_group": "Quads",
+      "equipment_req": ["leg extension machine"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["none"],
+      "ImageUrl": "leg-extension.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 20,
+      "difficulty": "advanced",
+      "category": ["legs", "back"],
+      "name": "deadlift",
+      "desc": "Deadlift is a compound exercise engaging hams, glutes, arms and core muscles.",
+      "muscle_group": "Legs, Hamstrings, Glutes, Lower back, Arms and Core muscles.",
+      "equipment_req": ["Barbell", "Belt", "weighted plates"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": [
+        "hamstrings",
+        "glutes",
+        "core",
+        "lower back",
+        "grip strength",
+        "traps"
+      ],
+      "ImageUrl": "deadlift.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 21,
+      "difficulty": "beginner",
+      "category": ["back"],
+      "name": "pull up",
+      "desc": "Pull-up is a classic upper body bodyweight exercise targeting back, biceps, and forearms.",
+      "muscle_group": "Back",
+      "equipment_req": ["pull-up bar"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["biceps", "shoulders"],
+      "ImageUrl": "pull-ups.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 22,
+      "difficulty": "intermediate",
+      "category": ["back"],
+      "name": "lat pull down",
+      "desc": "Lat pulldown is a resistance exercise targeting upper back and lats.",
+      "muscle_group": "lats",
+      "equipment_req": ["Lat pull down machine"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["traps", "upper back", "forearms", "biceps"],
+      "ImageUrl": "lat-pull-down.jpg",
       "overview": "",
       "safety_check": [
         {
