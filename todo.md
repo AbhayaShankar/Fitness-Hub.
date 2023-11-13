@@ -72,6 +72,10 @@ List of things you are supposed to do - *learning perspective*
 back-squats - #45a7c8
 bench-press - #a2b57f
 
+- Show a Skeleton while loading images - check if a image can be added in the skeleton then choose a gym image and addd that in the skeleton part.
+
+- Make a custom Error page for handling 404, 500 and 403 error.
+
 ``` json
 {
       "id": 6,

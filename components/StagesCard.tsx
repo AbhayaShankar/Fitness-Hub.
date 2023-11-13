@@ -34,7 +34,7 @@ const StagesCard = (props: StagesCardProps) => {
         </p>
       </div>
       <div
-        className={`w-full h-full absolute top-0 left-0 z-0 bg-no-repeat bg-cover bg-center opacity-0 group-hover:opacity-40 group-hover:dark:opacity-20`}
+        className={`w-full h-full absolute top-0 left-0 z-0 bg-no-repeat bg-cover bg-center opacity-0 group-hover:opacity-40 group-hover:dark:opacity-30`}
         style={{ backgroundImage: `url(${props.bgImgUrl})` }}
       ></div>
     </div>
