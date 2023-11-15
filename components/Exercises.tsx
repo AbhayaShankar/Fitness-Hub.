@@ -4,7 +4,7 @@ import ExercisesList from "../exercises.json";
 
 const Exercises = () => {
   return (
-    <div>
+    <div className="pb-4 lg:pb-10">
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">
         Exercises
       </h1>

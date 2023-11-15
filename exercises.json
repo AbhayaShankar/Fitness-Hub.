@@ -64,22 +64,22 @@
       ],
       "relevant_exercise": [
         {
-          "force_type": "push",
-          "name": "bench press",
-          "shortDesc": "the classic bench press",
-          "rel_imgUrl": "bench-press.jpg"
+          "force_type": "legs",
+          "name": "leg press",
+          "shortDesc": "limit pusher press",
+          "rel_imgUrl": "leg-press.jpg"
         },
         {
-          "force_type": "push",
-          "name": "cable fly",
-          "shortDesc": "the peck deck fly",
-          "rel_imgUrl": "cable-fly.webp"
+          "force_type": "legs",
+          "name": "leg extension",
+          "shortDesc": "leg extensions - the screamer ",
+          "rel_imgUrl": "leg-extension.webp"
         },
         {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
+          "force_type": "legs",
+          "name": "front squat",
+          "shortDesc": "Front Squat - the balancer",
+          "rel_imgUrl": "front-squat.jpg"
         }
       ],
       "video_resources": []
@@ -94,7 +94,7 @@
       "equipment_req": ["Barbell", "Bench", "Belt", "Wristbands"],
       "mechanics": "compound",
       "force_type": "push",
-      "secondary_muscle_group": ["Chest", "triceps"],
+      "secondary_muscle_group": ["triceps"],
       "ImageUrl": "bench-press.jpg",
       "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
       "safety_check": [
@@ -144,7 +144,7 @@
       "relevant_exercise": [
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         },
@@ -173,7 +173,7 @@
       "equipment_req": [],
       "mechanics": "compound",
       "force_type": "push",
-      "secondary_muscle_group": ["Chest", "triceps", "shoulders", "Back"],
+      "secondary_muscle_group": ["triceps", "shoulders", "Back"],
       "ImageUrl": "push-up.jpg",
       "overview": "The Pushup is a classic exercise for your full body core strength and muscle development. From bodybuilders, crossfit atheletes, powerlifters and calisthenics, everyone considers pushups to be the most basic and efficient exercise for muscle and strength growth. <br/ ><br/ >There are different variations of pushups which one can perform to target various muscle groups. Ex: A normal pushup - major focus on chest while minor on back and triceps.<br/ > Switch it with Archer pushups - Major for shoulders and minor for core and arms or switch it to diamond pushup to target your inner chest and triceps. <br/ ><br/ >This exercise can be performed by beginners to experts, with a mild adjustment you can make this exercise difficult and try to achieve that level. <br/ ><br/ > Beginners can start from Knee pushups. Once you are able to do 10 knee pushups, you can try to do one normal pushup. Once you are able to do 5 normal pushup - you can try to do a wide stance pushup. If you are able to do 5 wide pushups - you can try a diamond pushup and so on to Archer pushup and then final finish it with a one arm pushup. <br/> <br/> Once you are able to do one arm pushups - you can also try weighted pushups where you can put on weighted bags or put plates of weight over your back while you perform the motion.",
       "safety_check": [
@@ -193,31 +193,23 @@
       "instructions": [
         {
           "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+          "instr": "Assume a quadruped position on the floor with your hands under your shoulders, toes tucked, and knees under hips."
         },
         {
           "step": 2,
-          "instr": "Keep the bar in line with your wrist and elbows and ensure it travels in a straight line."
+          "instr": "Slowly descend to the floor by retracting the shoulder blades and unlocking the elbows."
         },
         {
           "step": 3,
-          "instr": "Lie on your back and make an arch on back, Take a regular grip with wrists a little wider than your shoulders. Take a deep breath and lift off."
+          "instr": "Descend until the upper arms are parallel or your chest touches the floor."
         },
         {
           "step": 4,
-          "instr": "Control the weight throughout the movement. Take a pause at the bottom and then push back."
+          "instr": "Push back to the starting point by extending the elbows and driving your palms into the floor."
         },
         {
           "step": 5,
-          "instr": "While lifting make sure you retract the shoulder blades and tighten your core to make the lift feel easier."
-        },
-        {
-          "step": 6,
-          "instr": "Squeeze the barbell as if you are trying to bend the bar to ensure your shoulder stability."
-        },
-        {
-          "step": 7,
-          "instr": "If you have weak wrists, you can also use wristbands. Lift and maintain constant tension throughtout and REPEAT."
+          "instr": "control the movement while descending and come back up with same speed and REPEAT."
         }
       ],
       "relevant_exercise": [
@@ -235,7 +227,7 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         }
@@ -244,17 +236,17 @@
     },
     {
       "id": 4,
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "category": ["chest"],
       "name": "cable fly",
-      "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
+      "desc": "Cable fly for targeting your lower peck for a well rounded chest.",
       "muscle_group": "chest",
       "equipment_req": ["cable machine"],
-      "mechanics": "compound",
+      "mechanics": "isolation",
       "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "triceps", "back"],
+      "secondary_muscle_group": ["shoulders", "triceps"],
       "ImageUrl": "cable-fly.webp",
-      "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+      "overview": "The standing cable fly is a variation of the chest fly and an exercise used to strengthen the pushing muscles of the body including the chest, triceps, and shoulders.<br/><br/> The standing cable fly can be tough to overload as it requires a great deal of core stability, so it is probably best used as an accessory movement for those looking to increase their chest muscle mass. <br/> <br/>Take small weights and control the movement throughout and hold at the streched position for about 1-2 sec and then slowly go back to the starting position.",
       "safety_check": [
         {
           "icon": "safety-bench.png",
@@ -268,31 +260,27 @@
       "instructions": [
         {
           "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+          "instr": "Set both pulleys directly at (or slightly above) shoulder height and select the desired weight.."
         },
         {
           "step": 2,
-          "instr": "Keep the bar in line with your wrist and elbows and ensure it travels in a straight line."
+          "instr": "Grasp both handles with a neutral grip and take a step forward to split the stance."
         },
         {
           "step": 3,
-          "instr": "Lie on your back and make an arch on back, Take a regular grip with wrists a little wider than your shoulders. Take a deep breath and lift off."
+          "instr": "Press the handles to lockout while flexing the pecs and extending the elbows and hold for about 1-2 secs."
         },
         {
           "step": 4,
-          "instr": "Control the weight throughout the movement. Take a pause at the bottom and then push back."
+          "instr": "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while the pecs stretch."
         },
         {
           "step": 5,
-          "instr": "While lifting make sure you retract the shoulder blades and tighten your core to make the lift feel easier."
+          "instr": "Return to the starting position by flexing your pecs and bringing the handles together at chest height."
         },
         {
           "step": 6,
-          "instr": "Squeeze the barbell as if you are trying to bend the bar to ensure your shoulder stability."
-        },
-        {
-          "step": 7,
-          "instr": "If you have weak wrists, you can also use wristbands. Lift and maintain constant tension throughtout and REPEAT."
+          "instr": "Slowly lower back to the starting position and repeat for the desired number of repetitions."
         }
       ],
       "relevant_exercise": [
@@ -304,7 +292,7 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         },
@@ -319,17 +307,17 @@
     },
     {
       "id": 5,
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "category": ["chest"],
-      "name": "incline db press",
-      "desc": "Evergreen exercise for full body - chest, shoulders, back, triceps and legs",
+      "name": "incline dumbbell press",
+      "desc": "Utilizing an incline dumbbell press will allow you to better target the upper chest.",
       "muscle_group": "chest",
-      "equipment_req": ["cable machine"],
+      "equipment_req": ["Dumbbell", "bench"],
       "mechanics": "compound",
       "force_type": "push",
-      "secondary_muscle_group": ["chest", "shoulders", "triceps"],
+      "secondary_muscle_group": ["shoulders", "triceps"],
       "ImageUrl": "incline-db-press.png",
-      "overview": "The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.  <br/> <br/>For powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. <br/> <br/> For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body. <br/> <br/> By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders. <br/> <br/> Not everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+      "overview": "The incline dumbbell bench press is a variation of the incline bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. <br/><br/>Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters.<br/><br/>The use of dumbbells will also promote balanced and equal strength among both sides of the chest.<br/> They can also help prevent shoulder and pec injuries when performing presses.",
       "safety_check": [
         {
           "icon": "safety-bench.png",
@@ -338,36 +326,36 @@
         {
           "icon": "safety-grip.png",
           "safety": "Dont take suicide grip."
+        },
+        {
+          "icon": "safety-wrist.png",
+          "safety": "Don't put too much pressure on wrist."
+        },
+        {
+          "icon": "safety-dumbbell.png",
+          "safety": "Don't drop weights sideways."
         }
       ],
       "instructions": [
         {
           "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+          "instr": "Pick up the dumbbells off the floor using a neutral grip (palms facing in). Position the ends of the dumbbells in your hip crease, and sit down on the edge of an incline bench."
         },
         {
           "step": 2,
-          "instr": "Keep the bar in line with your wrist and elbows and ensure it travels in a straight line."
+          "instr": "Lie on your back and make an arch on back, Take a regular grip with wrists a little wider than your shoulders.To get into position, lay back and keep the weights close to your chest."
         },
         {
           "step": 3,
-          "instr": "Lie on your back and make an arch on back, Take a regular grip with wrists a little wider than your shoulders. Take a deep breath and lift off."
+          "instr": "Once you are in position, take a deep breath, and press the dumbbells to lockout at the top."
         },
         {
           "step": 4,
-          "instr": "Control the weight throughout the movement. Take a pause at the bottom and then push back."
+          "instr": "Contract the chest and push the dumbbells back up to the starting position. Make sure to control the weight rather than letting weights move of gravity. Resist the motion."
         },
         {
           "step": 5,
-          "instr": "While lifting make sure you retract the shoulder blades and tighten your core to make the lift feel easier."
-        },
-        {
-          "step": 6,
-          "instr": "Squeeze the barbell as if you are trying to bend the bar to ensure your shoulder stability."
-        },
-        {
-          "step": 7,
-          "instr": "If you have weak wrists, you can also use wristbands. Lift and maintain constant tension throughtout and REPEAT."
+          "instr": "If you have weak wrists, you can also use wristbands. Lift and maintain constant tension throughout and REPEAT."
         }
       ],
       "relevant_exercise": [
@@ -379,10 +367,981 @@
         },
         {
           "force_type": "push",
-          "name": "incline db press",
+          "name": "cable fly",
+          "shortDesc": "the peck deck fly",
+          "rel_imgUrl": "cable-fly.webp"
+        },
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 6,
+      "difficulty": "beginner",
+      "category": ["chest"],
+      "name": "flys",
+      "desc": "Flys gives you wings that make you fly and make those pecks fill.",
+      "muscle_group": "chest",
+      "equipment_req": ["Dumbbell", "cable machine", "Bench"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "Back", "Lats"],
+      "ImageUrl": "flys.jpg",
+      "overview": "The fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger. <br/> <br/>The fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. <br/> <br/>One can try both dumbbell or machine variation, although the dumbbell variation is far more better than machine because it sets the tone of the movement. <br/> <br/>The dumbbell flys can make you feel the strech at the end of the motion and that is when your muscle grows.",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        },
+        {
+          "icon": "safety-dumbbell.png",
+          "safety": "Don't Ego lift."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Pick up the dumbbells off the floor using a neutral grip (palms facing in). Position the ends of the dumbbells in your hip crease, and sit down on the bench."
+        },
+        {
+          "step": 2,
+          "instr": "To get into position, lay back and keep the weights close to your chest. Once you are in position, take a deep breath, then press the dumbbells to lockout at the top."
+        },
+        {
+          "step": 3,
+          "instr": "Slightly retract your shoulder blades, unlock your elbows, and slowly lower the dumbbells laterally while maintaining the angle at your elbow."
+        },
+        {
+          "step": 4,
+          "instr": "Once the dumbbells reach chest level, reverse the movement by squeezing your pecs together and bringing the dumbbells back to their starting position."
+        },
+        {
+          "step": 5,
+          "instr": "Without allowing the dumbbells to touch, start the next repetition, and continue until the set is completed."
+        },
+        {
+          "step": 6,
+          "instr": "If performing same on the Flys machine - perform similarly and remember to pause at the contracting position."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "bench press",
+          "shortDesc": "the classic bench press",
+          "rel_imgUrl": "bench-press.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "cable fly",
+          "shortDesc": "the peck deck fly",
+          "rel_imgUrl": "cable-fly.webp"
+        },
+        {
+          "force_type": "push",
+          "name": "incline dumbbell press",
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 7,
+      "difficulty": "intermediate",
+      "category": ["chest", "back"],
+      "name": "dumbbell pullover",
+      "desc": "The Dumbbell pullover targets your lats which give your chest and back a wider look.",
+      "muscle_group": "chest",
+      "equipment_req": ["Dumbbell", "bench"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["Lats", "shoulders", "triceps"],
+      "ImageUrl": "db-pullovers.jpg",
+      "overview": "The dumbbell pullover exercise targets the chest, back, and triceps, promoting strength and muscle development. <br/><br/>It involves a controlled movement, where a dumbbell is lowered behind the head until the arms are parallel to the floor, then raised back to the starting position. <br/><br/>This exercise is versatile, benefiting both muscle mass and core stability. The pullover is known for expanding the ribcage and improving shoulder flexibility. <br/><br/>Utilizing the dumbbell over machines enhances the engagement of stabilizing muscles and allows for a more extensive range of motion, intensifying the workout's effectiveness. <br/><br/>When performed correctly, this exercise stimulates both the chest and back muscles, aiding in overall upper body strength and development.",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
         },
+        {
+          "icon": "safety-dumbbell.png",
+          "safety": "Don't let dumbbell go too forward  ."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench."
+        },
+        {
+          "step": 2,
+          "instr": "You should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor."
+        },
+        {
+          "step": 3,
+          "instr": "Holding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position."
+        },
+        {
+          "step": 4,
+          "instr": "Bending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench."
+        },
+        {
+          "step": 4,
+          "instr": "Slowly raise the dumbbell back to the starting position and Repeat."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "dips",
+          "shortDesc": "The ultimate overall bodyweight exercise",
+          "rel_imgUrl": "dips.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "cable fly",
+          "shortDesc": "the peck deck fly",
+          "rel_imgUrl": "cable-fly.webp"
+        },
+        {
+          "force_type": "push",
+          "name": "flys",
+          "shortDesc": "The peck deck developer",
+          "rel_imgUrl": "flys.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 8,
+      "difficulty": "intermediate",
+      "category": ["chest", "triceps"],
+      "name": "dips",
+      "desc": "Dips are a bodyweight exercise targeting the chest, shoulders and triceps using parallel bars",
+      "muscle_group": "chest",
+      "equipment_req": ["bars"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "abs"],
+      "ImageUrl": "dips.jpg",
+      "overview": "Dips, a foundational bodyweight exercise, engage the chest, shoulders, and triceps. Using parallel bars or a stable surface, individuals lower their bodies by flexing their elbows until their upper arms are parallel to the ground, then push back up to the starting position.<br/><br/>This movement effectively builds upper body strength and muscle endurance. Dips offer versatility, accommodating various hand placements and body positions to emphasize specific muscle groups, making them a versatile and adaptable exercise.<br/><br/>Chest dips effectively hit the lower region of the pec, similarly to the decline bench press. However, it follows a vertical pressing movement pattern, which provides a unique stimulus for the muscles of the chest.<br/> <br/>They challenge and effectively target multiple upper body muscle groups, fostering not just strength but also enhancing stability.<br/>When properly executed, dips serve as an excellent addition to any workout routine, aiding in overall upper body development and toning.",
+      "safety_check": [
+        {
+          "icon": "safety-dip-bar.png",
+          "safety": "Use a fixed parallel bar."
+        },
+        {
+          "icon": "safety-elbows.png",
+          "safety": "Don't flare out elbows."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Step up on the dip station and position your hands with a neutral grip."
+        },
+        {
+          "step": 2,
+          "instr": "Initiate the dip by unlocking the elbows and slowly lowering the body until the forearms are almost parallel with the floor."
+        },
+        {
+          "step": 3,
+          "instr": "Control the descent to parallel and then drive back to the starting position by pushing through the palms."
+        },
+        {
+          "step": 4,
+          "instr": "Ensure you dont flare out elbows too much putting risk on your shoulders and elbows then Repeat."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "bench press",
+          "shortDesc": "the classic bench press",
+          "rel_imgUrl": "bench-press.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "dumbbell pullover",
+          "shortDesc": "The lats developer",
+          "rel_imgUrl": "db-pullovers.jpg"
+        },
+        {
+          "force_type": "push",
+          "name": "flys",
+          "shortDesc": "The peck deck developer",
+          "rel_imgUrl": "flys.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 9,
+      "difficulty": "overhead press",
+      "category": ["shoulders"],
+      "name": "overhead press",
+      "desc": "The overhead press, a fundamental exercise targetting the shoulders and triceps",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell", "seated bench"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["chest", "traps", "Back"],
+      "ImageUrl": "overhead-press.jpg",
+      "overview": "The seated dumbbell press is a variation of the standing dumbbell press and an exercise used to strengthen the muscles of the shoulders.<br/> <br/> The overhead press is a foundational movement for establishing baseline strength and building a completely balanced physique. Tests your core stability. <br/> <br/> Utilizing dumbbells as opposed to performing with a barbell will allow the individual to strengthen each side of the muscle equally.",
+      "safety_check": [
+        {
+          "icon": "safety-grip.png",
+          "safety": "Take a neutral grip."
+        },
+        {
+          "icon": "safety-dumbbell.png",
+          "safety": "Don't Ego lift if beginner."
+        },
+        {
+          "icon": "safety-wrist.png",
+          "safety": "Wear wrist bands for heavy weights."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Set up an adjustable angle bench to be a little more than 90 degrees and select the desired weight from the rack."
+        },
+        {
+          "step": 2,
+          "instr": "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench."
+        },
+        {
+          "step": 3,
+          "instr": "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place. This step is very underrated and much time neglected. Make sure you kick the dumbbell and reach extended arm position."
+        },
+        {
+          "step": 4,
+          "instr": "Once the dumbbells are in place, rotate your palms so they are at about 45 degrees with your face."
+        },
+        {
+          "step": 5,
+          "instr": "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids."
+        },
+        {
+          "step": 6,
+          "instr": "Slowly lower the dumbbells back to the starting position and don't go below the shoulders level. Once you go below shoulders level - main target will shift from shoulders to traps and back. Repeat for reps."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 10,
+      "difficulty": "beginner",
+      "category": ["shoulders"],
+      "name": "lateral raise",
+      "desc": "The shoulders killer - Ego destroyer of bodybuilders.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["forearms", "traps", "back"],
+      "ImageUrl": "lateral-raise.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 11,
+      "difficulty": "advanced",
+      "category": ["shoulders"],
+      "name": "military press",
+      "desc": "The military press is perfect for building shoulder muscle and strength measurement.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Barbell", "weighted plates"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["abs", "triceps", "back"],
+      "ImageUrl": "military-press.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 12,
+      "difficulty": "beginner",
+      "category": ["shoulders", "back"],
+      "name": "face pull",
+      "desc": "Face pull targets the rear part of your shoulders and back muscles.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["cable machine", "rope attachment"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["upper back", "traps"],
+      "ImageUrl": "face-pull.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 13,
+      "difficulty": "rear delt fly",
+      "category": ["shoulders", "back"],
+      "name": "rear delt fly",
+      "desc": "Rear delt fly targeting the rear deltoids and back of the shoulders.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell", "seated bench"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["traps", "triceps"],
+      "ImageUrl": "rear-delt.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 14,
+      "difficulty": "beginner",
+      "category": ["shoulders"],
+      "name": "front raise",
+      "desc": "The Front raise targeting your frontier deltoid which gives your shoulder a round shape.",
+      "muscle_group": "shoulders",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["triceps", "forearms"],
+      "ImageUrl": "front-raise.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 15,
+      "difficulty": "leg press",
+      "category": ["legs"],
+      "name": "leg press",
+      "desc": "lower body strength training exercise targeting the quadriceps, hamstrings, and glutes",
+      "muscle_group": "Quads",
+      "equipment_req": ["leg press machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["quads", "hamstrings", "glutes"],
+      "ImageUrl": "leg-press.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 16,
+      "difficulty": "intermediate",
+      "category": ["legs"],
+      "name": "hamstring curls",
+      "desc": "Hamstring curls is an exercise primarily focusing on the hamstring muscles at the back of the thighs.",
+      "muscle_group": "Hamstrings",
+      "equipment_req": ["hamstring machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["calves", "glutes"],
+      "ImageUrl": "ham-curls.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 17,
+      "difficulty": "advanced",
+      "category": ["legs"],
+      "name": "front squats",
+      "desc": "Front squats are a compound lower body exercise targeting the quadriceps, glutes, and core muscles.",
+      "muscle_group": "quads",
+      "equipment_req": ["Barbell", "weighted plates", "Belt"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["abs", "calves", "glutes", "hamstrings"],
+      "ImageUrl": "front-squat.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 18,
+      "difficulty": "intermediate",
+      "category": ["legs"],
+      "name": "Lunges",
+      "desc": "Lunges are a versatile lower body exercise primarily engaging the quadriceps, hamstrings, and glutes.",
+      "muscle_group": "Quads",
+      "equipment_req": ["bodyweight", "Dumbbell"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["hamstrings", "glutes"],
+      "ImageUrl": "lunges.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 19,
+      "difficulty": "beginner",
+      "category": ["legs"],
+      "name": "leg extension",
+      "desc": "Leg extensions are an isolation exercise that specifically targeting front of the quadriceps.",
+      "muscle_group": "Quads",
+      "equipment_req": ["leg extension machine"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["none"],
+      "ImageUrl": "leg-extension.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 20,
+      "difficulty": "advanced",
+      "category": ["legs", "back"],
+      "name": "deadlift",
+      "desc": "Deadlift is a compound exercise engaging hams, glutes, arms and core muscles.",
+      "muscle_group": "Legs, Hamstrings, Glutes, Lower back, Arms and Core muscles.",
+      "equipment_req": ["Barbell", "Belt", "weighted plates"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": [
+        "hamstrings",
+        "glutes",
+        "core",
+        "lower back",
+        "grip strength",
+        "traps"
+      ],
+      "ImageUrl": "deadlift.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 21,
+      "difficulty": "beginner",
+      "category": ["back"],
+      "name": "pull up",
+      "desc": "Pull-up is a classic upper body bodyweight exercise targeting back, biceps, and forearms.",
+      "muscle_group": "Back",
+      "equipment_req": ["pull-up bar"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["biceps", "shoulders"],
+      "ImageUrl": "pull-ups.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 22,
+      "difficulty": "intermediate",
+      "category": ["back"],
+      "name": "lat pull down",
+      "desc": "Lat pulldown is a resistance exercise targeting upper back and lats.",
+      "muscle_group": "lats",
+      "equipment_req": ["Lat pull down machine"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["traps", "upper back", "forearms", "biceps"],
+      "ImageUrl": "lat-pull-down.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 23,
+      "difficulty": "beginner",
+      "category": ["back"],
+      "name": "seated rows",
+      "desc": "Seated rows engage your back muscles, targeting the lats, rhomboids, and traps.",
+      "muscle_group": "lats",
+      "equipment_req": ["cable machine", "Dumbbell"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["rhomoids", "traps", "biceps"],
+      "ImageUrl": "seated-rows.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 24,
+      "difficulty": "intermediate",
+      "category": ["back"],
+      "name": "bent over rows",
+      "desc": "Hinge at hips, maintain a strong core, and pull the barbell/dumbbell towards your lower chest.",
+      "muscle_group": "lats",
+      "equipment_req": ["Dumbbell", "Barbell"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["rear delts", "biceps", "lower back"],
+      "ImageUrl": "bent-over-rows.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 25,
+      "difficulty": "beginner",
+      "category": ["back", "shoulders"],
+      "name": "reverse fly",
+      "desc": "Reverse fly exercise targets the rear deltoids and upper back muscles.",
+      "muscle_group": "rear deltoids",
+      "equipment_req": ["chest fly machine"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["traps", "upper back", "rhomoids"],
+      "ImageUrl": "reverse-fly.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 26,
+      "difficulty": "beginner",
+      "category": ["biceps"],
+      "name": "dumbbell curls",
+      "desc": "Dumbbell curls are a classic bicep-building exercise targeting primarily on biceps.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["shoulders"],
+      "ImageUrl": "dumbbell-curl.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 27,
+      "difficulty": "beginner",
+      "category": ["biceps", "triceps"],
+      "name": "hammer curl",
+      "desc": "Hammer Curl - stressing on the biceps and the inner triceps - brachialis.",
+      "muscle_group": "biceps and triceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis", "triceps", "forearms"],
+      "ImageUrl": "hammer-curl.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 28,
+      "difficulty": "beginner",
+      "category": ["biceps"],
+      "name": "chin up",
+      "desc": "Chin-ups are a powerful upper body exercise, primarily engaging the biceps, lats, and upper back.",
+      "muscle_group": "biceps",
+      "equipment_req": ["pull-up bar"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["lats", "upper back", "forearms"],
+      "ImageUrl": "chin-ups.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 29,
+      "difficulty": "intermediate",
+      "category": ["biceps"],
+      "name": "concentration curl",
+      "desc": "Concentration curls focus on isolating the biceps for targeted development.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis"],
+      "ImageUrl": "concentration-curls.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
         {
           "force_type": "push",
           "name": "pushups",
