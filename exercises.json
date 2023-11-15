@@ -1245,6 +1245,111 @@
         }
       ],
       "video_resources": []
+    },
+    {
+      "id": 27,
+      "difficulty": "beginner",
+      "category": ["biceps", "triceps"],
+      "name": "hammer curl",
+      "desc": "Hammer Curl - stressing on the biceps and the inner triceps - brachialis.",
+      "muscle_group": "biceps and triceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis", "triceps", "forearms"],
+      "ImageUrl": "hammer-curl.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 28,
+      "difficulty": "beginner",
+      "category": ["biceps"],
+      "name": "chin up",
+      "desc": "Chin-ups are a powerful upper body exercise, primarily engaging the biceps, lats, and upper back.",
+      "muscle_group": "biceps",
+      "equipment_req": ["pull-up bar"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["lats", "upper back", "forearms"],
+      "ImageUrl": "chin-ups.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 29,
+      "difficulty": "intermediate",
+      "category": ["biceps"],
+      "name": "concentration curl",
+      "desc": "Concentration curls focus on isolating the biceps for targeted development.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis"],
+      "ImageUrl": "concentration-curls.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
     }
   ]
 }
