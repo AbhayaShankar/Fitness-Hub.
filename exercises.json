@@ -1350,6 +1350,41 @@
         }
       ],
       "video_resources": []
+    },
+    {
+      "id": 30,
+      "difficulty": "intermediate",
+      "category": ["biceps"],
+      "name": "preacher curl",
+      "desc": "Preacher curls target the biceps with precision - using dumbbell or preacher machine.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell", "preacher machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis"],
+      "ImageUrl": "preacher-curls.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
     }
   ]
 }
