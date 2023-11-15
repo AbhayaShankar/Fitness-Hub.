@@ -8,6 +8,15 @@ body,
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
+
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  transform: translateY(-100%);
+}
+
 /* 
 @layer base {
   :root {

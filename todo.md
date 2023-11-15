@@ -39,9 +39,9 @@ List of things you are supposed to do - *learning perspective*
 14. About page design ✅❗ - Update few more details
 15. Contact page - research for design ✅
 16. Google Map location ✅
-17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories.
-18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique.
-19. design a json file for Exercises.Think properly all the things you are going to need for a single exercise --> then you can replicate for different.
+17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories. ✅
+18. ExerciseCard --> onClick --> Open up refernce video on how to perform with proper posture and technique. ✅
+19. design a json file for Exercises.Think properly all the things you are going to need for a single exercise --> then you can replicate for different. ✅
 20. Highlight the currently active route. ✅
 21. BMI weight - decimal allow - fix "step='any'" ✅
 22. Classes card - overflow hidden ✅
@@ -49,9 +49,9 @@ List of things you are supposed to do - *learning perspective*
 24. BMI Button margin inc ✅
 25. Contact form Loading state... - shadcnui component
 26. Bug - why isnt marker showing up ? ❗
-27. Loadign state refractor
+27. Loading state refractor
 28. Achievements page design
-29. Change courses page to exercises --> point 17 features.
+29. Change courses page to exercises --> point 17 features. ✅
 30. On Subscribe sheet - if loggedin dont show login/register buttons - else show view Plan ❗❗Edit to navigate to Stripe page ❗
 31. Bug - SidebarSheet coming up twice - both for mobile and desktop. (Check if contextAPI will resolve or not.)
 32. Trainer card in mobile bug
@@ -72,7 +72,9 @@ List of things you are supposed to do - *learning perspective*
 back-squats - #45a7c8
 bench-press - #a2b57f
 
-- Show a Skeleton while loading images - check if a image can be added in the skeleton then choose a gym image and addd that in the skeleton part.
+- Show a Skeleton while loading images - check if a image can be added in the skeleton then choose a gym image and addd that in the skeleton part. ✅
+
+- Add a  progressbar - for every route hitting completion. ❗
 
 - Make a custom Error page for handling 404, 500 and 403 error.
 

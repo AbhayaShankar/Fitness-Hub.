@@ -1286,7 +1286,7 @@
       "difficulty": "beginner",
       "category": ["biceps"],
       "name": "chin up",
-      "desc": "Chin-ups are a powerful upper body exercise, primarily engaging the biceps, lats, and upper back.",
+      "desc": "Chin-ups are a powerful upper body exercise, primarily engaging biceps, lats and upper back.",
       "muscle_group": "biceps",
       "equipment_req": ["pull-up bar"],
       "mechanics": "compound",

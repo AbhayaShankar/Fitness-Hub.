@@ -12,6 +12,19 @@ import {
 } from "@/app/(routes)/(otherRoutes)/exercise/page";
 
 const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(true);
+
+  //TODO : Make the loader more appealing..
+
+  useEffect(() => {
+    setIsImageLoaded(true);
+    const timer = setTimeout(() => {
+      setIsImageLoaded(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Link href={LinkRoute(props.name)} className="">
       {/* Slanted Button - Tilt */}
@@ -20,13 +33,26 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
       </div> */}
 
       <div className="w-80">
-        <Image
-          alt={props.name}
-          src={`/assets/gym/${props.imageUrl}`}
-          height={400}
-          width={400}
-          className="h-48 w-80 object-cover object-center rounded-t-lg"
-        />
+        {!isImageLoaded ? (
+          <Image
+            alt={props.name}
+            src={`/assets/gym/${props.imageUrl}`}
+            height={400}
+            width={400}
+            className="h-48 w-80 object-cover object-center rounded-none rounded-t-lg"
+          />
+        ) : (
+          <div className="h-48 w-80 object-center m-auto bg-no-repeat rounded-none rounded-t-lg bg-muted flex flex-col justify-center items-center relative">
+            <Image
+              alt={props.name}
+              src={`/assets/bg/loader.png`}
+              height={400}
+              width={400}
+              className="h-[180px] w-auto object-cover object-center rounded-none rounded-t-lg animate-pulse "
+            />
+            <div className="w-[60%] h-[6px] absolute bottom-2 animate-pulse bg-[#bcbcbc] rounded-full"></div>
+          </div>
+        )}
         <div className="bg-[#21212125] dark:bg-[#fcfcfc22]  rounded-b-lg bg-clip-padding backdrop-filter dark:backdrop-blur-sm backdrop-blur-2xl dark:bg-opacity-10 bg-opacity-60 p-4">
           <h1 className="capitalize text-lg tracking-wide font-semibold">
             {props.name}
