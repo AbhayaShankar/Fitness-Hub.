@@ -1105,6 +1105,146 @@
         }
       ],
       "video_resources": []
+    },
+    {
+      "id": 23,
+      "difficulty": "beginner",
+      "category": ["back"],
+      "name": "seated rows",
+      "desc": "Seated rows engage your back muscles, targeting the lats, rhomboids, and traps.",
+      "muscle_group": "lats",
+      "equipment_req": ["cable machine", "Dumbbell"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["rhomoids", "traps", "biceps"],
+      "ImageUrl": "seated-rows.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 24,
+      "difficulty": "intermediate",
+      "category": ["back"],
+      "name": "bent over rows",
+      "desc": "Hinge at hips, maintain a strong core, and pull the barbell/dumbbell towards your lower chest.",
+      "muscle_group": "lats",
+      "equipment_req": ["Dumbbell", "Barbell"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["rear delts", "biceps", "lower back"],
+      "ImageUrl": "bent-over-rows.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 25,
+      "difficulty": "beginner",
+      "category": ["back", "shoulders"],
+      "name": "reverse fly",
+      "desc": "Reverse fly exercise targets the rear deltoids and upper back muscles.",
+      "muscle_group": "rear deltoids",
+      "equipment_req": ["chest fly machine"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["traps", "upper back", "rhomoids"],
+      "ImageUrl": "reverse-fly.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 26,
+      "difficulty": "beginner",
+      "category": ["biceps"],
+      "name": "dumbbell curls",
+      "desc": "Dumbbell curls are a classic bicep-building exercise targeting primarily on biceps.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["shoulders"],
+      "ImageUrl": "dumbbell-curl.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
     }
   ]
 }
