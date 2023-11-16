@@ -85,6 +85,41 @@
       "video_resources": []
     },
     {
+      "id": 30,
+      "difficulty": "intermediate",
+      "category": ["biceps"],
+      "name": "preacher curl",
+      "desc": "Preacher curls target the biceps with precision - using dumbbell or preacher machine.",
+      "muscle_group": "biceps",
+      "equipment_req": ["Dumbbell", "preacher machine"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["brachialis"],
+      "ImageUrl": "preacher-curls.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
       "id": 2,
       "difficulty": "intermediate",
       "category": ["chest", "triceps"],
@@ -235,6 +270,118 @@
       "video_resources": []
     },
     {
+      "id": 32,
+      "difficulty": "intermediate",
+      "category": ["triceps"],
+      "name": "overhead extensions",
+      "desc": "Overhead extensions - a potent triceps exercise which involves extending a weight overhead.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "traps"],
+      "ImageUrl": "overhead-extension.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 20,
+      "difficulty": "advanced",
+      "category": ["legs", "back"],
+      "name": "deadlift",
+      "desc": "Deadlift is a compound exercise engaging hams, glutes, arms and core muscles.",
+      "muscle_group": "Legs, Hamstrings, Glutes, Lower back, Arms and Core muscles.",
+      "equipment_req": ["Barbell", "Belt", "weighted plates"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": [
+        "hamstrings",
+        "glutes",
+        "core",
+        "lower back",
+        "grip strength",
+        "traps"
+      ],
+      "ImageUrl": "deadlift.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 19,
+      "difficulty": "beginner",
+      "category": ["legs"],
+      "name": "leg extension",
+      "desc": "Leg extensions are an isolation exercise that specifically targeting front of the quadriceps.",
+      "muscle_group": "Quads",
+      "equipment_req": ["leg extension machine"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["none"],
+      "ImageUrl": "leg-extension.webp",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
       "id": 4,
       "difficulty": "beginner",
       "category": ["chest"],
@@ -296,6 +443,41 @@
           "shortDesc": "The Ultimate push ",
           "rel_imgUrl": "incline-db-press.png"
         },
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 34,
+      "difficulty": "intermediate",
+      "category": ["triceps"],
+      "name": "skull crusher",
+      "desc": "Skull Crushers - challenging exercise that isolates and strengthens the triceps.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "EZ bar"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "chest", "forearms"],
+      "ImageUrl": "skull-crushers.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
         {
           "force_type": "push",
           "name": "pushups",
@@ -960,83 +1142,6 @@
       "video_resources": []
     },
     {
-      "id": 19,
-      "difficulty": "beginner",
-      "category": ["legs"],
-      "name": "leg extension",
-      "desc": "Leg extensions are an isolation exercise that specifically targeting front of the quadriceps.",
-      "muscle_group": "Quads",
-      "equipment_req": ["leg extension machine"],
-      "mechanics": "isolation",
-      "force_type": "push",
-      "secondary_muscle_group": ["none"],
-      "ImageUrl": "leg-extension.webp",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
-    {
-      "id": 20,
-      "difficulty": "advanced",
-      "category": ["legs", "back"],
-      "name": "deadlift",
-      "desc": "Deadlift is a compound exercise engaging hams, glutes, arms and core muscles.",
-      "muscle_group": "Legs, Hamstrings, Glutes, Lower back, Arms and Core muscles.",
-      "equipment_req": ["Barbell", "Belt", "weighted plates"],
-      "mechanics": "compound",
-      "force_type": "pull",
-      "secondary_muscle_group": [
-        "hamstrings",
-        "glutes",
-        "core",
-        "lower back",
-        "grip strength",
-        "traps"
-      ],
-      "ImageUrl": "deadlift.jpg",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
-    {
       "id": 21,
       "difficulty": "beginner",
       "category": ["back"],
@@ -1352,41 +1457,6 @@
       "video_resources": []
     },
     {
-      "id": 30,
-      "difficulty": "intermediate",
-      "category": ["biceps"],
-      "name": "preacher curl",
-      "desc": "Preacher curls target the biceps with precision - using dumbbell or preacher machine.",
-      "muscle_group": "biceps",
-      "equipment_req": ["Dumbbell", "preacher machine"],
-      "mechanics": "isolation",
-      "force_type": "pull",
-      "secondary_muscle_group": ["brachialis"],
-      "ImageUrl": "preacher-curls.jpg",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
-    {
       "id": 31,
       "difficulty": "intermediate",
       "category": ["triceps", "chest"],
@@ -1422,41 +1492,6 @@
       "video_resources": []
     },
     {
-      "id": 32,
-      "difficulty": "intermediate",
-      "category": ["triceps"],
-      "name": "overhead extensions",
-      "desc": "Overhead extensions - a potent triceps exercise which involves extending a weight overhead.",
-      "muscle_group": "triceps",
-      "equipment_req": ["Dumbbell", "cable machine"],
-      "mechanics": "compound",
-      "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "traps"],
-      "ImageUrl": "overhead-extension.jpg",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
-    {
       "id": 33,
       "difficulty": "beginner",
       "category": ["triceps"],
@@ -1468,41 +1503,6 @@
       "force_type": "push",
       "secondary_muscle_group": ["brachialis"],
       "ImageUrl": "cable-pushdowns.jpg",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
-    {
-      "id": 34,
-      "difficulty": "intermediate",
-      "category": ["triceps"],
-      "name": "skull crusher",
-      "desc": "Skull Crushers - challenging exercise that isolates and strengthens the triceps.",
-      "muscle_group": "triceps",
-      "equipment_req": ["Dumbbell", "EZ bar"],
-      "mechanics": "isolation",
-      "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "chest", "forearms"],
-      "ImageUrl": "skull-crushers.jpg",
       "overview": "",
       "safety_check": [
         {
