@@ -1,18 +1,11 @@
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 const Routelayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className={cn(
-        "min-h-full relative bg-[url(/assets/bg/bg-2.jpg)] dark:bg-[url(/assets/bg/dark-bg2.jpg)]",
-        font.className
+        "min-h-full relative bg-[url(/assets/bg/bg-2.jpg)] dark:bg-[url(/assets/bg/dark-bg2.jpg)]"
       )}
     >
       <Image

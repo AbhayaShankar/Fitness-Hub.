@@ -28,7 +28,7 @@ export const Navbar = (props: any) => {
     setMounted(true);
 
     const handleScroll = () => {
-      console.log("scrolled");
+      // console.log("scrolled");
       const isScrolled = window.scrollY > 50;
       setScrolled(isScrolled);
     };
@@ -80,7 +80,6 @@ export const Navbar = (props: any) => {
         {NAVBAR_LINKS.map((item) => (
           <div key={item.id}>
             <Link
-              key={item.id}
               className={cn(
                 `font-semibold transition-all delay-75 duration-150 text-[15.5px] py-[6px] px-4 dark:text-muted-foreground dark:hover:text-white  text-gray-400 hover:text-gray-900 active:text-gray-900 hover:bg-black/[0.075] dark:hover:bg-white/10 rounded-xl  hidden lg:block ${
                   trimmedPath === item.label.toLowerCase() ||
@@ -95,7 +94,6 @@ export const Navbar = (props: any) => {
               {item.label}
             </Link>
             <Link
-              key={item.id}
               className={cn(
                 "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 lg:hidden",
                 font.className

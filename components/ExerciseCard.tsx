@@ -20,7 +20,7 @@ const ExerciseCard = ({ ...props }: ExerciseCardProps) => {
     setIsImageLoaded(true);
     const timer = setTimeout(() => {
       setIsImageLoaded(false);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

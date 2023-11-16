@@ -1385,6 +1385,146 @@
         }
       ],
       "video_resources": []
+    },
+    {
+      "id": 31,
+      "difficulty": "intermediate",
+      "category": ["triceps", "chest"],
+      "name": "diamond pushup",
+      "desc": "A challenging exercise targeting triceps, chest and shoulders focusing inner chest.",
+      "muscle_group": "triceps",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "chest", "wrist"],
+      "ImageUrl": "diamond-pushup.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 32,
+      "difficulty": "intermediate",
+      "category": ["triceps"],
+      "name": "overhead extensions",
+      "desc": "Overhead extensions - a potent triceps exercise which involves extending a weight overhead.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "traps"],
+      "ImageUrl": "overhead-extension.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 33,
+      "difficulty": "beginner",
+      "category": ["triceps"],
+      "name": "cable pushdown",
+      "desc": "Cable Pushdowns - a dynamic triceps exercise, employ a cable machine for resistance.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "cable machine"],
+      "mechanics": "compound",
+      "force_type": "push",
+      "secondary_muscle_group": ["brachialis"],
+      "ImageUrl": "cable-pushdowns.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 34,
+      "difficulty": "intermediate",
+      "category": ["triceps"],
+      "name": "skull crusher",
+      "desc": "Skull Crushers - challenging exercise that isolates and strengthens the triceps.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "EZ bar"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "chest", "forearms"],
+      "ImageUrl": "skull-crushers.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
     }
   ]
 }
