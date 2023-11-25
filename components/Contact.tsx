@@ -1,3 +1,5 @@
+"use client";
+
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import React from "react";
@@ -39,7 +41,7 @@ const Contact = () => {
           <div className="relative">
             <HeadingComp
               title="Fitness Hub, Putki."
-              advStyle="capitalize text-[20px]"
+              advStyle="capitalize text-left !text-[20px]"
             />
             <span className="top-[30px] absolute w-[3rem] h-[4px] bg-[#ce032c]"></span>
             <p className="mt-5 text-muted-foreground font-medium">
@@ -49,7 +51,7 @@ const Contact = () => {
           <div className="relative">
             <HeadingComp
               title="Opening Hours."
-              advStyle="capitalize text-[20px]"
+              advStyle="capitalize text-left !text-[20px]"
             />
             <span className="top-[30px] absolute w-[3rem] h-[4px] bg-[#ce032c]"></span>
             <p className="mt-5 text-muted-foreground font-medium">
@@ -61,7 +63,7 @@ const Contact = () => {
           <div className="relative">
             <HeadingComp
               title="Information."
-              advStyle="capitalize text-[20px]"
+              advStyle="capitalize text-left !text-[20px]"
             />
             <span className="top-[30px] absolute w-[3rem] h-[4px] bg-[#ce032c]"></span>
             <p className="mt-5 text-muted-foreground font-medium">
@@ -72,7 +74,7 @@ const Contact = () => {
           <div className="relative">
             <HeadingComp
               title="Follow us on."
-              advStyle="capitalize text-[20px]"
+              advStyle="capitalize text-left !text-[20px]"
             />
             <span className="top-[30px] absolute w-[3rem] h-[4px] bg-[#ce032c]"></span>
             <p className="mt-5 text-muted-foreground font-medium">
@@ -126,6 +128,7 @@ const Contact = () => {
               <span className="top-[70px] absolute w-[4rem] h-[4px] bg-[#ce032c]"></span>
             </CardDescription>
           </CardHeader>
+          {/* TODO: Move this into different component. Add a form handler - Console.log the data first in the console. Save the data in Prisma DB  */}
           <CardContent>
             <form>
               <div className="grid w-full items-center gap-8">
