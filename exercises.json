@@ -382,6 +382,76 @@
       "video_resources": []
     },
     {
+      "id": 35,
+      "difficulty": "intermediate",
+      "category": ["abs"],
+      "name": "leg raises",
+      "desc": "Leg raises are core-strengthening exercise engaging the lower abdominal muscles.",
+      "muscle_group": "abdominal",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["none"],
+      "ImageUrl": "abs-leg-raises.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 34,
+      "difficulty": "intermediate",
+      "category": ["triceps"],
+      "name": "skull crusher",
+      "desc": "Skull Crushers - challenging exercise that isolates and strengthens the triceps.",
+      "muscle_group": "triceps",
+      "equipment_req": ["Dumbbell", "EZ bar"],
+      "mechanics": "isolation",
+      "force_type": "push",
+      "secondary_muscle_group": ["shoulders", "chest", "forearms"],
+      "ImageUrl": "skull-crushers.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
       "id": 4,
       "difficulty": "beginner",
       "category": ["chest"],
@@ -452,41 +522,7 @@
       ],
       "video_resources": []
     },
-    {
-      "id": 34,
-      "difficulty": "intermediate",
-      "category": ["triceps"],
-      "name": "skull crusher",
-      "desc": "Skull Crushers - challenging exercise that isolates and strengthens the triceps.",
-      "muscle_group": "triceps",
-      "equipment_req": ["Dumbbell", "EZ bar"],
-      "mechanics": "isolation",
-      "force_type": "push",
-      "secondary_muscle_group": ["shoulders", "chest", "forearms"],
-      "ImageUrl": "skull-crushers.jpg",
-      "overview": "",
-      "safety_check": [
-        {
-          "icon": "safety-bench.png",
-          "safety": "Tighten core & brace."
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
-        }
-      ],
-      "relevant_exercise": [
-        {
-          "force_type": "push",
-          "name": "pushups",
-          "shortDesc": "the evergreen pushups",
-          "rel_imgUrl": "push-up.jpg"
-        }
-      ],
-      "video_resources": []
-    },
+
     {
       "id": 5,
       "difficulty": "beginner",
@@ -1503,6 +1539,146 @@
       "force_type": "push",
       "secondary_muscle_group": ["brachialis"],
       "ImageUrl": "cable-pushdowns.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 36,
+      "difficulty": "intermediate",
+      "category": ["abs"],
+      "name": "russian twists",
+      "desc": "Russian twists are an effective core exercise primarily targeting the oblique.",
+      "muscle_group": "obliques",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["rectus abdominis", "transverse abdominis"],
+      "ImageUrl": "russian-twist.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 37,
+      "difficulty": "beginner",
+      "category": ["abs"],
+      "name": "planks",
+      "desc": "Planks are a fundamental core exercise requiring maintaining a straight body.",
+      "muscle_group": "abdominal",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["obliques", "deltoids", "shoulders"],
+      "ImageUrl": "abs-planks.jpeg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 38,
+      "difficulty": "beginner",
+      "category": ["abs"],
+      "name": "mountain climbers",
+      "desc": "Mountain climbers are a dynamic full-body exercise primarily targets the core muscles.",
+      "muscle_group": "core",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "compound",
+      "force_type": "pull",
+      "secondary_muscle_group": ["deltoids", "triceps", "hips flexor"],
+      "ImageUrl": "abs-mountain-climber.jpg",
+      "overview": "",
+      "safety_check": [
+        {
+          "icon": "safety-bench.png",
+          "safety": "Tighten core & brace."
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instr": "Technique and posture first, Weights second - Don't EGO Lift."
+        }
+      ],
+      "relevant_exercise": [
+        {
+          "force_type": "push",
+          "name": "pushups",
+          "shortDesc": "the evergreen pushups",
+          "rel_imgUrl": "push-up.jpg"
+        }
+      ],
+      "video_resources": []
+    },
+    {
+      "id": 39,
+      "difficulty": "beginner",
+      "category": ["abs"],
+      "name": "hollow rock",
+      "desc": "Dynamic core exercise primary focuses on creating a 'hollow' body shape.",
+      "muscle_group": "core",
+      "equipment_req": ["bodyweight"],
+      "mechanics": "isolation",
+      "force_type": "pull",
+      "secondary_muscle_group": ["lower back", "hips flexor"],
+      "ImageUrl": "hollow-rock.jpg",
       "overview": "",
       "safety_check": [
         {
