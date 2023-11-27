@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Fitness Hub",
@@ -19,11 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo.png" sizes="any" />
-      </head>
+      </Head>
       <html lang="en">
-        <body className={cn("h-full", inter.className)}>
+        <body className={cn("h-full", font.className)}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

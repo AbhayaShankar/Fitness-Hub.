@@ -10,13 +10,6 @@ import {
 } from "./ui/card";
 import { HeadingComp } from "@/lib/Common";
 import { Input } from "./ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { ALL_CLASSES } from "@/constants";
@@ -80,30 +73,34 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid w-full items-center gap-6">
               <div className="flex flex-col space-y-4 relative">
-                <Input
-                  className="placeholder:tracking-wide"
-                  id="Name"
-                  type="text"
-                  placeholder="Full Name*"
-                  {...register("name")}
-                />
-                {typeof errors.name?.message === "string" && (
-                  <p className="text-sm text-red-500 pl-1 space-y-0">
-                    {errors.name?.message}
-                  </p>
-                )}
-                <Input
-                  id="Email"
-                  type="email"
-                  placeholder="Email Address*"
-                  className="placeholder:tracking-wide"
-                  {...register("email")}
-                />
-                {typeof errors.email?.message === "string" && (
-                  <p className="text-sm text-red-500 pl-1">
-                    {errors.email?.message}
-                  </p>
-                )}
+                <div>
+                  <Input
+                    className="placeholder:tracking-wide"
+                    id="Name"
+                    type="text"
+                    placeholder="Full Name*"
+                    {...register("name")}
+                  />
+                  {typeof errors.name?.message === "string" && (
+                    <p className="text-sm text-red-500 mt-1 pl-1 space-y-0">
+                      {errors.name?.message}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <Input
+                    id="Email"
+                    type="email"
+                    placeholder="Email Address*"
+                    className="placeholder:tracking-wide"
+                    {...register("email")}
+                  />
+                  {typeof errors.email?.message === "string" && (
+                    <p className="text-sm text-red-500 mt-1 pl-1">
+                      {errors.email?.message}
+                    </p>
+                  )}
+                </div>
               </div>
               <div className="flex flex-col space-y-4">
                 <Label htmlFor="selectField" className="pl-1">
@@ -142,7 +139,7 @@ const ContactForm = () => {
                     //     </SelectContent>
                     //   </Select>
                     //   {fieldState && fieldState.error && (
-                    //     <p className="text-sm text-red-500 pl-1 space-y-0">
+                    //     <p className="text-sm text-red-500 mt-1 pl-1 space-y-0">
                     //       {fieldState.error.message}
                     //     </p>
                     //   )}
@@ -176,14 +173,13 @@ const ContactForm = () => {
                         ))}
                       </select>
                       {fieldState && fieldState.error && (
-                        <p className="text-sm text-red-500 pl-1 space-y-0">
+                        <p className="text-sm text-red-500 mt-1 pl-1 space-y-0">
                           {fieldState.error.message}
                         </p>
                       )}
                     </div>
                   )}
                 />
-
                 <div>
                   <Textarea
                     className="placeholder:tracking-wide"
@@ -192,7 +188,7 @@ const ContactForm = () => {
                     {...register("comments")}
                   />
                   {typeof errors.comments?.message === "string" && (
-                    <p className="text-sm text-red-500 pl-1 pt-0 mt-0 space-y-2">
+                    <p className="text-sm text-red-500 mt-1 pl-1 pt-0 space-y-2">
                       {errors.comments?.message}
                     </p>
                   )}
