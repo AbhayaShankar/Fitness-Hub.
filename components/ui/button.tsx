@@ -27,7 +27,7 @@ const buttonVariants = cva(
         custom1:
           "text-primary-foreground border-input bg-primary hover:text-primary-foreground hover:bg-primary  custom-button uppercase text-sm font-bold tracking-wide",
         custom2:
-          "border border-input bg-muted hover:bg-[#ff0336]  hover:text-accent-foreground custom-button-2 uppercase text-sm font-bold tracking-wide ",
+          "border-input bg-muted hover:bg-[#ff0336]  hover:text-accent-foreground custom-button-2 uppercase text-sm font-bold tracking-wide ",
       },
       size: {
         default: "h-10 px-4 py-2",

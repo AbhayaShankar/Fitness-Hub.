@@ -12,6 +12,9 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import Image from "next/image";
+import TitleBg from "./TitleBg";
+import { HeadingComp } from "@/lib/Common";
+import { Button } from "./ui/button";
 
 const heroImages = [
   {
@@ -48,7 +51,7 @@ const LandingHero: React.FC = () => {
 
   return (
     <div className="flex items-start justify-end">
-      <div className="w-[60%] h-[80vh] overflow-hidden relative transition-all ease-in duration-1000 ">
+      <div className="w-[66%] h-[80vh] overflow-hidden relative transition-all ease-in duration-1000 ">
         <Image
           src={heroImage}
           alt="hero-image"
@@ -56,8 +59,25 @@ const LandingHero: React.FC = () => {
           height={500}
           className="w-full h-full object-contain object-bottom blur-[6px] transform translate-y-20 scale-[1.8] bg-[#0c0a09]"
         />
-        <div className="absolute z-10 text-white text-lg top-0 left-0">
-          Abhaya
+        <div className="absolute z-10 text-white text-lg top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-5">
+          <TitleBg title="Come join us" />
+          <h1 className=" capitalize text-center lg:!leading-[50px] lg:text-[44px] max-w-[500px] font-bold tracking-[0.2px]  dark:text-white text-xl lg:text-3xl">
+            Make your body{" "}
+            <span className="text-[#ff0134] uppercase italic border-b-[2px] border-[#ff0134] ">
+              fit
+            </span>{" "}
+            and{" "}
+            <span className="text-[#ff0134] uppercase italic border-b-[2px] border-[#ff0134] ">
+              perfect
+            </span>
+          </h1>
+          <Button
+            variant={"custom1"}
+            size={"lg"}
+            className="mt-5 min-w-[300px] lg:w-[400px] mx-auto"
+          >
+            Join our classes
+          </Button>
         </div>
       </div>
       <Swiper
@@ -71,7 +91,7 @@ const LandingHero: React.FC = () => {
         effect="fade"
         navigation={true}
         modules={[Pagination, Navigation, EffectFade]}
-        className="mySwiper flex items-end justify-end flex-row w-[40%] h-full !mr-0 bg-[#0c0a09]"
+        className="mySwiper flex items-end justify-end flex-row w-[34%] h-full !mr-0 bg-[#0c0a09]"
       >
         {heroImages.map((item) => (
           <SwiperSlide key={item.id} className="w-[800px] !h-[80vh] relative">
@@ -82,7 +102,7 @@ const LandingHero: React.FC = () => {
               height={500}
               className="w-full h-full object-cover object-center"
             />
-            <div className="absolute uppercase bottom-16 right-0 w-[200px] h-[80px] text-center text-lg font-semibold m-auto border-[1px] flex items-center justify-center tracking-wide bg-muted/80 rounded-l-xl">
+            <div className="absolute uppercase bottom-16 right-0 w-[200px] h-[80px] text-center text-lg font-bold m-auto border-[1px] flex items-center justify-center tracking-wide bg-muted/80 rounded-l-xl">
               {item.title}
             </div>
           </SwiperSlide>
