@@ -7,6 +7,11 @@ body,
 :root {
   height: 100%;
   font-family: "Montserrat", sans-serif;
+  --swiper-pagination-bullet: white;
+}
+
+.swiper-pagination-bullet {
+  color: var(--swiper-pagination-bullet) !important;
 }
 
 .navbar {
