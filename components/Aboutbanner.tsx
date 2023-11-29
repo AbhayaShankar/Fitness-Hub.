@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import TitleBg from "./TitleBg";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
