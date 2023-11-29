@@ -1,4 +1,4 @@
-import { AboutBanner2 } from "@/components/AboutBanner";
+import AboutBanner2 from "@/components/AboutBanner2";
 import BMIComponent from "@/components/BMI";
 import ClassGrid from "@/components/ClassGrid";
 import GalleryGrid from "@/components/GalleryGrid";

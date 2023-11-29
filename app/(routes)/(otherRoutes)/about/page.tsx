@@ -1,7 +1,7 @@
 import AboutContent from "@/components/AboutContent";
 import React from "react";
 import { Metadata } from "next";
-import { AboutBanner } from "@/components/AboutBanner";
+import AboutBanner from "@/components/AboutBanner";
 
 export const metadata: Metadata = {
   title: "About - Fitness Hub",
