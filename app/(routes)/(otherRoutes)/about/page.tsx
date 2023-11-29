@@ -1,8 +1,7 @@
 import AboutContent from "@/components/AboutContent";
-import { AboutBanner } from "@/components/AboutBanner";
-import React, { Fragment } from "react";
-import Head from "next/head";
+import React from "react";
 import { Metadata } from "next";
+import { AboutBanner } from "@/components/AboutBanner";
 
 export const metadata: Metadata = {
   title: "About - Fitness Hub",

@@ -6,9 +6,6 @@ import { GymCards } from "@/components/GymCards";
 import LandingHero from "@/components/LandingHero";
 import StagesGrid from "@/components/StagesGrid";
 import Trainers from "@/components/Trainers";
-import { Button } from "@/components/ui/button";
-
-import Link from "next/link";
 
 export default function Home() {
   return (
