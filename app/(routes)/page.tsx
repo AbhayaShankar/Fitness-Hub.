@@ -14,16 +14,6 @@ export default function Home() {
   return (
     <main className="flex  space-y-10 lg:pb-20 flex-col bg-[url(/assets/bg/bg-2.jpg)] dark:bg-[url(/assets/bg/dark-bg2.jpg)] pb-8">
       <LandingHero />
-      <Link href="/sign-in" className="w-fit">
-        <Button variant={"custom1"} size={"lg"}>
-          Login
-        </Button>
-      </Link>
-      <Link href="/sign-up" className="w-fit">
-        <Button variant={"custom2"} size={"lg"}>
-          Register
-        </Button>
-      </Link>
       <StagesGrid />
       <AboutBanner2 />
       <Trainers />

@@ -53,16 +53,16 @@ const LandingHero: React.FC = () => {
 
   return (
     <div className="flex items-start justify-end">
-      <div className="w-[66%] h-[80vh] overflow-hidden relative transition-all ease-in duration-1000 ">
+      <div className="w-full lg:w-[66%] h-[80vh] overflow-hidden relative transition-all ease-in duration-1000 ">
         <Image
           src={heroImage}
           alt="hero-image"
           width={500}
           height={500}
-          className="w-full h-full object-contain object-bottom blur-[6px] transform translate-y-20 scale-[1.8] bg-[#0c0a09]"
+          className="w-full h-full object-contain object-bottom blur-[6px] transform translate-y-0 sm:translate-y-8 md:translate-y-14 lg:translate-y-20 scale-[1.8] bg-[#0c0a09]"
         />
         {/* Sharing icons */}
-        <div className="absolute z-20 text-white text-lg top-20 right-0 flex items-center transform -rotate-90 gap-5">
+        <div className="absolute z-20 text-white text-lg top-20 right-0  items-center transform -rotate-90 gap-5 hidden md:flex">
           <div className="flex items-center flex-col gap-5 transform rotate-90 pt-32">
             <div className="bg-gray-200 group rounded-full p-1">
               <Instagram
@@ -118,41 +118,41 @@ const LandingHero: React.FC = () => {
           >
             Join our classes
           </Button>
-          <div className="flex items-center justify-evenly gap-8 mt-10 bg-background/5 dark:bg-background/20 p-4 rounded-xl">
+          <div className="flex items-center justify-evenly gap-4 md:gap-6 lg:gap-8 mt-10 bg-background/5 dark:bg-background/20 p-2 lg:p-4 rounded-xl">
             <div className="flex items-center flex-col gap-1">
-              <CountUp start={0} end={55} delay={1} duration={3}>
+              <CountUp start={0} end={10} delay={1} duration={3}>
                 {({ countUpRef }) => (
-                  <div className="text-2xl font-semibold">
+                  <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />
                     K+
                   </div>
                 )}
               </CountUp>
-              <p className="dark:text-muted-foreground font-medium text-sm">
+              <p className="dark:text-muted-foreground font-medium text-xs lg:text-sm">
                 Happy Clients
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <CountUp start={0} end={10} delay={1} duration={3}>
+              <CountUp start={0} end={8} delay={1} duration={3}>
                 {({ countUpRef }) => (
-                  <div className="text-2xl font-semibold">
+                  <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />+
                   </div>
                 )}
               </CountUp>
-              <p className="dark:text-muted-foreground font-medium text-sm">
+              <p className="dark:text-muted-foreground font-medium text-xs lg:text-sm">
                 Expert Trainers
               </p>
             </div>
             <div className="flex items-center flex-col">
               <CountUp start={0} end={5} delay={1} duration={3}>
                 {({ countUpRef }) => (
-                  <div className="text-2xl font-semibold">
+                  <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />+
                   </div>
                 )}
               </CountUp>
-              <p className="dark:text-muted-foreground font-medium text-sm">
+              <p className="dark:text-muted-foreground font-medium text-xs lg:text-sm">
                 Years Of Experience
               </p>
             </div>
@@ -170,7 +170,7 @@ const LandingHero: React.FC = () => {
         effect="fade"
         navigation={true}
         modules={[Pagination, Navigation, EffectFade]}
-        className="mySwiper flex items-end justify-end flex-row w-[34%] h-full !mr-0 bg-[#0c0a09]"
+        className="mySwiper flex items-end justify-end flex-row w-0 lg:w-[34%] h-full !mr-0 bg-[#0c0a09]"
       >
         {heroImages.map((item) => (
           <SwiperSlide key={item.id} className="w-[800px] !h-[80vh] relative">
@@ -181,8 +181,16 @@ const LandingHero: React.FC = () => {
               height={500}
               className="w-full h-full object-cover object-center"
             />
-            <div className="absolute uppercase bottom-16 right-0 w-[200px] h-[80px] text-center text-lg font-bold m-auto border-[1px] flex items-center justify-center tracking-wide bg-muted/80 rounded-l-xl">
+            <div className="absolute uppercase bottom-[82px] right-0 w-[200px] h-[80px] text-center text-lg font-bold m-auto border-[1px] flex items-center justify-center tracking-wide bg-muted/80 rounded-l-xl">
               {item.title}
+            </div>
+            <div className="absolute bottom-16 right-[220px] w-[240px] h-[120px] bg-muted/70 rounded-xl p-[2px]">
+              <h2 className="text-center text-lg font-bold tracking-wider">
+                {item.reach}
+              </h2>
+              <p className="text-[13px] pl-5 tracking-wide font-medium text-white/80">
+                {item.desc}
+              </p>
             </div>
           </SwiperSlide>
         ))}
