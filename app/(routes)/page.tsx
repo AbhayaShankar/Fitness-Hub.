@@ -24,7 +24,6 @@ export default function Home() {
           Register
         </Button>
       </Link>
-      <h1 className="text-4xl uppercase font-bold text-center">HOME BANNER</h1>
       <StagesGrid />
       <AboutBanner2 />
       <Trainers />
