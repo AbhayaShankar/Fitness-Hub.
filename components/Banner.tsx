@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-const AboutBanner = () => {
+const Banner = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-x-12 p-2 lg:p-8">
       <div className="flex items-start justify-start flex-col gap-8">
@@ -55,4 +55,4 @@ const AboutBanner = () => {
   );
 };
 
-export default AboutBanner;
+export default Banner;
