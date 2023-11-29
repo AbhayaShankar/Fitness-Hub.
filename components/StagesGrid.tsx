@@ -1,17 +1,11 @@
-import { Montserrat } from "next/font/google";
 import StagesCard from "./StagesCard";
 import { cn } from "@/lib/utils";
 import { Goal } from "lucide-react";
 import { STAGES_CARD } from "@/constants";
 
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
-
 const StagesGrid = () => {
   return (
-    <div className={cn("flex justify-center items-center", font.className)}>
+    <div className={cn("flex justify-center items-center")}>
       <div className="flex flex-col lg:grid grid-cols-7 grid-rows-5 gap-10 p-4 lg:p-16">
         {STAGES_CARD.map((item) => (
           <StagesCard

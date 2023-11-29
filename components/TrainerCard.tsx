@@ -3,12 +3,6 @@
 import { cn } from "@/lib/utils";
 import { ChevronUp, Facebook, Instagram, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
-import { Montserrat, Poppins } from "next/font/google";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
 
 interface TrainerCardProps {
   name: string;
@@ -37,8 +31,7 @@ const TrainerCard = ({ name, type, src }: TrainerCardProps) => {
       </div>
       <div
         className={cn(
-          "text-center px-5 py-8 space-x-5 z-10 bg-white dark:bg-white shadow-2xl relative flex items-center flex-col box-desc rounded-xl backdrop-blur-lg",
-          font.className
+          "text-center px-5 py-8 space-x-5 z-10 bg-white dark:bg-white shadow-2xl relative flex items-center flex-col box-desc rounded-xl backdrop-blur-lg"
         )}
       >
         <Image

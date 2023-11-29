@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ALL_CLASSES } from "@/constants";
@@ -18,11 +17,6 @@ import {
 } from "lucide-react";
 import { useAuth } from "@clerk/nextjs";
 
-const font = Montserrat({
-  weight: ["300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-});
-
 const SubscribeComp = (props: any) => {
   const { isSignedIn } = useAuth();
   const [mounted, setMounted] = useState(false);
@@ -36,7 +30,7 @@ const SubscribeComp = (props: any) => {
   }
 
   return (
-    <div className={cn("z-50 pb-10", font.className)}>
+    <div className={cn("z-50 pb-10")}>
       <h1 className="uppercase text-lg lg:text-2xl font-semibold text-center mt-10">
         <span className="text-[#ff0336] font-bold">Subscribe </span> to Fitness
       </h1>

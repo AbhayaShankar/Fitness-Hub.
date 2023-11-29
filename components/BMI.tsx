@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Input } from "./ui/input";
@@ -19,11 +18,6 @@ const formSchema = z.object({
   weight: z.number().min(1, {
     message: "Weight .",
   }),
-});
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const BMIComponent = () => {
@@ -58,8 +52,7 @@ const BMIComponent = () => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16 ",
-        font.className
+        "flex flex-col lg:flex-row items-center justify-evenly gap-5 p-4 lg:py-16 lg:pl-16 "
       )}
     >
       <div className="flex flex-col gap-3">

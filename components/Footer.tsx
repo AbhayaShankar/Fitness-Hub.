@@ -2,22 +2,15 @@ import { classes, TRAINING_HOURS } from "@/constants";
 import { HeadingComp } from "@/lib/Common";
 import { cn } from "@/lib/utils";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 const Footer = () => {
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-start justify-evenly px-6 py-10 gap-y-5 border-t-[1px] border-t-muted-foreground/20 dark:border-t-muted ",
-        font.className
+        "flex flex-col lg:flex-row items-start justify-evenly px-6 py-10 gap-y-5 border-t-[1px] border-t-muted-foreground/20 dark:border-t-muted "
       )}
     >
       {/* Title */}

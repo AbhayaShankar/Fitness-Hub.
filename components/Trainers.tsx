@@ -4,16 +4,10 @@ import { TRAINERS_LIST } from "@/constants";
 import TitleBg from "./TitleBg";
 import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 const Trainers = () => {
   return (
-    <div className={cn("flex flex-col space-y-4 items-center", font.className)}>
+    <div className={cn("flex flex-col space-y-4 items-center")}>
       <TitleBg title={"Gym Trainers"} />
       <HeadingComp
         title="team of expert coaches"

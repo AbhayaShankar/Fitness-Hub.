@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ModeToggle } from "./ThemeToggler";
-import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -10,11 +9,6 @@ import { NAVBAR_LINKS } from "@/constants";
 import { usePathname } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import SubscribeSheet from "./SubscribeSheet";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
 
 export const Navbar = (props: any) => {
   const pathname = usePathname();
@@ -62,8 +56,7 @@ export const Navbar = (props: any) => {
           <h1
             className={cn(
               "font-extrabold text-2xl tracking-normal",
-              "font-bold",
-              font.className
+              "font-bold"
             )}
           >
             <span className="dark:text-[#fafe19]">Fitness </span>
@@ -86,8 +79,7 @@ export const Navbar = (props: any) => {
                   (item.label.toLowerCase() === "home" && trimmedPath === "")
                     ? "text-gray-900 dark:text-white bg-black/[0.075] dark:bg-white/10"
                     : ""
-                }`,
-                font.className
+                }`
               )}
               href={item.href}
             >
@@ -95,8 +87,7 @@ export const Navbar = (props: any) => {
             </Link>
             <Link
               className={cn(
-                "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 lg:hidden",
-                font.className
+                "font-semibold transition-all delay-75 text-[17px] dark:text-muted-foreground dark:hover:text-white  text-gray-500 hover:text-gray-900 lg:hidden"
               )}
               href={item.href}
               onClick={() => props.setOpen(false)}

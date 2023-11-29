@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Fitness Hub",
@@ -27,7 +21,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
       <html lang="en">
-        <body className={cn("h-full", font.className)}>
+        <body className={cn("h-full")}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

@@ -1,10 +1,4 @@
-import { Montserrat } from "next/font/google";
 import { cn } from "./utils";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 interface HeadingCompProps {
   title: string;
@@ -24,8 +18,7 @@ export const HeadingComp = ({ title, advStyle }: HeadingCompProps) => {
   return (
     <h1
       className={cn(
-        `font-bold tracking-[0.2px] text-left capitalize dark:text-white text-xl lg:text-3xl ${advStyle}`,
-        font.className
+        `font-bold tracking-[0.2px] text-left capitalize dark:text-white text-xl lg:text-3xl ${advStyle}`
       )}
     >
       {title}
@@ -37,8 +30,7 @@ export const DescriptionComp = ({ desc, advStyle }: DescriptionCompProps) => {
   return (
     <p
       className={cn(
-        `text-center dark:text-muted-foreground pb-5 max-w-[600px] ${advStyle}`,
-        font.className
+        `text-center dark:text-muted-foreground pb-5 max-w-[600px] ${advStyle}`
       )}
       dangerouslySetInnerHTML={{ __html: desc }}
     ></p>

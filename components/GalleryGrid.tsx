@@ -2,21 +2,10 @@ import { DescriptionComp, HeadingComp } from "@/lib/Common";
 import TitleBg from "./TitleBg";
 import GalleryCard from "./GalleryCard";
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
-
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "600", "700", "800"],
-});
 
 const GalleryGrid = () => {
   return (
-    <div
-      className={cn(
-        "flex flex-col space-y-4 pt-16 items-center",
-        font.className
-      )}
-    >
+    <div className={cn("flex flex-col space-y-4 pt-16 items-center")}>
       <TitleBg title={"Gallery"} />
       <HeadingComp title="Our WorkPlace" advStyle="capitalize text-[32px]" />
       <DescriptionComp

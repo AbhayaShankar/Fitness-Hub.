@@ -1,8 +1,6 @@
 import GalleryGrid from "@/components/GalleryGrid";
 import { ALL_CLASSES } from "@/constants";
-import { cn } from "@/lib/utils";
 import { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
@@ -11,14 +9,9 @@ export const metadata: Metadata = {
   description: "Galleria",
 };
 
-const font = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
-
 const GalleryPage = () => {
   return (
-    <div className={cn("", font.className)}>
+    <div>
       <h1 className="absolute top-[260px] left-[44%] text-[30px] tracking-wide font-semibold capitalize text-white dark:text-white">
         Gallery
       </h1>
