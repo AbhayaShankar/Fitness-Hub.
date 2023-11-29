@@ -1,5 +1,5 @@
 import AboutContent from "@/components/AboutContent";
-import AboutBanner from "@/components/AboutBanner";
+import { AboutBanner } from "@/components/AboutBanner";
 import React, { Fragment } from "react";
 import Head from "next/head";
 import { Metadata } from "next";
