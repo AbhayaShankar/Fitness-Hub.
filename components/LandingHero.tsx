@@ -120,7 +120,7 @@ const LandingHero: React.FC = () => {
           </Button>
           <div className="flex items-center justify-evenly gap-4 md:gap-6 lg:gap-8 mt-10 bg-background/5 dark:bg-background/20 p-2 lg:p-4 rounded-xl">
             <div className="flex items-center flex-col gap-1">
-              <CountUp start={0} end={10} delay={1} duration={3}>
+              <CountUp start={0} end={10} delay={0} duration={3}>
                 {({ countUpRef }) => (
                   <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />
@@ -133,7 +133,7 @@ const LandingHero: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <CountUp start={0} end={8} delay={1} duration={3}>
+              <CountUp start={0} end={8} delay={0} duration={3}>
                 {({ countUpRef }) => (
                   <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />+
@@ -145,7 +145,7 @@ const LandingHero: React.FC = () => {
               </p>
             </div>
             <div className="flex items-center flex-col">
-              <CountUp start={0} end={5} delay={1} duration={3}>
+              <CountUp start={0} end={5} delay={0} duration={3}>
                 {({ countUpRef }) => (
                   <div className="text-lg md:text-xl lg:text-2xl font-semibold">
                     <span ref={countUpRef} />+
