@@ -401,10 +401,10 @@ body,
 .box-item {
   position: relative;
   -webkit-backface-visibility: hidden;
-  width: 375px;
+  width: 330px;
   /* margin-bottom: 35px; */
   max-width: 100%;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .flip-box {
@@ -485,7 +485,8 @@ body,
 }
 
 .flip-box .inner {
-  position: absolute;
+  position: relative;
+  top: 210px;
   left: 0;
   width: 100%;
   padding: 60px;
@@ -497,7 +498,7 @@ body,
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
   -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
+  /* top: -50%; */
 }
 
 .flip-box-header {
@@ -525,4 +526,9 @@ body,
   padding: 15px 20px;
   text-transform: uppercase;
   z-index: 10;
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
