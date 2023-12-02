@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const GymRats = () => {
   const handleClick = () => {
@@ -44,11 +44,11 @@ const GymRats = () => {
           {/* After Flip */}
           <div className="flip-box-back rounded-md border-[1px] border-muted-foreground dark:border-muted text-center bg-[url('/assets/test.jpg')]">
             <div className="inner-back text-white text-left">
-              <ul className="text-lg pl-2">
+              <ul className="text-lg pl-2 space-x-2">
                 <li className="list-image-[url('/assets/custom-list.png')] list-outside">
                   2<sup>nd</sup> position at xyz Powerlifting competition.
                 </li>
-                <br />
+                {/* <br /> */}
                 <li className="list-image-[url('/assets/custom-list.png')] list-outside">
                   Max Bench - 105 kgs
                 </li>
@@ -71,8 +71,8 @@ const GymRats = () => {
                   >
                     <Instagram
                       color="#5f5f5f"
-                      strokeWidth={2}
-                      className="w-10 h-10 group-hover:stroke-[#ce032c] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#ce032c]"
+                      strokeWidth={1.25}
+                      className="w-10 h-10 group-hover:stroke-[#c235a7] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#c235a7]"
                     />
                   </Link>
                   <Link
@@ -80,10 +80,10 @@ const GymRats = () => {
                     href={"https://www.abhayashankar.com"}
                     target="_blank"
                   >
-                    <Instagram
+                    <Facebook
                       color="#5f5f5f"
-                      strokeWidth={2}
-                      className="w-10 h-10 group-hover:stroke-[#ce032c] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#ce032c]"
+                      strokeWidth={1.25}
+                      className="w-10 h-10 group-hover:stroke-[#0862f6] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#0862f6]"
                     />
                   </Link>
                   <Link
@@ -91,10 +91,10 @@ const GymRats = () => {
                     href={"https://www.abhayashankar.com"}
                     target="_blank"
                   >
-                    <Instagram
+                    <Youtube
                       color="#5f5f5f"
-                      strokeWidth={2}
-                      className="w-10 h-10 group-hover:stroke-[#ce032c] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#ce032c]"
+                      strokeWidth={1.25}
+                      className="w-10 h-10 group-hover:stroke-[#f70000] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#f70000]"
                     />
                   </Link>
                   <Link
@@ -102,10 +102,10 @@ const GymRats = () => {
                     href={"https://www.abhayashankar.com"}
                     target="_blank"
                   >
-                    <Instagram
+                    <Twitter
                       color="#5f5f5f"
-                      strokeWidth={2}
-                      className="w-10 h-10 group-hover:stroke-[#ce032c] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#ce032c]"
+                      strokeWidth={1.25}
+                      className="w-10 h-10 group-hover:stroke-[#1c9cea] transition-all ease-in duration-150 p-[6px] border-[1px] rounded-full group-hover:border-[#1c9cea]"
                     />
                   </Link>
                 </div>
