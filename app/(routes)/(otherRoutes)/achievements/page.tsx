@@ -1,3 +1,4 @@
+import GymRats from "@/components/GymRats";
 import { Metadata } from "next";
 import React from "react";
 
@@ -7,7 +8,11 @@ export const metadata: Metadata = {
 };
 
 const AchievementsPage = () => {
-  return <div>AchievementsPage</div>;
+  return (
+    <div className="">
+      <GymRats />
+    </div>
+  );
 };
 
 export default AchievementsPage;
