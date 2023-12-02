@@ -438,7 +438,7 @@ body,
   width: 100%;
   height: 100%;
   background-color: black; /* Set the background color to black */
-  opacity: 0.25; /* Adjust the opacity to control the intensity of the black shade */
+  opacity: 0.4; /* Adjust the opacity to control the intensity of the black shade */
   z-index: 1;
   border-radius: 8px;
 }
