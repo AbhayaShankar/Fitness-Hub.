@@ -123,5 +123,3 @@ bench-press - #a2b57f
  - Secured __ position
  - Organised at __________.
  - Stats -  
-
-![Alt text](image.png)

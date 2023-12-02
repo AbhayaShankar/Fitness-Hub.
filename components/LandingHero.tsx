@@ -13,7 +13,6 @@ import "swiper/css/effect-fade";
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import Image from "next/image";
 import TitleBg from "./TitleBg";
-import { HeadingComp } from "@/lib/Common";
 import { Button } from "./ui/button";
 import CountUp from "react-countup";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";

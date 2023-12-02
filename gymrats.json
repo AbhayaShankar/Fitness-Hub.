@@ -1,0 +1,38 @@
+{
+  "gymData": [
+    {
+      "id": 1,
+      "name": "Abhaya Shankar",
+      "profession": "Powerlifter / Armwrestler",
+      "location": "Dhanbad, Jharkhand",
+      "height": 176,
+      "weight": 70,
+      "imgUrl": "Abhaya.jpg",
+      "bench": 85,
+      "squats": 100,
+      "deadlift": 160,
+      "instaLink": "https://www.instagram.com/abhaya_shankar05/",
+      "facebookLink": "",
+      "youtubeLink": "",
+      "twitterLink": "https://twitter.com/AbhayaShankar2",
+      "achievements": ["Ranked 2nd in the surya Powerlifting competition."]
+    },
+    {
+      "id": 2,
+      "name": "Nawal Mahato",
+      "profession": "Powerlifter",
+      "location": "Dhanbad, Jharkhand",
+      "height": 182,
+      "weight": 76,
+      "imgUrl": "Nawal.jpg",
+      "bench": 85,
+      "squats": 100,
+      "deadlift": 160,
+      "instaLink": "https://www.instagram.com/abhaya_shankar05/",
+      "facebookLink": "/",
+      "youtubeLink": "",
+      "twitterLink": "https://twitter.com/AbhayaShankar2",
+      "achievements": ["Ranked 2nd in the surya Powerlifting competition."]
+    }
+  ]
+}
