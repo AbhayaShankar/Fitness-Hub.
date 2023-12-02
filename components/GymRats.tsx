@@ -2,7 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Ruler,
+  Twitter,
+  Weight,
+  Youtube,
+} from "lucide-react";
 
 const GymRats = () => {
   return (
@@ -13,27 +20,44 @@ const GymRats = () => {
             {/* Before Flip */}
             <div className="inner text-white relative">
               <div className="h-[260px] w-full bg-transparent absolute -top-[150px] left-0 flex flex-col items-center justify-end"></div>
-              <div className="h-[150px] w-full absolute bg-black/50 dark:bg-[#090909b4]  backdrop-blur-2xl bg-opacity-80 text-[#fcfcfc]  left-0 -bottom-[150px] rounded-md z-20 backdrop-filter">
-                <div className="p-2 flex items-center justify-evenly">
-                  <div className="flex flex-col items-center">
+              <div className="h-[150px] w-full absolute bg-black/40 dark:bg-[#1c1c1cb4]  backdrop-blur-2xl bg-opacity-80 text-[#fcfcfc]  left-0 -bottom-[150px] rounded-md z-20 backdrop-filter">
+                <div className="p-2 flex items-center justify-evenly mt-2">
+                  {/* <div className="flex flex-col items-center">
                     <h3 className="text-xl font-medium">
                       2 <sup>nd</sup>
                     </h3>
                     <span className="text-[#FFC000] text-xl">
                       &#9733; &#9733; &#9734;
-                      {/* if(value === 1){
-                        return &#9733; &#9734; &#9734;
-                      } */}
                     </span>
-                  </div>
-                  <div className="text-xl uppercase font-semibold -mt-2 tracking-wider">
+                  </div> */}
+                  <div className="text-2xl leading-5 uppercase font-semibold  tracking-wider">
                     ABHAYA SHANKAR
                   </div>
                 </div>
-                <div className="uppercase text-2xl font-medium tracking-widest">
-                  Powerlifting
+                <div className="capitalize text-sm font-medium tracking-widest">
+                  ( Powerlifter / Arm-wrestler )
                 </div>
-                <div className="tracking-wide">Dhanbad, Jharkhand</div>
+                <div className="tracking-wide text-sm mt-[2px]">
+                  Dhanbad, Jharkhand
+                </div>
+                <div className="p-2 px-8 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Ruler
+                      color="#ce032c"
+                      strokeWidth={1.25}
+                      className="w-5 h-5 "
+                    />
+                    <p className="!text-sm"> (in cms)</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Weight
+                      color="#ce032c"
+                      strokeWidth={1.25}
+                      className="w-5 h-5 "
+                    />
+                    <p className="!text-sm"> (in kgs)</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
