@@ -501,6 +501,23 @@ body,
   /* top: -50%; */
 }
 
+.flip-box .inner-back {
+  position: relative;
+  top: 210px;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  /* top: -50%; */
+}
+
 .flip-box-header {
   font-size: 34px;
 }
