@@ -117,9 +117,22 @@ bench-press - #a2b57f
 }
 
 ```
-- Add a by default active flag for pricing...
+- Add a by default active flag for pricing... ✅
 
 ## Achievement card styling idea... Hover to Flip - Competition details
  - Secured __ position
  - Organised at __________.
  - Stats -  
+
+After all basics are done - improvisation. - create a new branch for this and make adjustments on that.
+------
+
+## After you grasp the basic of redux and state management - Add a route
+- Stories : Where logged-in people can add a story and people can like, comment and share.
+
+## Contact page 
+- Add a checkbox - Send response to self.
+- Send a response from the official website - Thankyou for your feedback, rest assured we will reach back to you as soon as possible.
+- If a user subscribes - Send a response - Thankyou for subscribing to fitness hub. Welcome to a brand new journey.
+
+-----

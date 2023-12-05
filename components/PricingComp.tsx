@@ -68,16 +68,19 @@ const PricingComp = () => {
             billingPeriod="monthly"
             planType="Beginners Plan"
             MonthlyAmount={10}
+            isDefault={true}
           />
           <PricingCard
             billingPeriod="monthly"
             planType="Intermediate Plan"
             MonthlyAmount={30}
+            isDefault={false}
           />
           <PricingCard
             billingPeriod="monthly"
             planType="Advance Plan"
             MonthlyAmount={50}
+            isDefault={false}
           />
         </>
       ) : (
@@ -86,16 +89,19 @@ const PricingComp = () => {
             billingPeriod="yearly"
             planType="Beginners Plan"
             YearlyAmount={100}
+            isDefault={false}
           />
           <PricingCard
             billingPeriod="yearly"
             planType="Intermediate Plan"
             YearlyAmount={288}
+            isDefault={true}
           />
           <PricingCard
             billingPeriod="yearly"
             planType="Advance Plan"
             YearlyAmount={480}
+            isDefault={false}
           />
         </>
       )}
