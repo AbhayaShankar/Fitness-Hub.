@@ -76,7 +76,9 @@ bench-press - #a2b57f
 
 - Add a  progressbar - for every route hitting completion. ❗
 
-- Make a custom Error page for handling 404, 500 and 403 error.
+- Make a custom Error page for handling 404, 500 and 403 error. ❗
+
+- Stripe Integration. ❗
 
 ``` json
 {
@@ -136,3 +138,9 @@ After all basics are done - improvisation. - create a new branch for this and ma
 - If a user subscribes - Send a response - Thankyou for subscribing to fitness hub. Welcome to a brand new journey.
 
 -----
+
+Plan to Proceed : 
+
+1. Add a Custom Error page.
+2. Add stripe integration.
+3. Incorporate redux toolkit into it.
