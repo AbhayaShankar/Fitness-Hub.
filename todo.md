@@ -24,7 +24,7 @@ List of things you are supposed to do - *learning perspective*
    
 ### 22.10.23 - 
 1. Fix Navbar issue - refer codebox. ✅
-2. Design Basic Other routes - Banner image ❗
+2. Design Basic Other routes - Banner image ✅
 3. 6 Card Design - Stages of healthy workout cycle. ✅
 4. Classes cards design ✅
 5. Footer Design ✅
@@ -36,7 +36,7 @@ List of things you are supposed to do - *learning perspective*
 11. route - achievements - Hall of Fame - card design and text image etc.
 12. Pricing page ✅
 13. Home page Banner.
-14. About page design ✅❗ - Update few more details
+14. About page design ✅ - Update few more details
 15. Contact page - research for design ✅
 16. Google Map location ✅
 17. Set of exercises for different muscle groups --> Button toggler. --> onClick --> display those categories. ✅
@@ -48,7 +48,7 @@ List of things you are supposed to do - *learning perspective*
 23. Classes show more feature.
 24. BMI Button margin inc ✅
 25. Contact form Loading state... - shadcnui component
-26. Bug - why isnt marker showing up ? ❗
+26. Bug - why isnt marker showing up ? ✅
 27. Loading state refractor
 28. Achievements page design
 29. Change courses page to exercises --> point 17 features. ✅
@@ -56,7 +56,7 @@ List of things you are supposed to do - *learning perspective*
 31. Bug - SidebarSheet coming up twice - both for mobile and desktop. (Check if contextAPI will resolve or not.)
 32. Trainer card in mobile bug
 33. Design a color picker js util class and which will help you to extract vibrant color from the image and then that color should be in the back og the glass morphism effect. ✅
-34. Custom_error page ❗
+34. Custom_error page ✅
 35. On scroll_up display Navbar, on scroll_down hide the Navbar
 
 
@@ -141,6 +141,6 @@ After all basics are done - improvisation. - create a new branch for this and ma
 
 Plan to Proceed : 
 
-1. Add a Custom Error page.
+1. Add a Custom Error page. ✅
 2. Add stripe integration.
 3. Incorporate redux toolkit into it.

@@ -15,7 +15,7 @@ export default function NotFound() {
         setRedirect(time);
         time--;
       } else {
-        // router.push("/");
+        router.push("/");
       }
     }, 1000);
 
