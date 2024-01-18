@@ -23,6 +23,14 @@ export const metadata: Metadata = {
   description: "Know how to perform with proper instructions.",
 };
 
+export type VideoReferenceType = {
+  title: string;
+  desc: string;
+  link: string;
+  imgsrc: string;
+  category: string;
+};
+
 const SingleExercisePage = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
 
@@ -162,7 +170,7 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
             Video Resources
           </h3>
-          <VideoReference VideoReferenceList={VideoReferenceList} />
+          <VideoReference VideoReferenceList={VideoReferenceList.videos} />
         </div>
       </div>
     </div>

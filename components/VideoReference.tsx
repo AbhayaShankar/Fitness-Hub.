@@ -1,13 +1,14 @@
+import { VideoReferenceType } from "@/app/(routes)/(otherRoutes)/exercise/[slug]/page";
 import React from "react";
 
-interface VideoReferenceProps {}
-
-const VideoReference: React.FC<VideoReferenceProps> = ({
+const VideoReference = ({
   VideoReferenceList,
-}: any) => {
+}: {
+  VideoReferenceList: VideoReferenceType[];
+}) => {
   return (
     <div>
-      {VideoReferenceList.videos.map((video) => (
+      {VideoReferenceList.map((video: VideoReferenceType) => (
         <div key={video.title}>{video.title}</div>
       ))}
     </div>
