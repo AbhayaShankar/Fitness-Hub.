@@ -8,17 +8,15 @@ import {
 } from "@/components/SingleExercise";
 import { Button } from "@/components/ui/button";
 import { ArrowLeftCircleIcon } from "lucide-react";
-import { Metadata, NextPage } from "next";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 import ExercisesList from "../../../../../exercises.json";
 import { ExerciseDescProps } from "../page";
-
-// type Props = {
-//   params: { slug: string };
-// };
+import VideoReference from "@/components/VideoReference";
+import VideoReferenceList from "../../../../../video-references.json";
 
 export const metadata: Metadata = {
   title: "Single Muscle", // TODO: Dynamic title
@@ -164,6 +162,7 @@ const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
             Video Resources
           </h3>
+          <VideoReference VideoReferenceList={VideoReferenceList} />
         </div>
       </div>
     </div>
