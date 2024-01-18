@@ -12,6 +12,24 @@ body,
   --swiper-pagination-bullet: white;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3.5px solid rgba(0, 0, 0, 0);
+  background-color: var(--scroll-thumb);
+  background-clip: padding-box;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-hover);
+}
+
 .swiper-pagination-bullet {
   color: var(--swiper-pagination-bullet) !important;
 }
@@ -57,6 +75,9 @@ body,
     --ring: 245, 72%, 59%;
 
     --radius: 0.5rem;
+    --scroll-track: #f4f4f2;
+    --scroll-thumb: #8a8a8a;
+    --scroll-thumb-hover: #a1a1a1;
   }
 
   .dark {
@@ -88,6 +109,9 @@ body,
     --destructive-foreground: 0 85.7% 97.3%;
 
     --ring: 12 6.5% 15.1%;
+    --scroll-track: #000000;
+    --scroll-thumb: #393939;
+    --scroll-thumb-hover: #343434;
   }
 }
 
