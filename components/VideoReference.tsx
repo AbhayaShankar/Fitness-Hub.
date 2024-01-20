@@ -1,6 +1,7 @@
 import { VideoReferenceType } from "@/app/(routes)/(otherRoutes)/exercise/[slug]/page";
 import { PlayCircle, PlaySquare } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const VideoReference = ({
@@ -16,7 +17,12 @@ const VideoReference = ({
   return (
     <div className="grid place-items-center grid-cols-3 gap-5">
       {VideoReferenceList.map((video: VideoReferenceType) => (
-        <div key={video.title} className="rounded-xl  cursor-pointer relative">
+        <Link
+          href={video.link}
+          target="_blank"
+          key={video.title}
+          className="rounded-xl  cursor-pointer relative"
+        >
           <Image
             src={`/assets/video-references/${video.imgsrc}`}
             alt={video.title}
@@ -30,7 +36,7 @@ const VideoReference = ({
             color="#a1a1a1"
             strokeWidth={2}
           />
-        </div>
+        </Link>
       ))}
     </div>
   );
