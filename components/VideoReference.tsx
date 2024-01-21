@@ -30,7 +30,6 @@ const VideoReference = ({
             width={600}
             className="overflow-hidden w-[520px] h-[276px] object-cover rounded-xl"
           />
-          {/* <div className="absolute top-0 left-0 w-full h-full rounded-xl bg-black/20"></div> */}
           <PlayCircle
             className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-24 h-20 hover:stroke-[#b0b0b0] transition-all linear z-10"
             color="#a1a1a1"
