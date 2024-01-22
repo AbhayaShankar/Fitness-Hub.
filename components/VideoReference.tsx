@@ -35,6 +35,9 @@ const VideoReference = ({
             color="#a1a1a1"
             strokeWidth={2}
           />
+          <p className="uppercase mt-2 font-bold tracking-wide">
+            {video.category}
+          </p>
         </Link>
       ))}
     </div>
