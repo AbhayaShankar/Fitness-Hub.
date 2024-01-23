@@ -44,7 +44,9 @@ const VideoReference = ({ VideoReferenceList, muscleCategory }: VideoType) => {
             strokeWidth={2}
           />
           <p className="uppercase mt-2 font-bold tracking-wide">
-            {video.category}
+            {video.title.length > 40
+              ? video.title.substring(0, 38) + "..."
+              : video.title}
           </p>
         </Link>
       ))}
