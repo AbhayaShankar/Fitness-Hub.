@@ -1,5 +1,5 @@
 import { VideoReferenceType } from "@/app/(routes)/(otherRoutes)/exercise/[slug]/page";
-import { PlayCircle, PlaySquare } from "lucide-react";
+import { PlayCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,8 +11,9 @@ type VideoType = {
 
 const VideoReference = ({ VideoReferenceList, muscleCategory }: VideoType) => {
   // For Filtering out videos of sepcific categories
+
   const relatedVideos = VideoReferenceList.filter((videos) => {
-    videos.category === muscleCategory;
+    return videos.category === muscleCategory;
   });
 
   console.log("Related", relatedVideos);
