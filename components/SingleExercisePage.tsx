@@ -15,10 +15,15 @@ import {
 } from "./SingleExerciseUtils";
 import VideoReference from "./VideoReference";
 import VideoReferenceList from "../video-references.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const SingleExercise = ({ ...props }: ExerciseDescProps) => {
   const [muscleCategory, setMuscleCategory] = useState("chest");
+
+  useEffect(() => {
+    setMuscleCategory(props.category[0]);
+  }, [muscleCategory]);
+
   return (
     <div className=" p-5 space-y-5">
       <Link href={"/exercise"}>
@@ -123,7 +128,10 @@ export const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
             Video Resources
           </h3>
-          <VideoReference VideoReferenceList={VideoReferenceList.videos} />
+          <VideoReference
+            muscleCategory={muscleCategory}
+            VideoReferenceList={VideoReferenceList.videos}
+          />
         </div>
       </div>
     </div>

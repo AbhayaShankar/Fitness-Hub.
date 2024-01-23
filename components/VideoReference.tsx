@@ -4,23 +4,30 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const VideoReference = ({
-  VideoReferenceList,
-}: {
+type VideoType = {
   VideoReferenceList: VideoReferenceType[];
-}) => {
+  muscleCategory: string;
+};
+
+const VideoReference = ({ VideoReferenceList, muscleCategory }: VideoType) => {
   // For Filtering out videos of sepcific categories
-  const filteredVideosList = VideoReferenceList.filter(
-    (videos) => videos.category === "chest"
+  const relatedVideos = VideoReferenceList.filter(
+    (videos) => videos.category === muscleCategory
   );
+
+  console.log("Related", relatedVideos);
+
+  const filteredVideosList = relatedVideos.splice(0, 3);
+
+  console.log("Filtered", filteredVideosList);
 
   return (
     <div className="grid place-items-center grid-cols-3 gap-5">
-      {VideoReferenceList.map((video: VideoReferenceType) => (
+      {filteredVideosList.map((video: VideoReferenceType, index) => (
         <Link
           href={video.link}
           target="_blank"
-          key={video.title}
+          key={index}
           className="rounded-xl  cursor-pointer relative"
         >
           <Image

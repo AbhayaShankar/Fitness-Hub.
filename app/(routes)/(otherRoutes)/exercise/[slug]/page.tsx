@@ -26,6 +26,7 @@ const SingleExercisePage = ({ params }: { params: { slug: string } }) => {
 
   if (correctExercise.length === 1) {
     const finalExercise = correctExercise[0];
+
     return (
       <SingleExercise
         category={finalExercise.category}
