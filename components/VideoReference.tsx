@@ -11,9 +11,9 @@ type VideoType = {
 
 const VideoReference = ({ VideoReferenceList, muscleCategory }: VideoType) => {
   // For Filtering out videos of sepcific categories
-  const relatedVideos = VideoReferenceList.filter(
-    (videos) => videos.category === muscleCategory
-  );
+  const relatedVideos = VideoReferenceList.filter((videos) => {
+    videos.category === muscleCategory;
+  });
 
   console.log("Related", relatedVideos);
 

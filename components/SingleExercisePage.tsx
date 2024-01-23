@@ -21,7 +21,12 @@ export const SingleExercise = ({ ...props }: ExerciseDescProps) => {
   const [muscleCategory, setMuscleCategory] = useState("chest");
 
   useEffect(() => {
-    setMuscleCategory(props.category[0]);
+    console.log("Ctaegory", props.category);
+
+    muscleCategory.length
+      ? setMuscleCategory(props.category[0])
+      : setMuscleCategory("chest");
+    console.log("Muscle category", muscleCategory);
   }, [muscleCategory]);
 
   return (
