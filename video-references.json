@@ -27,6 +27,41 @@
       "link": "https://www.youtube.com/watch?v=Bo_AxIlOhRk&ab_channel=RyanHumiston",
       "imgsrc": "biceps-science-based.webp",
       "category": "biceps"
+    },
+    {
+      "title": "The PERFECT Biceps Workout (Sets and Reps Included).",
+      "desc": "Master the art of bench pressing with precision to sculpt your chest, shoulders, and arms. Don't underestimate the importance of proper form to prevent potential injuries. Discover the simplicity of perfect bench technique in 5 easy steps",
+      "link": "https://www.youtube.com/watch?v=gozU3CUIizs&ab_channel=ATHLEAN-X%E2%84%A2",
+      "imgsrc": "perfect-biceps-atheanx.webp",
+      "category": "biceps"
+    },
+    {
+      "title": "How To Build Huge Biceps: Optimal Training Explained.",
+      "desc": "Master the art of bench pressing with precision to sculpt your chest, shoulders, and arms. Don't underestimate the importance of proper form to prevent potential injuries. Discover the simplicity of perfect bench technique in 5 easy steps",
+      "link": "https://www.youtube.com/watch?v=i1YgFZB6alI&ab_channel=JeffNippard",
+      "imgsrc": "jeff-biceps-workout.webp",
+      "category": "biceps"
+    },
+    {
+      "title": "The Ultimate Science-Based Leg Day For Muscle Growth (2023).",
+      "desc": "Master the art of bench pressing with precision to sculpt your chest, shoulders, and arms. Don't underestimate the importance of proper form to prevent potential injuries. Discover the simplicity of perfect bench technique in 5 easy steps",
+      "link": "https://www.youtube.com/watch?v=H6mRkx1x77k&ab_channel=JeffNippard",
+      "imgsrc": "jeff-legs-workout.webp",
+      "category": "legs"
+    },
+    {
+      "title": "BRUTAL LEG WORKOUT | MINDSET RANT.",
+      "desc": "Master the art of bench pressing with precision to sculpt your chest, shoulders, and arms. Don't underestimate the importance of proper form to prevent potential injuries. Discover the simplicity of perfect bench technique in 5 easy steps",
+      "link": "https://www.youtube.com/watch?v=w8pYsRhLmUE&ab_channel=ChrisBumstead",
+      "imgsrc": "cbum-legs-workout.webp",
+      "category": "legs"
+    },
+    {
+      "title": "The Best Science-Based Leg Day For Growth (Quads/Glutes/Hamstrings).",
+      "desc": "Master the art of bench pressing with precision to sculpt your chest, shoulders, and arms. Don't underestimate the importance of proper form to prevent potential injuries. Discover the simplicity of perfect bench technique in 5 easy steps",
+      "link": "https://www.youtube.com/watch?v=Xg9B6pqHUQE&ab_channel=JeremyEthier",
+      "imgsrc": "complete-legs-workout.webp",
+      "category": "legs"
     }
   ]
 }
