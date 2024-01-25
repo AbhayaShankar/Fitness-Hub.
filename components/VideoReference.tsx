@@ -42,7 +42,7 @@ const VideoReference = ({ VideoReferenceList, muscleCategory }: VideoType) => {
           <PlayCircle
             className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-24 h-20 hover:stroke-[#fedf19] transition-all linear z-10"
             color="#fafe19"
-            fill="#9e770dab"
+            fill="#9e770d71"
             strokeWidth={2}
           />
           <p className="uppercase mt-2 font-bold tracking-wide">
