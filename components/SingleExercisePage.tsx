@@ -125,7 +125,7 @@ export const SingleExercise = ({ ...props }: ExerciseDescProps) => {
           </div>
         </div>
         <div className="col-span-4">
-          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5">
+          <h3 className="text-center capitalize font-semibold text-lg lg:text-3xl mb-5 lg:mb-8">
             Video Resources
           </h3>
           <VideoReference
