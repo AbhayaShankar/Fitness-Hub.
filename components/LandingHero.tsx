@@ -22,14 +22,14 @@ const heroImages = [
     id: 1,
     imgUrl: "/assets/hero-1.jpg",
     title: "Happy clients",
-    reach: "6K+",
+    reach: "10K+",
     desc: "We build trust and establish a strong bond with our clients through personalized fitness journeys.",
   },
   {
     id: 2,
     imgUrl: "/assets/hero-2.jpg",
     title: "Expert trainers",
-    reach: "10+",
+    reach: "8+",
     desc: "Our expert trainers help you achieve your fitness goals and dream physique.",
   },
   {
