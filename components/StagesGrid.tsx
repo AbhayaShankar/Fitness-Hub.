@@ -1,6 +1,5 @@
 import StagesCard from "./StagesCard";
 import { cn } from "@/lib/utils";
-import { Goal } from "lucide-react";
 import { STAGES_CARD } from "@/constants";
 import TitleBg from "./TitleBg";
 
